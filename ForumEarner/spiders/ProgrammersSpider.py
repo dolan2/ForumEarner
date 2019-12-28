@@ -10,10 +10,12 @@ class ProgrammersSpider(scrapy.Spider):
 
     def parse(self, response):
         for post in response.css('div.post'):
-            yield {
-                'date': post.css('span.timestamp::text').get(),
-                'post-content': post.css('div.post-content').get()
-            }
+            if post.css('span.timestamp::text').get() is not None \
+                    and "wiek" in str(post.css('div.post-content').get()).lower():
+                yield {
+                    'date': post.css('span.timestamp::text').get(),
+                    'post-content': post.css('div.post-content').get()
+                }
 
         next_page = response.css('ul.pagination').css('li')[-1].css('a::attr(href)').get()
         if next_page is not None:

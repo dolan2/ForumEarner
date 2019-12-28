@@ -1,2 +1,4 @@
 ### ForumEarner
-Scrap forum, view example result in excel file
+- Forum scrapper
+- Save result to file:
+    - `scrapy crawl 4p -o data.json` or `data.csv`
