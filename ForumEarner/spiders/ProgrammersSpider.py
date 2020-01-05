@@ -1,21 +1,9 @@
 from datetime import datetime
+import unidecode
 import scrapy
 import re
 
-# posts on 247 pages:
-# 2964 all with None (11 posts + 1 post always null)
-# 2717 <div> if date is not None (11 posts per page)
-# 2470 <div> if remove title post on each page(10 posts per page)
-# 2105 <div> contains 'wiek' or 'Wiek'
-# wiek 2743
-# stanowisko 2361, technologia 391, technologie 479, jezyk 42
-# doświadczenie 2656, doswiadczenie 65
-# zarobki 2341, wynagrodzenie 79 kasa 22
-# miasto 2385, miejsce 155
-# 1534 <div> contains all above
-# 1559 <p> with all above
 
-# Check if this working lol
 class ProgrammersSpider(scrapy.Spider):
     name = "4p"
 
@@ -32,29 +20,81 @@ class ProgrammersSpider(scrapy.Spider):
                     date = datetime.date(datetime.now())
 
                 age = 'wiek'
-                position = ['stanowisko', 'technologia', 'technologie', 'jezyk']
-                experience = ['doświadczenie', 'doswiadczenie']
-                salary = ['zarobki', 'wynagrodzenie', 'kasa']
+                stack = ['stanowisko', 'technologia', 'technologie', 'jezyk']
+                experience = ['doświadczenie', 'doswiadczenie', 'dosw']
+                salary = ['zarobki', 'wynagrodzenie', 'stawka', 'kasa']
                 place = ['miasto', 'miejsce', 'lokalizacja']
 
                 div_post_content = str(div_post.css('div.post-content').get()).lower()
                 if age in div_post_content \
-                        and any(ele in div_post_content for ele in position) \
+                        and any(ele in div_post_content for ele in stack) \
                         and any(ele in div_post_content for ele in experience) \
                         and any(ele in div_post_content for ele in salary) \
-                        and any(ele in div_post_content for ele in position) \
                         and any(ele in div_post_content for ele in place):
 
                     content = ''
-                    for p_tag in div_post.css('div.post-content p'):
-                        if age in str(p_tag.get()).lower():
-                            content = p_tag.get()
+                    for p_tag in div_post.css('div.post-content > p'):
+                        p_tag = str(p_tag.get()).lower()
+                        if age in p_tag \
+                                and any(ele in p_tag for ele in stack) \
+                                and any(ele in p_tag for ele in experience) \
+                                and any(ele in p_tag for ele in salary) \
+                                and any(ele in p_tag for ele in place):
+                            content = p_tag
 
                     if content != '':
-                        yield {
-                            'date': date,
-                            'post-content': content
-                        }
+
+                        content = content.lower()
+                        age = re.search(r'(\n|>).iek.*?(\d{2})', content)
+                        if age:
+                            age = age.group(2).replace('/strong>', '')
+
+                        stack = re.search(r'(\n|>)(.tanowisko|.echnologia|.echnologie|..zyk).(.*)<', content)
+                        if stack:
+                            stack = stack.group(3).replace('/strong>', '').replace('&gt;', '')\
+                                .replace('&lt', '').replace(':', '').strip()
+
+                        exp = re.search(r'(\n|>)(.o.wiadczenie|.o.w).(.*)<', content)
+                        if exp:
+                            exp = exp.group(3).replace('/strong>', '').replace('&gt;', '')\
+                                .replace('&lt', '').replace(':', '').strip()
+
+                            if 'brak' in exp:
+                                exp = 0
+
+                        salary = re.search(r'(\n|>)(.ynagrodzenie|.arobki|.tawka|.asa).(.*)<', content)
+                        if salary:
+                            salary = salary.group(3).replace('/strong>', '').replace('&gt;', '')\
+                                .replace('&lt', '').replace(':', '').strip()
+
+                        location = re.search(r'(\n|>)(.iasto|.iejsce|.okalizacja).(.*)<', content)
+                        if location:
+                            location = unidecode.unidecode(location.group(3).replace('/strong>', '')
+                                                           .replace('&gt;', '').replace('&lt', '').replace(':', '')
+                                                           .strip())
+
+                            if 'zdaln' in location or 'on-line' in location:
+                                location = 'zdalnie'
+                            if 'wwa' in location or 'wawa' in location or 'stolica' in location \
+                                    or 'stolyca' in location or 'warszafka' in location:
+                                location = 'warszawa'
+                            if 'krakow' in location or 'krk' in location:
+                                location = 'krakow'
+                            if 'trojmiasto' in location or 'gdansk' in location or '3city' in location:
+                                location = 'gdansk'
+                            if 'wroclaw' in location:
+                                location = 'wroclaw'
+
+                        if age is not None and stack is not None and exp is not None \
+                                and salary is not None and location is not None:
+                            yield {
+                                'date': date,
+                                'age': age,
+                                'stack': stack,
+                                'exp': exp,
+                                'salary': salary,
+                                'location': location
+                            }
 
         next_page = response.css('ul.pagination').css('li')[-1].css('a::attr(href)').get()
         if next_page is not None:
