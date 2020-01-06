@@ -1,7 +1,8 @@
 from datetime import datetime
-import unidecode
+
 import scrapy
-import re
+
+from ForumEarner.validation import validator
 
 
 class ProgrammersSpider(scrapy.Spider):
@@ -43,47 +44,13 @@ class ProgrammersSpider(scrapy.Spider):
                             content = p_tag
 
                     if content != '':
-
                         content = content.lower()
-                        age = re.search(r'(\n|>).iek.*?(\d{2})', content)
-                        if age:
-                            age = age.group(2).replace('/strong>', '')
 
-                        stack = re.search(r'(\n|>)(.tanowisko|.echnologia|.echnologie|..zyk).(.*)<', content)
-                        if stack:
-                            stack = stack.group(3).replace('/strong>', '').replace('&gt;', '')\
-                                .replace('&lt', '').replace(':', '').strip()
-
-                        exp = re.search(r'(\n|>)(.o.wiadczenie|.o.w).(.*)<', content)
-                        if exp:
-                            exp = exp.group(3).replace('/strong>', '').replace('&gt;', '')\
-                                .replace('&lt', '').replace(':', '').strip()
-
-                            if 'brak' in exp:
-                                exp = 0
-
-                        salary = re.search(r'(\n|>)(.ynagrodzenie|.arobki|.tawka|.asa).(.*)<', content)
-                        if salary:
-                            salary = salary.group(3).replace('/strong>', '').replace('&gt;', '')\
-                                .replace('&lt', '').replace(':', '').strip()
-
-                        location = re.search(r'(\n|>)(.iasto|.iejsce|.okalizacja).(.*)<', content)
-                        if location:
-                            location = unidecode.unidecode(location.group(3).replace('/strong>', '')
-                                                           .replace('&gt;', '').replace('&lt', '').replace(':', '')
-                                                           .strip())
-
-                            if 'zdaln' in location or 'on-line' in location:
-                                location = 'zdalnie'
-                            if 'wwa' in location or 'wawa' in location or 'stolica' in location \
-                                    or 'stolyca' in location or 'warszafka' in location:
-                                location = 'warszawa'
-                            if 'krakow' in location or 'krk' in location:
-                                location = 'krakow'
-                            if 'trojmiasto' in location or 'gdansk' in location or '3city' in location:
-                                location = 'gdansk'
-                            if 'wroclaw' in location:
-                                location = 'wroclaw'
+                        age = validator.valid_age(content)
+                        stack = validator.valid_stack(content)
+                        exp = validator.valid_experience(content)
+                        salary = validator.valid_salary(content)
+                        location = validator.valid_location(content)
 
                         if age is not None and stack is not None and exp is not None \
                                 and salary is not None and location is not None:
@@ -93,7 +60,8 @@ class ProgrammersSpider(scrapy.Spider):
                                 'stack': stack,
                                 'exp': exp,
                                 'salary': salary,
-                                'location': location
+                                'location': location,
+                                # 'post-content': content
                             }
 
         next_page = response.css('ul.pagination').css('li')[-1].css('a::attr(href)').get()
