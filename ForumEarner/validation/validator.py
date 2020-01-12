@@ -27,49 +27,49 @@ def valid_experience(content):
         exp = exp.group(3).replace('/strong>', '').replace('&gt;', '') \
             .replace('&lt', '').replace(',', '.').replace(':', '').strip()
 
-        if 'brak' in exp or 'staż' in exp or 'praktyki' in exp:
+        if re.search(r'(\d|rok.*|lat.*|mies.*)', exp) is None and 'brak' not in exp and 'staż' not in exp and 'praktyk' not in exp and 'pierwsza praca' not in exp:
+            exp = None
+        elif 'brak' in exp or 'staż' in exp or 'praktyk' in exp or 'pierwsza praca' in exp and re.search(r'\d', exp) is None:
             exp = 0
-        elif re.search(r'(msc|mies|mc|m-c|m-cy|miechy)', exp) is None:
-            if re.search(r"rok\s", exp) or re.search(r'rok$', exp):
-                exp = 1
-            elif re.search(r'p...roku', exp):
-                exp = 0.5
-            elif re.search(r'(\d)-(\d)', exp):
-                exp = re.search(r'(\d)-(\d)', exp).group(1)
-            elif re.search(r'\d+.\d+', exp):
+        elif re.search(r'(msc|mies|mc|m-c|m-cy|miechy|\dm|ms)', exp) is None:
+            if re.search(r'(\d+)(-|/)(\d+)', exp) and len(re.findall(r'[0-9]+', exp)) <= 2:
+                exp = re.search(r'(\d+)(-|/)(\d+)', exp).group(1)
+            elif re.search(r'\d+.\d+', exp) and len(re.findall(r'[0-9]+', exp)) <= 2:
                 exp = re.search(r'\d+.\d+', exp).group(0)
             elif re.search(r'\d+', exp):
                 exp = re.search(r'\d+', exp).group(0)
+            elif re.search(r"rok\s", exp) or re.search(r'rok$', exp):
+                exp = 1
+            elif re.search(r'p...roku', exp):
+                exp = 0.5
+            elif re.search(r'p..tora roku', exp):
+                exp = 1.5
             else:
-                exp = 0
-        else:
+                exp = None
+        elif re.search(r'(msc|mies|mc|m-c|m-cy|miechy|\dm|ms)', exp) is not None:
             if len(re.findall(r'[0-9]+', exp)) > 1:
-                regex = re.search(r'(\d+).*?(\d+)', exp)
-                exp = int(regex.group(1)) + int(regex.group(2))
-                exp = round(float(exp / 12), 2)
+                if re.search(r'(\d+).*?(lat|lat.|rok|rok.).*?(\d+)', exp) is not None:
+                    regex = re.search(r'(\d+).*?(lat|lat.|rok|rok.).*?(\d+)', exp)
+                    exp = round(float(regex.group(1)) + float(regex.group(3)) / 12, 2)
+                elif re.search(r'(msc|mies|mc|m-c|m-cy|miechy|\dm|ms)', exp) is None:
+                    exp = re.search(r'(\d+)', exp).group(1)
+                else:
+                    exp = round(float(re.search(r'(\d+)', exp).group(1)) / 12, 2)
             elif re.search(r'rok.*?(\d+)', exp):
-                exp = float(1.0 + float(int(re.search(r'rok.*?(\d+)', exp).group(1))) / 12)
+                exp = round(float(1.0 + float(int(re.search(r'rok.*?(\d+)', exp).group(1))) / 12), 2)
             elif re.search(r'rok.*', exp):
                 exp = 1
-            elif re.search(r'staż', exp):
-                exp = 0
-            else:
+            elif re.search(r'(msc|mies|mc|m-c|m-cy|miechy|\dm|ms)', exp) is not None:
                 exp = int(re.search(r'(\d+)', exp).group(1))
                 exp = round(float(exp / 12), 2)
-    # RETURN NONE IF BULLSHIT
-    # {"exp": "2", "post-content": "\ndoświadczenie: ~10 lat, ale w różnych językach. c/c++ około 2-3 lat<"},
-    # {"exp": "8", "post-content": "\ndoświadczenie: 8 lat, ale różne języki, na aktualnym stanowisku ~2 lata<"},
-    # {"exp": 0.92,"post-content": "\ndoświadczenie: 3 miesiące zawodowo, wcześniej kilkanaście zleceń, programowaniem interesuję się od 8 lat<"},
-    # {"exp": 1, "post-content": "\ndoświadczenie: 2,5 roku, piąty rok studiów<"},
-    # {"exp": 1, "post-content": "\ndoświadczenie: 3 lata(granty, projekty naukowe) + 1 rok komercyjnego<"}
-    # {"exp": 1.08, "post-content": "\ndoświadczenie: 6-7 miesięcy<"},
-    # {"exp": 1.08, "post-content": "\ndoświadczenie: 2 lata 11 miesięcy (prawie 3 lata :))<"},
-    # {"exp": 2.33,"post-content": "\ndoświadczenie: czysto komercyjne 10 miesięcy, wcześniej prowadzenie działalności przez 18 miesięcy i wytwarzanie oprogramowania dla januszów z różnym skutkiem<"},
-    # {"exp": 0.5, "post-content": "\ndoświadczenie: 1,5 miesiąca<"},
-    # {"exp": 1, "post-content": "\ndoświadczenie: 3,5 roku (1 rok automatyzacja)<"},
-    # {"exp": "2", "post-content": "\ndoświadczenie: 2 lata jako student (na magisterskie przeniosłem się na informatykę), 0 komercyjnie<"},
-    # if 'rok' na koniec dac bo psuje all
-    # if komercyjne
+            else:
+                exp = None
+        else:
+            exp = None
+
+    if exp is not None:
+        exp = float(exp)
+
     return exp
 
 
@@ -81,7 +81,7 @@ def valid_salary(content):
 
         if 'uop' in content or 'umowa o prac' in content or 'etat' in content:
             salary = 1
-        elif 'b2b' in content or 'vat' in content or 'fv' in content:
+        elif 'b2b' in content or 'vat' in content or 'fv' in content or 'kontrakt' in content:
             salary = 2
         elif 'uz' in content or 'zlecenie' in content:
             salary = 3

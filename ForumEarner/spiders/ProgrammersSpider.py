@@ -1,5 +1,5 @@
 from datetime import datetime
-
+import re
 import scrapy
 
 from ForumEarner.validation import validator
@@ -52,17 +52,17 @@ class ProgrammersSpider(scrapy.Spider):
                         salary = validator.valid_salary(content)
                         location = validator.valid_location(content)
 
-                        if age is not None and stack is not None and exp is not None \
-                                and salary is not None and location is not None:
-                            yield {
-                                'date': date,
-                                'age': age,
-                                'stack': stack,
-                                'exp': exp,
-                                'salary': salary,
-                                'location': location,
-                                # 'post-content': content
-                            }
+                        # if age is not None and stack is not None and exp is not None \
+                        #         and salary is not None and location is not None:
+                        yield {
+                            #'date': date,
+                            #'age': age,
+                            #'stack': stack,
+                            'exp': exp,
+                            #'salary': salary,
+                            #'location': location,
+                             'post-content': str(re.search(r'(\n|>)(.o.wiadczenie|.o.w).(.*)<', content).group(3))
+                        }
 
         next_page = response.css('ul.pagination').css('li')[-1].css('a::attr(href)').get()
         if next_page is not None:
