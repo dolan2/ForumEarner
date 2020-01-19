@@ -3,3 +3,10 @@
 - Save result to file:
     - `scrapy crawl 4p -o data.json`
     - `scrapy crawl 4p -o data.csv -t csv`
+- Copy .csv file to excel
+    - select all
+    - click on `Data` tab and select `Text to columns`
+    - select `delimeted` and `next`
+    - select `Comma` checkbox and `next`
+    - select data type as `text` and `finish`
+    - click on `Filter` in `Data` tab to sort

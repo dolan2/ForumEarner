@@ -60,7 +60,7 @@ class ProgrammersSpider(scrapy.Spider):
                                 'exp': exp,
                                 'salary': salary,
                                 'location': location,
-                                'post-content': content
+                                # 'post-content': content
                             }
 
         next_page = response.css('ul.pagination').css('li')[-1].css('a::attr(href)').get()

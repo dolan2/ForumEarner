@@ -92,7 +92,7 @@ def valid_salary(content):
         elif 'freelancer' in content:
             salary = None
         elif re.search(r'\d', salary) is not None:
-            salary = get_salary(salary, 'brak3')
+            salary = get_salary(salary, '-')
         else:
             salary = None
 
@@ -156,7 +156,7 @@ def get_salary(salary, contract_type):
         elif 'netto' in salary or 'na rek' in salary:
             contract_salary += ' netto ' + contract_type
         else:
-            contract_salary += ' brak2 ' + contract_type
+            contract_salary += ' - ' + contract_type
 
         if re.search(r'.*?(\d+).*?', contract_salary):
             temp_salary = int(re.search(r'.*?(\d+).*?', contract_salary).group(1))
