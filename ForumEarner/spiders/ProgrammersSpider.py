@@ -27,12 +27,11 @@ class ProgrammersSpider(scrapy.Spider):
                 place = ['miasto', 'miejsce', 'lokalizacja']
 
                 div_post_content = str(div_post.css('div.post-content').get()).lower()
-                if age in div_post_content \
+                if re.search(r'\|', div_post_content) is None and age in div_post_content \
                         and any(ele in div_post_content for ele in stack) \
                         and any(ele in div_post_content for ele in experience) \
                         and any(ele in div_post_content for ele in salary) \
                         and any(ele in div_post_content for ele in place):
-
                     content = ''
                     for p_tag in div_post.css('div.post-content > p'):
                         p_tag = str(p_tag.get()).lower()
@@ -52,17 +51,17 @@ class ProgrammersSpider(scrapy.Spider):
                         salary = validator.valid_salary(content)
                         location = validator.valid_location(content)
 
-                        # if age is not None and stack is not None and exp is not None \
-                        #         and salary is not None and location is not None:
-                        yield {
-                            #'date': date,
-                            #'age': age,
-                            #'stack': stack,
-                            'exp': exp,
-                            #'salary': salary,
-                            #'location': location,
-                             'post-content': str(re.search(r'(\n|>)(.o.wiadczenie|.o.w).(.*)<', content).group(3))
-                        }
+                        if age is not None and stack is not None and exp is not None \
+                                and salary is not None and location is not None:
+                            yield {
+                                'date': date,
+                                'age': age,
+                                'stack': stack,
+                                'exp': exp,
+                                'salary': salary,
+                                'location': location,
+                                'post-content': content
+                            }
 
         next_page = response.css('ul.pagination').css('li')[-1].css('a::attr(href)').get()
         if next_page is not None:
