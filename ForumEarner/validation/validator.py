@@ -17,6 +17,81 @@ def valid_stack(content):
         stack = stack.group(3).replace('/strong>', '').replace('&gt;', '') \
             .replace('&lt', '').replace(':', '').strip()
 
+    if 'javascript' in stack:
+        stack = 'Javascript'
+    elif 'java' in stack:
+        stack = 'Java'
+    elif 'c#' in stack:
+        stack = 'C#'
+    elif 'c++' in stack:
+        stack = 'C++'
+    elif 'php' in stack or 'magent' in stack or 'laravel' in stack or 'symfony' in stack:
+        stack = 'PHP'
+    elif 'python' in stack:
+        stack = 'Python'
+    elif 'ruby' in stack:
+        stack = 'Ruby'
+    elif 'kotlin' in stack:
+        stack = 'Kotlin'
+    elif 'swift' in stack:
+        stack = 'Swift'
+    elif 'golang' in stack:
+        stack = 'Golang'
+    elif 'rust' in stack:
+        stack = 'Rust'
+    elif 'vba' in stack:
+        stack = 'Visual Basic'
+    elif '.net' in stack:
+        stack = '.NET'
+    elif 'android' in stack:
+        stack = 'Android'
+    elif 'ios' in stack:
+        stack = 'iOs'
+    elif 'ror' in stack:
+        stack = 'Ror'
+    elif 'embedded' in stack:
+        stack = 'Embedded'
+    elif 'cobool' in stack:
+        stack = 'cobol'
+    elif 'scala' in stack:
+        stack = 'scala'
+    elif 'front' in stack:
+        stack = 'Frontend'
+    elif 'back' in stack:
+        stack = 'Backend'
+    elif 'full' in stack:
+        stack = 'Fullstack'
+    elif 'angular' in stack:
+        stack = 'Angular'
+    elif 'react' in stack:
+        stack = 'React'
+    elif 'anal' in stack:
+        stack = 'Analityk'
+    elif 'manual' in stack:
+        stack = 'tester manualny'
+    elif 'automat' in stack:
+        stack = 'Tester automatyczny'
+    elif 'tester' in stack:
+        stack = 'Tester'
+    elif 'qa' in stack:
+        stack = 'Tester'
+    elif 'devops' in stack:
+        stack = 'DevOps'
+    elif 'sql' in stack:
+        stack = 'SQL'
+    elif 'admin' in stack:
+        stack = 'Admin'
+    elif 'web' in stack:
+        stack = 'Javascript'
+    elif 'sharepoint' in stack:
+        stack = 'SharePoint'
+    elif 'archite' in stack:
+        stack = 'Architekt'
+    else:
+        print('check= ' + stack)
+        stack = None
+
+    # stack = stack[:20]
     return stack
 
 
@@ -160,7 +235,7 @@ def get_salary(salary, contract_type):
 
         if re.search(r'.*?(\d+).*?', contract_salary):
             temp_salary = int(re.search(r'.*?(\d+).*?', contract_salary).group(1))
-            if temp_salary > 50000 or temp_salary < 500:
+            if temp_salary > 50000 or temp_salary < 700:
                 contract_salary = None
 
     return contract_salary
@@ -175,7 +250,7 @@ def valid_location(content):
 
         if 'zdaln' in location or 'on-line' in location or 'google play' in location or 'remote' in location:
             location = 'zdalnie'
-        elif 'wwa' in location or 'wawa' in location or 'stolica' in location or 'stolyca' in location or 'warszafka' in location:
+        elif 'warszawa' in location or 'wwa' in location or 'wawa' in location or 'stolica' in location or 'stolyca' in location or 'warszafka' in location:
             location = 'warszawa'
         elif 'krakow' in location or 'krk' in location:
             location = 'krakow'
@@ -183,5 +258,14 @@ def valid_location(content):
             location = 'gdansk'
         elif 'wroclaw' in location:
             location = 'wroclaw'
+        elif 'poznan' in location:
+            location = 'poznan'
+        elif 'lodz' in location:
+            location = 'lodz'
+        elif 'rzeszow' in location:
+            location = 'rzeszow'
+
+            if len(location) > 80:
+                location = None
 
     return location

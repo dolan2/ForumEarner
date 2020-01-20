@@ -17,7 +17,7 @@ class ProgrammersSpider(scrapy.Spider):
             date = str(div_post.css('span.timestamp::text').get()).split()[0]
 
             if date is not None and date != '2014-05-05':
-                if 'dziś' in date:
+                if 'dziś' in date or 'wczoraj' in date:
                     date = datetime.date(datetime.now())
 
                 age = 'wiek'
