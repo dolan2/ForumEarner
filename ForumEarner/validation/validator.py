@@ -131,7 +131,7 @@ def valid_experience(content):
         exp = exp.group(3).replace('/strong>', '').replace('&gt;', '') \
             .replace('&lt', '').replace(',', '.').replace(':', '').strip()
 
-        if re.search(r'(\d|rok.*|lat.*|mies.*)',
+        if re.search(r'(\d|rok|lat.*|mies.*)',
                      exp) is None and 'brak' not in exp and 'staż' not in exp and 'praktyk' not in exp and 'pierwsza praca' not in exp:
             exp = None
         elif 'brak' in exp or 'staż' in exp or 'praktyk' in exp or 'pierwsza praca' in exp and re.search(r'\d',
@@ -186,13 +186,15 @@ def valid_salary(content):
         salary = salary.group(3).replace('/strong>', '').replace('&gt;', '') \
             .replace('&lt', '').replace(':', '').replace(',', '.').strip()
 
-        if re.search(r'.*?uop.*?', content) or re.search(r'.*?umowa o prac.*?', content) or re.search(r'.*?etat.*?', content):
+        if re.search(r'.*?\Wuop\W.*?', content) or re.search(r'.*?\Wumowa o prac.\W.*?', content) \
+                or re.search(r'.*?\Wetat\W.*?', content) and 'zlecenie' not in content:
             salary = get_salary(salary, 'uop')
-        elif re.search(r'.*?b2b.*?', content) or re.search(r'.*?vat.*?', content) or re.search(r'.*?fv.*?', content) or re.search(r'.*?kontrakt.*?', content) or re.search(r'.*?działalno.*?', content):
+        elif re.search(r'.*?b2b.*?', content) or re.search(r'.*?vat.*?', content) or re.search(r'.*?\Wfv.*?', content) \
+                or re.search(r'.*?kontrakt.*?', content) or re.search(r'.*?działalno.*?', content) and 'umowa o dzie' not in content:
             salary = get_salary(salary, 'b2b')
-        elif re.search(r'.*?uz.*?', content) or re.search(r'.*?zlecenie.*?', content):
+        elif re.search(r'.*?\Wuz\W.*?', content) or re.search(r'.*?zlecenie.*?', content):
             salary = get_salary(salary, 'uz')
-        elif re.search(r'.*?ud.*?', content) or re.search(r'.*?umowa o dzie.*?', content) or re.search(r'.*?uod.*?', content):
+        elif re.search(r'.*?\Wud\W.*?', content) or re.search(r'.*?umowa o dzie.*?', content) or re.search(r'.*?\Wuod\W.*?', content):
             salary = get_salary(salary, 'uod')
         elif 'freelancer' in content:
             salary = None
@@ -232,7 +234,11 @@ def get_salary(salary, contract_type):
                 contract_salary *= 100
     else:
         if re.search(r'.*?(\d+)(|\s)k.*?', salary):
-            contract_salary = int(re.search(r'.*?(\d+)(|\s)k.*?', salary).group(1)) * 1000
+            if 'rok' in salary or 'rocznie' in salary:
+                contract_salary = int(re.search(r'.*?(\d+)(|\s)k.*?', salary).group(1)) * 1000
+                contract_salary /= 12
+            else:
+                contract_salary = int(re.search(r'.*?(\d+)(|\s)k.*?', salary).group(1)) * 1000
         elif re.search(r'.*?(\d+).*?(tyś|tys.*).*?', salary):
             contract_salary = int(re.search(r'.*?(\d+).*?(tyś|tys.*).*?', salary).group(1)) * 1000
         elif re.search(r'.*?(\d+).*?(/h|/ h|/g|/ g|godz.*|rbh).*?', salary):
@@ -250,6 +256,7 @@ def get_salary(salary, contract_type):
         if contract_salary < 15 and len(re.findall(r'[0-9]', salary)) < 3:
             contract_salary *= 1000
 
+        contract_salary = int('{0:g}'.format(contract_salary))
         contract_salary = format(contract_salary, ',').replace(',', ' ')
 
         if '€' in salary or 'eur' in salary:
