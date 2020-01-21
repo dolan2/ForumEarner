@@ -2,7 +2,11 @@ from datetime import datetime
 import re
 import scrapy
 
-from ForumEarner.validation import validator
+from ForumEarner.validation import age_validator
+from ForumEarner.validation import experience_validator
+from ForumEarner.validation import location_validator
+from ForumEarner.validation import salary_validator
+from ForumEarner.validation import stack_validator
 
 
 class ProgrammersSpider(scrapy.Spider):
@@ -45,20 +49,23 @@ class ProgrammersSpider(scrapy.Spider):
                     if content != '':
                         content = content.lower()
 
-                        age = validator.valid_age(content)
-                        stack = validator.valid_stack(content)
-                        exp = validator.valid_experience(content)
-                        salary = validator.valid_salary(content)
-                        location = validator.valid_location(content)
+                        age = age_validator.valid_age(content)
+                        stack = stack_validator.valid_stack(content)
+                        exp = experience_validator.valid_experience(content)
+                        salary = salary_validator.valid_salary(content)
+                        location = location_validator.valid_location(content)
 
                         if age is not None and stack is not None and exp is not None \
-                                and salary is not None and location is not None:
+                                and salary is not None and None not in salary and location is not None:
                             yield {
                                 'date': date,
                                 'age': age,
                                 'stack': stack,
                                 'exp': exp,
-                                'salary': salary,
+                                'salary': salary[0],
+                                'currency': salary[1],
+                                'taxes': salary[2],
+                                'contract_type': salary[3],
                                 'location': location,
                                 # 'post-content': content
                             }
