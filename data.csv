@@ -356,7 +356,7 @@ date,age,stack,exp,salary,location
 2017-02-02,28,Java,2.5,11 500 pln netto b2b,Kraków
 2017-02-03,22,Java,2.17,7 500 pln brutto uop,Warszawa
 2017-02-04,24,Javascript,0.58,1 800 pln netto ?,Poznań
-2017-02-04,30,Java,5,1 166.6666666666667 pln netto b2b,Gdańsk
+2017-02-04,30,Java,5,1 166 pln netto b2b,Gdańsk
 2017-02-04,32,Javascript,5,2 700 pln netto uop,Warszawa
 2017-02-04,25,Javascript,0,1 400 pln brutto uz,Kraków
 2017-02-04,23,Java,1.5,5 100 pln netto uop,Kraków
@@ -497,7 +497,7 @@ date,age,stack,exp,salary,location
 2017-06-09,21,Java,0,1 500 pln netto uz,Kraków
 2017-06-10,25,Java,0,6 000 pln netto uop,Warszawa
 2017-06-10,21,Javascript,1.5,10 000 pln brutto uop,Wrocław
-2017-06-13,42,Tester Automatyczny,22,1 333.3333333333333 usd netto b2b,Warszawa
+2017-06-13,42,Tester Automatyczny,22,1 333 usd netto b2b,Warszawa
 2017-06-13,35,Python,8,6 800 pln netto b2b,Białystok
 2017-06-13,24,Java,0,1 800 pln netto ?,Lublin
 2017-06-14,32,.NET,5,4 500 pln brutto ?,Kraków
@@ -669,7 +669,7 @@ date,age,stack,exp,salary,location
 2017-10-13,24,Android,0.67,5 500 pln brutto ?,Kraków
 2017-10-14,26,Java,2.5,5 000 pln netto ?,Szczecin
 2017-10-15,21,Javascript,0.33,3 600 pln netto ?,Wrocław
-2017-10-16,25,Java,4,10 833.333333333334 usd ! ?,San Francisco
+2017-10-16,25,Java,4,10 833 usd ! ?,San Francisco
 2017-10-16,28,.NET,0.92,3 000 pln netto uop,Kraków
 2017-10-19,20,Java,0,2 200 pln brutto uop,Gliwice
 2017-10-21,23,Django,2,8 000 pln netto b2b,Poznań
@@ -899,7 +899,7 @@ date,age,stack,exp,salary,location
 2018-04-24,22,Java,3,10 400 pln netto b2b,Poznań
 2018-04-24,32,.NET,0.75,3 200 pln netto uop,Warszawa
 2018-04-24,24,Java,2.5,9 000 pln brutto uop,Kraków
-2018-04-25,34,Senior Engineer,7,1 166.6666666666667 pln brutto uop,Kraków
+2018-04-25,34,Senior Engineer,7,1 166 pln brutto uop,Kraków
 2018-04-26,26,Big Data,2.5,11 000 pln brutto ?,Kraków
 2018-04-27,27,.NET,0.17,6 200 pln netto uop,Gdańsk
 2018-04-27,27,Java,0.75,4 000 pln brutto uop,Katowice
@@ -1051,7 +1051,7 @@ date,age,stack,exp,salary,location
 2018-09-06,25,Javascript,1.5,9 000 pln netto b2b,Sopot
 2018-09-07,21,C++,0.17,3 500 pln netto uz,Kraków
 2018-09-08,27,Java,1.33,2 400 pln netto uod,Warszawa
-2018-09-10,28,.NET,4,2 083.3333333333335 pln brutto uop,"Praga, Czechy "
+2018-09-10,28,.NET,4,2 083 pln brutto uop,"Praga, Czechy "
 2018-09-10,30,Python,7,9 000 pln netto uop,Poznań
 2018-09-10,26,Fullstack,1,12 000 pln brutto uop,Warszawa
 2018-09-12,24,Python,0,2 000 pln netto uod,Zielona Góra
@@ -1067,9 +1067,9 @@ date,age,stack,exp,salary,location
 2018-09-15,24,.NET,1.25,3 300 pln netto uop,Wrocław
 2018-09-15,31,Android,9,12 000 pln netto ?,Kraków
 2018-09-16,23,.NET,3,10 000 pln brutto uop,Warszawa
-2018-09-16,33,Tester Automatyczny,10,1 833.3333333333333 usd brutto b2b,Zdalnie
+2018-09-16,33,Tester Automatyczny,10,1 833 usd brutto b2b,Zdalnie
 2018-09-17,33,Ruby,3,14 000 pln netto ?,Katowice
-2018-09-18,24,Lead Technology,3,15 416.666666666666 pln ! ?,Londyn
+2018-09-18,24,Lead Technology,3,15 416 pln ! ?,Londyn
 2018-09-18,22,PHP,0.67,5 500 pln netto b2b,Warszawa
 2018-09-19,35,Java,12,16 800 pln netto b2b,Warszawa
 2018-09-19,25,Java,4,16 800 pln netto b2b,Gdańsk
@@ -1196,7 +1196,7 @@ date,age,stack,exp,salary,location
 2018-12-20,27,Tester Automatyczny,4.5,9 500 pln brutto uop,Kraków
 2018-12-21,25,Tester,1,5 270 pln brutto uop,Kraków
 2018-12-21,25,.NET,2,6 200 pln brutto uop,Kraków
-2018-12-21,32,Ruby,11,2 583.3333333333335 pln netto b2b,Zdalnie
+2018-12-21,32,Ruby,11,2 583 pln netto b2b,Zdalnie
 2018-12-21,22,Java,3,9 000 pln netto uop,Gdańsk
 2018-12-21,24,Java,2,7 500 pln netto uop,Łódź
 2018-12-22,26,Java,3,21 500 pln netto b2b,Poznań
@@ -1401,7 +1401,7 @@ date,age,stack,exp,salary,location
 2019-09-22,27,Fullstack,2,17 300 pln netto b2b,Warszawa
 2019-09-24,25,Java,0,4 000 pln ! uz,Wrocław
 2019-09-24,24,Sharepoint,2,9 600 pln netto b2b,Zawsze Na Wschod
-2019-09-24,21,Big Data,2,4 166.666666666667 gbp brutto ?,Londyn
+2019-09-24,21,Big Data,2,4 166 gbp brutto ?,Londyn
 2019-09-24,20,Javascript,2,3 600 pln netto uop,Wrocław
 2019-09-25,22,.NET,1.83,10 000 pln netto b2b,Kraków
 2019-09-25,26,Analityk,4,5 000 pln netto uop,Wrocław

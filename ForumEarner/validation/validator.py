@@ -259,6 +259,7 @@ def get_salary(salary, contract_type):
         if contract_salary < 15 and len(re.findall(r'[0-9]', salary)) < 3:
             contract_salary *= 1000
 
+        contract_salary = int(contract_salary)
         contract_salary = format(contract_salary, ',').replace(',', ' ').replace('.0', '')
 
         if '€' in salary or 'eur' in salary:
