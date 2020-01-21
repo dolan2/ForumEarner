@@ -25,7 +25,7 @@ def valid_stack(content):
         stack = '.NET'
     elif 'c++' in stack:
         stack = 'C++'
-    elif 'php' in stack or 'magent' in stack or 'laravel' in stack or 'symfony' in stack:
+    elif 'php' in stack or 'magento' in stack or 'laravel' in stack or 'symfony' in stack:
         stack = 'PHP'
     elif 'python' in stack:
         stack = 'Python'
@@ -43,14 +43,16 @@ def valid_stack(content):
         stack = 'Visual Basic'
     elif '.net' in stack:
         stack = '.NET'
+    elif 'kernel' in stack:
+        stack = 'Linux Kernel'
     elif 'android' in stack:
         stack = 'Android'
     elif 'ios' in stack:
         stack = 'iOS'
     elif 'ror' in stack:
         stack = 'Ruby'
-    elif 'embedded' in stack:
-        stack = 'Embedded'
+    elif 'Embedded' in stack:
+        stack = 'C'
     elif 'cobol' in stack:
         stack = 'Cobol'
     elif 'scala' in stack:
@@ -61,26 +63,24 @@ def valid_stack(content):
         stack = 'Javascript'
     elif 'web' in stack:
         stack = 'Javascript'
+    elif 'nodejs' in stack or 'node.js' in stack or 'node' in stack:
+        stack = 'Javascript'
+    elif 'django' in stack:
+        stack = 'Python'
     elif 'front' in stack:
         stack = 'Javascript'
-    elif 'back' in stack:
-        stack = 'Backend'
-    elif 'full' in stack:
-        stack = 'Fullstack'
     elif 'anal' in stack:
         stack = 'Analityk'
     elif 'manual' in stack:
-        stack = 'Tester manualny'
+        stack = 'Testing'
     elif 'automat' in stack:
-        stack = 'Tester automatyczny'
+        stack = 'Testing'
     elif 'tester' in stack:
-        stack = 'Tester'
+        stack = 'Testing'
     elif 'qa' in stack:
-        stack = 'Tester'
+        stack = 'Testing'
     elif 'devops' in stack:
         stack = 'DevOps'
-    elif 'sql' in stack:
-        stack = 'SQL'
     elif 'admin' in stack:
         stack = 'Admin'
     elif 'sharepoint' in stack:
@@ -92,29 +92,46 @@ def valid_stack(content):
     elif '. net' in stack:
         stack = '.NET'
     elif 'test' in stack:
-        stack = 'Tester automatyczny'
-    elif 'nodejs' in stack or 'node.js' in stack or 'node' in stack:
-        stack = 'Javascript'
-    elif 'django' in stack:
-        stack = 'Django'
+        stack = 'Testing'
     elif 'typescript' in stack:
         stack = 'Javascript'
     elif 'spring' in stack:
         stack = 'Java'
-    elif 'bi' in stack or 'intelligence' in stack:
+    elif 'bi' in stack or 'intelligence' in stack or 'konsultant' in stack or 'consultant' in stack or 'sas' in stack or 'erp' in stack:
         stack = 'Analityk'
     elif 'data' in stack or 'etl' in stack or 'dwh' in stack:
         stack = 'Big Data'
     elif 'system' in stack:
-        stack = 'Embedded'
+        stack = 'C'
     elif 'machine' in stack:
-        stack = 'Machine Learning'
+        stack = 'Python'
     elif 'wordpress' in stack:
         stack = 'Wordpress'
     elif 'support' in stack or 'help' in stack:
         stack = 'Helpdesk'
-    elif 'programista c' in stack:
-        stack = 'Embedded'
+    elif 'delphi' in stack:
+        stack = 'Delphi'
+    elif 'net' in stack:
+        stack = '.NET'
+    elif 'sql' in stack:
+        stack = 'SQL'
+    elif 'salesforce' in stack:
+        stack = 'Salesforce'
+    elif 'lider' in stack or 'lead' in stack:
+        stack = 'Team Leader'
+    elif 'owner' in stack:
+        stack = 'Product Owner'
+    elif 'informatyk' in stack:
+        stack = 'Informatyk'
+    elif 'ux designer' in stack:
+        stack = 'UX Designer'
+    elif re.search(r'\sc$', stack) is not None or re.search(r'\sc\s', stack) is not None or re.search(r'^c$', stack) is not None:
+        stack = 'C'
+    elif 'developer' in stack or 'software' in stack or 'programista' in stack or 'dev' in stack or 'senior' in stack \
+            or 'junior' in stack or 'stażysta' in stack or 'intern' in stack or 'backend' in stack or 'full' in stack:
+        stack = 'Developer'
+    else:
+        stack = None
 
     if stack is not None:
         if stack is not 'iOS' and stack is not '.NET' and stack is not 'PHP' and stack is not 'SQL':
@@ -294,7 +311,7 @@ def valid_location(content):
         if 'zdaln' in location or 'on-line' in location or 'google play' in location or 'remote' in location:
             location = 'zdalnie'
         elif 'warszawa' in location or 'wwa' in location or 'wawa' in location or 'stolica' in location \
-                or 'stolyca' in location or 'warszafka' in location or 'w-wa' in location or 'waw' in location:
+                or 'stolyca' in location or 'warszafka' in location or 'w-wa' in location or 'waw' in location or 'sloikowo' in location:
             location = 'Warszawa'
         elif 'krakow' in location or 'krk' in location:
             location = 'Kraków'
@@ -328,8 +345,12 @@ def valid_location(content):
             location = "Łomża"
         elif 'chelm' in location:
             location = 'Chełm'
+        elif 'nowy sacz' in location:
+            location = 'Nowy Sącz'
+        elif 'gliwice' in location:
+            location = 'Gliwice'
 
-        if len(location) > 80:
+        if len(location.split()) > 10:
             location = None
         else:
             location = location.title()
