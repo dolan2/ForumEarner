@@ -62,7 +62,7 @@ def valid_stack(content):
     elif 'web' in stack:
         stack = 'Javascript'
     elif 'front' in stack:
-        stack = 'Frontend'
+        stack = 'Javascript'
     elif 'back' in stack:
         stack = 'Backend'
     elif 'full' in stack:
@@ -101,11 +101,25 @@ def valid_stack(content):
         stack = 'Javascript'
     elif 'spring' in stack:
         stack = 'Java'
+    elif 'bi' in stack or 'intelligence' in stack:
+        stack = 'Analityk'
+    elif 'data' in stack or 'etl' in stack or 'dwh' in stack:
+        stack = 'Big Data'
+    elif 'system' in stack:
+        stack = 'Embedded'
+    elif 'machine' in stack:
+        stack = 'Machine Learning'
+    elif 'wordpress' in stack:
+        stack = 'Wordpress'
+    elif 'support' in stack or 'help' in stack:
+        stack = 'Helpdesk'
 
     if stack is not None:
         if stack is not 'iOS' and stack is not '.NET' and stack is not 'PHP' and stack is not 'SQL':
             stack = stack.title()
-        stack = stack[:20]
+
+        stack = re.sub(r'\(.*?\)', '', stack)
+        stack = stack[:30]
 
     return stack
 
@@ -161,6 +175,7 @@ def valid_experience(content):
 
     if exp is not None:
         exp = float(exp)
+        exp = '{0:g}'.format(exp)
 
     return exp
 
@@ -182,7 +197,7 @@ def valid_salary(content):
         elif 'freelancer' in content:
             salary = None
         elif re.search(r'\d', salary) is not None:
-            salary = get_salary(salary, '-')
+            salary = get_salary(salary, '?')
         else:
             salary = None
 
@@ -227,10 +242,15 @@ def get_salary(salary, contract_type):
         else:
             contract_salary = int(re.search(r'.*?(\d+).*', salary).group(1))
 
+    if contract_salary > 50000 or contract_salary < 800:
+        contract_salary = None
+
     if contract_salary is not None:
 
         if contract_salary < 15 and len(re.findall(r'[0-9]', salary)) < 3:
             contract_salary *= 1000
+
+        contract_salary = format(contract_salary, ',').replace(',', ' ')
 
         if '€' in salary or 'eur' in salary:
             contract_salary = str(contract_salary) + ' eur'
@@ -250,11 +270,6 @@ def get_salary(salary, contract_type):
                 contract_salary += ' netto ' + contract_type
             else:
                 contract_salary += ' ! ' + contract_type
-
-        if re.search(r'.*?(\d+).*?', contract_salary):
-            temp_salary = int(re.search(r'.*?(\d+).*?', contract_salary).group(1))
-            if temp_salary > 50000 or temp_salary < 800:
-                contract_salary = None
 
     return contract_salary
 
@@ -295,6 +310,8 @@ def valid_location(content):
             location = 'Białystok'
         elif 'pn' in location:
             location = 'Poznań'
+        elif 'zielona gora' in location:
+            location = 'Zielona Góra'
 
         if len(location) > 80:
             location = None
