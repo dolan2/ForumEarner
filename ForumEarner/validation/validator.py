@@ -22,7 +22,7 @@ def valid_stack(content):
     elif 'java' in stack:
         stack = 'Java'
     elif 'c#' in stack:
-        stack = 'C#'
+        stack = '.NET'
     elif 'c++' in stack:
         stack = 'C++'
     elif 'php' in stack or 'magent' in stack or 'laravel' in stack or 'symfony' in stack:
@@ -34,7 +34,7 @@ def valid_stack(content):
     elif 'kotlin' in stack:
         stack = 'Kotlin'
     elif 'swift' in stack:
-        stack = 'Swift'
+        stack = 'iOS'
     elif 'golang' in stack:
         stack = 'Golang'
     elif 'rust' in stack:
@@ -46,29 +46,31 @@ def valid_stack(content):
     elif 'android' in stack:
         stack = 'Android'
     elif 'ios' in stack:
-        stack = 'iOs'
+        stack = 'iOS'
     elif 'ror' in stack:
-        stack = 'Ror'
+        stack = 'Ruby'
     elif 'embedded' in stack:
         stack = 'Embedded'
-    elif 'cobool' in stack:
-        stack = 'cobol'
+    elif 'cobol' in stack:
+        stack = 'Cobol'
     elif 'scala' in stack:
-        stack = 'scala'
+        stack = 'Scala'
+    elif 'angular' in stack:
+        stack = 'Javascript'
+    elif 'react' in stack:
+        stack = 'Javascript'
+    elif 'web' in stack:
+        stack = 'Javascript'
     elif 'front' in stack:
         stack = 'Frontend'
     elif 'back' in stack:
         stack = 'Backend'
     elif 'full' in stack:
         stack = 'Fullstack'
-    elif 'angular' in stack:
-        stack = 'Angular'
-    elif 'react' in stack:
-        stack = 'React'
     elif 'anal' in stack:
         stack = 'Analityk'
     elif 'manual' in stack:
-        stack = 'tester manualny'
+        stack = 'Tester manualny'
     elif 'automat' in stack:
         stack = 'Tester automatyczny'
     elif 'tester' in stack:
@@ -81,17 +83,30 @@ def valid_stack(content):
         stack = 'SQL'
     elif 'admin' in stack:
         stack = 'Admin'
-    elif 'web' in stack:
-        stack = 'Javascript'
     elif 'sharepoint' in stack:
         stack = 'SharePoint'
     elif 'archite' in stack:
         stack = 'Architekt'
-    else:
-        print('check= ' + stack)
-        stack = None
+    elif 'js' in stack:
+        stack = 'Javascript'
+    elif '. net' in stack:
+        stack = '.NET'
+    elif 'test' in stack:
+        stack = 'Tester automatyczny'
+    elif 'nodejs' in stack or 'node.js' in stack or 'node' in stack:
+        stack = 'Javascript'
+    elif 'django' in stack:
+        stack = 'Django'
+    elif 'typescript' in stack:
+        stack = 'Javascript'
+    elif 'spring' in stack:
+        stack = 'Java'
 
-    # stack = stack[:20]
+    if stack is not None:
+        if stack is not 'iOS' and stack is not '.NET' and stack is not 'PHP' and stack is not 'SQL':
+            stack = stack.title()
+        stack = stack[:20]
+
     return stack
 
 
@@ -231,11 +246,14 @@ def get_salary(salary, contract_type):
         elif 'netto' in salary or 'na rek' in salary:
             contract_salary += ' netto ' + contract_type
         else:
-            contract_salary += ' - ' + contract_type
+            if 'b2b' in contract_type:
+                contract_salary += ' netto ' + contract_type
+            else:
+                contract_salary += ' ! ' + contract_type
 
         if re.search(r'.*?(\d+).*?', contract_salary):
             temp_salary = int(re.search(r'.*?(\d+).*?', contract_salary).group(1))
-            if temp_salary > 50000 or temp_salary < 700:
+            if temp_salary > 50000 or temp_salary < 800:
                 contract_salary = None
 
     return contract_salary
@@ -250,22 +268,38 @@ def valid_location(content):
 
         if 'zdaln' in location or 'on-line' in location or 'google play' in location or 'remote' in location:
             location = 'zdalnie'
-        elif 'warszawa' in location or 'wwa' in location or 'wawa' in location or 'stolica' in location or 'stolyca' in location or 'warszafka' in location:
-            location = 'warszawa'
+        elif 'warszawa' in location or 'wwa' in location or 'wawa' in location or 'stolica' in location \
+                or 'stolyca' in location or 'warszafka' in location or 'w-wa' in location or 'waw' in location:
+            location = 'Warszawa'
         elif 'krakow' in location or 'krk' in location:
-            location = 'krakow'
-        elif 'trojmiasto' in location or 'gdansk' in location or '3city' in location:
-            location = 'gdansk'
-        elif 'wroclaw' in location:
-            location = 'wroclaw'
+            location = 'Kraków'
+        elif 'trojmiasto' in location or 'gdansk' in location or '3city' in location or '3miasto' in location:
+            location = 'Gdańsk'
+        elif 'wroclaw' in location or 'wrocek' in location:
+            location = 'Wrocław'
         elif 'poznan' in location:
-            location = 'poznan'
+            location = 'Poznań'
         elif 'lodz' in location:
-            location = 'lodz'
+            location = 'Łódź'
         elif 'rzeszow' in location:
-            location = 'rzeszow'
+            location = 'Rzeszów'
+        elif 'slask' in location:
+            location = 'Śląsk'
+        elif 'katowice' in location:
+            location = 'Katowice'
+        elif 'torun' in location:
+            location = 'Toruń'
+        elif 'b-b' in location:
+            location = 'Bielsko-Biała'
+        elif 'bialystok' in location:
+            location = 'Białystok'
+        elif 'pn' in location:
+            location = 'Poznań'
 
-            if len(location) > 80:
-                location = None
+        if len(location) > 80:
+            location = None
+        else:
+            location = location.title()
+            location = re.sub(r'\(.*?\)', '', location)
 
     return location
