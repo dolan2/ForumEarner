@@ -10,13 +10,13 @@ date,age,stack,exp,salary,location
 2014-05-08,25,Java,1.5,5 700 pln brutto ?,Kraków
 2014-05-09,20,.NET,0,1 200 pln brutto ?,Gdańsk
 2014-05-09,32,Java,10,26 000 pln netto b2b,Warszawa
-2014-05-09,23,.NET,0.75,1 700 pln netto b2b,Czestochowa
+2014-05-09,23,.NET,0.75,1 700 pln netto b2b,Częstochowa
 2014-05-11,24,C++,1.5,6 000 pln netto uop,Wrocław
 2014-05-11,26,Visual Basic,1,1 800 pln netto uop,Radom
 2014-05-11,24,.NET,1.5,3 900 pln netto uop,Warszawa
 2014-05-11,23,Java,0.5,4 000 pln brutto uop,Kraków
 2014-05-11,21,C++,0.83,2 700 pln netto b2b,Wrocław
-2014-05-13,26,Java,2,3 500 pln brutto b2b,Czestochowa
+2014-05-13,26,Java,2,3 500 pln brutto b2b,Częstochowa
 2014-05-15,24,.NET,1,3 500 pln netto uop,Kraków
 2014-05-16,25,Java,1,3 700 pln netto b2b,Warszawa
 2014-05-16,21,Java,1.5,4 500 pln brutto uop,Kraków
@@ -31,7 +31,7 @@ date,age,stack,exp,salary,location
 2014-07-07,24,iOS,0.83,3 300 pln brutto uop,Kraków
 2014-07-08,27,Programista,4,11 000 pln brutto uop,Kraków
 2014-07-10,25,Salesforce,1.5,5 000 pln brutto uop,Lublin
-2014-07-21,21,.NET,0,3 600 pln brutto uop,Lomza
+2014-07-21,21,.NET,0,3 600 pln brutto uop,Łomża
 2014-08-16,25,.NET,4,11 000 pln netto b2b,Gdańsk
 2014-08-29,24,Visual Basic,2,4 400 pln brutto ?,Wrocław
 2014-09-03,25,C++,1,6 000 pln brutto ?,Warszawa
@@ -47,7 +47,7 @@ date,age,stack,exp,salary,location
 2014-10-10,29,C++,7,5 000 pln netto uop,Szczecin
 2014-10-13,16,PHP,1,2 000 pln netto ?,Gdańsk
 2014-10-14,26,Java,2,7 000 pln brutto uop,Wrocław
-2014-10-14,22,Embedded,1,11 000 pln brutto ?,Chelm
+2014-10-14,22,Embedded,1,11 000 pln brutto ?,Chełm
 2014-10-21,30,PHP,10,6 000 pln ! ?,Zielona Góra
 2014-10-25,20,PHP,0,1 600 pln netto ?,Warszawa
 2014-11-09,22,.NET,1,3 500 pln brutto ?,Warszawa
@@ -76,7 +76,7 @@ date,age,stack,exp,salary,location
 2015-04-13,24,Javascript,2,9 500 pln brutto ?,Poznań
 2015-04-21,20,Javascript,1.25,4 000 gbp brutto ?,Uk
 2015-04-25,24,Embedded,0,4 500 pln netto uop,Duze
-2015-04-25,21,Własna Działalność Gospodarcza,0,3 500 pln netto b2b,Zdalnie
+2015-04-25,21,Własna Działalność Gospodarcza ,0,3 500 pln netto b2b,Zdalnie
 2015-04-26,22,Javascript,0,3 800 pln brutto ?,Warszawa
 2015-04-26,20,C++,0,3 000 pln netto uop,Warszawa
 2015-04-26,26,C++,6,50 000 pln ! ?,Ny
@@ -193,7 +193,7 @@ date,age,stack,exp,salary,location
 2016-02-26,21,PHP,0.67,4 000 pln netto uod,Warszawa
 2016-03-16,27,.NET,3,12 800 pln netto b2b,Rzeszów
 2016-03-16,25,Java,0.33,2 500 pln netto uop,Katowice
-2016-03-17,25,Python,1,6 750 pln ! uop,Woclaw
+2016-03-17,25,Python,1,6 750 pln ! uop,Wrocław
 2016-03-17,23,Javascript,0.83,4 800 pln netto uz,Warszawa
 2016-03-17,34,.NET,10,13 500 pln netto b2b,Warszawa
 2016-03-19,21,Android,0,2 500 pln netto uop,Warszawa
@@ -202,7 +202,7 @@ date,age,stack,exp,salary,location
 2016-03-23,31,.NET,9,14 000 pln netto b2b,Lublin
 2016-03-23,25,Java,4,11 000 pln netto ?,Wielka Brytania
 2016-03-26,26,Java,3.5,8 000 pln brutto uop,Łódź
-2016-03-28,28,Programista C,8,8 500 pln brutto ?,Warszawa
+2016-03-28,28,Embedded,8,8 500 pln brutto ?,Warszawa
 2016-04-01,25,SQL,0,2 800 pln netto uop,Warszawa
 2016-04-05,26,Python,3,5 100 pln netto uop,Poznań
 2016-04-14,23,Java,2,8 000 pln brutto uop,Wrocław
@@ -212,7 +212,7 @@ date,age,stack,exp,salary,location
 2016-04-27,22,Tester Automatyczny,1.5,10 400 pln netto b2b,Kraków
 2016-04-28,22,PHP,2,3 000 pln netto uop,Łódź
 2016-04-30,28,Tester Automatyczny,5,8 000 pln ! uop,Kraków
-2016-05-02,28,Programista C,8,9 200 pln brutto ?,Warszawa
+2016-05-02,28,Embedded,8,9 200 pln brutto ?,Warszawa
 2016-05-06,23,Embedded,3,12 000 pln brutto uop,Warszawa
 2016-05-06,20,Java,0.5,4 700 pln brutto uz,Wrocław
 2016-05-07,19,Junior Software Engineer ,0,3 000 pln brutto uop,Kraków
@@ -276,7 +276,7 @@ date,age,stack,exp,salary,location
 2016-08-24,22,Tester,0.08,2 000 pln ! ?,Katowice
 2016-08-30,30,Java,1.5,8 000 pln brutto uop,Poznań
 2016-08-30,26,Tester,3,6 300 pln brutto uop,Kraków
-2016-08-31,31,Java,9,5 400 pln ! uop,Bielsko-Biala
+2016-08-31,31,Java,9,5 400 pln ! uop,Bielsko-Biała
 2016-08-31,24,PHP,4,9 000 pln netto b2b,Wrocław
 2016-09-01,34,Java,11,12 000 pln netto b2b,Gdańsk
 2016-09-06,29,.NET,11,22 300 pln brutto uop,Zdalnie
@@ -350,9 +350,1134 @@ date,age,stack,exp,salary,location
 2017-01-23,22,Java,0,1 800 pln brutto uz,Katowice
 2017-01-25,20,Java,13,8 000 pln netto uod,Warszawa
 2017-01-26,23,Java,2,3 000 pln netto uod,Kraków
-2017-01-30,23,Informatyczna Obsługa Produkcj,0.58,1 800 pln netto uop,Chorzow
+2017-01-30,23,Informatyczna Obsługa Produkcji,0.58,1 800 pln netto uop,Chorzow
 2017-01-31,25,Python,2,7 000 pln netto uod,Zdalnie
 2017-01-31,25,Embedded,0.75,5 000 pln brutto uop,Wrocław
 2017-02-02,28,Java,2.5,11 500 pln netto b2b,Kraków
 2017-02-03,22,Java,2.17,7 500 pln brutto uop,Warszawa
 2017-02-04,24,Javascript,0.58,1 800 pln netto ?,Poznań
+2017-02-04,30,Java,5,1 166.6666666666667 pln netto b2b,Gdańsk
+2017-02-04,32,Javascript,5,2 700 pln netto uop,Warszawa
+2017-02-04,25,Javascript,0,1 400 pln brutto uz,Kraków
+2017-02-04,23,Java,1.5,5 100 pln netto uop,Kraków
+2017-02-05,21,Java,0.58,3 500 pln ! uz,Warszawa
+2017-02-05,26,Javascript,0.92,2 400 pln ! uop,Poznań
+2017-02-05,23,C++,1,2 500 pln ! ?,Wrocław
+2017-02-06,29,C++,5,11 000 pln brutto uop,Wrocław
+2017-02-06,35,Javascript,10,4 500 pln ! ?,Katowice
+2017-02-07,22,Javascript,1.75,5 300 pln netto uop,Kraków
+2017-02-07,20,Java,0.58,4 000 pln netto ?,Poznań
+2017-02-07,24,Java,1.5,4 500 pln netto uz,Warszawa
+2017-02-07,27,.NET,0,4 200 pln netto uod,Sanok 
+2017-02-08,25,Java,1,3 600 pln netto uop,Kraków
+2017-02-09,29,.NET,6,9 600 pln netto b2b,Wrocław
+2017-02-12,29,Java,5,3 000 eur netto uop,Dublin Irlandia
+2017-02-12,29,Java,6,9 500 pln brutto uop,Wrocław
+2017-02-14,27,Android,4,31 000 pln netto b2b,Zdalnie
+2017-02-14,26,Javascript,3,11 500 pln netto b2b,Kraków
+2017-02-15,25,Junior Software Developer,2,7 000 pln netto b2b,Warszawa
+2017-02-15,29,Fullstack,5,9 000 pln netto b2b,Poznań
+2017-02-17,23,SQL,0.67,3 400 pln brutto uop,Prawa Czesc Zachodniopomorskiego
+2017-02-17,25,Java,2,8 000 pln netto uop,Rzeszów
+2017-02-19,26,.NET,0.67,6 200 pln brutto uop,Śląsk
+2017-02-21,33,Software Engineer,10,11 000 gbp brutto b2b,Londyn
+2017-02-22,22,Java,0.67,1 700 pln netto uod,Łódź
+2017-02-22,34,Tester,12,11 000 pln netto uop,Kraków
+2017-02-23,29,Senior Software Engineer,4,9 000 pln brutto uop,Gdańsk
+2017-02-26,28,Software Engineer,0.67,4 500 pln brutto uop,Wrocław
+2017-02-28,24,Junior Software Engineer,1.5,5 300 pln brutto uop,Łódź
+2017-02-28,23,Software Engineer,1.33,7 600 pln brutto uop,Kraków
+2017-03-01,21,Java,0,3 000 pln netto uod,Śląsk
+2017-03-01,25,Software Engineer,3,12 000 pln brutto uop,Wrocław
+2017-03-02,27,Java,0.67,6 500 pln brutto ?,Warszawa
+2017-03-05,30,Javascript,1.25,8 000 pln brutto uop,Poznań
+2017-03-06,27,Tester,4,8 100 pln netto uop,Kraków
+2017-03-06,23,.NET,1,2 500 pln netto uop,Wrocław
+2017-03-07,27,iOS,0,1 600 pln ! uod,Kraków
+2017-03-07,21,Java,0,2 200 pln netto uop,Warszawa
+2017-03-09,23,Java,0.42,3 500 pln brutto uop,Warszawa
+2017-03-10,31,Java,4,8 000 pln brutto ?,Zdalnie
+2017-03-12,31,C++,7,10 000 pln netto uop,Gdańsk
+2017-03-13,27,SQL,0.67,3 500 pln brutto uop,Lublin
+2017-03-14,27,Java,3,12 000 pln brutto uop,Kraków
+2017-03-14,39,SQL,14,12 500 pln brutto uop,Warszawa
+2017-03-17,42,Java,16,19 200 pln netto b2b,Wrocław
+2017-03-18,23,Java,0.5,7 500 pln brutto uop,Kraków
+2017-03-18,31,.NET,0.33,3 300 pln netto uop,Kraków
+2017-03-19,27,PHP,4,8 500 pln netto b2b,Wrocław
+2017-03-22,30,PHP,6,11 000 pln brutto uop,Warszawa
+2017-03-25,28,.NET,0.5,7 500 pln brutto uop,Kraków
+2017-03-25,32,Android,0.08,8 500 pln netto b2b,Katowice
+2017-03-26,22,Android,0.33,4 000 pln brutto uz,Kraków
+2017-03-26,26,Android,0.5,3 700 pln ! uop,Zdalnie
+2017-03-26,24,C++,0.83,3 000 pln ! uz,Wrocław
+2017-03-27,27,Tester Automatyczny,2,3 500 pln netto ?,Szczecin
+2017-03-27,24,Tester,0.33,3 000 pln netto uop,Katowice
+2017-03-29,29,Tester Automatyczny,6,8 000 pln brutto uop,Kraków
+2017-03-30,25,Tester Automatyczny,1.5,8 900 pln netto ?,Katowice
+2017-03-31,23,Tester Automatyczny,2.5,12 000 pln netto b2b,Kraków
+2017-04-05,25,Java,2,3 300 pln netto uop,Szczecin
+2017-04-05,26,.NET,4,15 000 pln brutto uop,Kraków
+2017-04-05,25,Java,1.5,5 000 pln brutto uz,Warszawa
+2017-04-05,26,Java,2,6 000 pln brutto uop,Katowice
+2017-04-06,23,Java,0.5,4 000 pln brutto uop,Warszawa
+2017-04-06,30,Senior,5,13 600 pln netto b2b,Szczecin
+2017-04-07,27,Fullstack,2.75,10 000 pln netto b2b,Gdańsk
+2017-04-07,37,Java,12,11 000 pln brutto uop,Kraków
+2017-04-09,23,Intern,0,46 000 pln brutto ?,Nyc
+2017-04-09,29,Javascript,1.5,4 000 pln netto uop,Wrocław
+2017-04-10,30,.NET,7,7 000 pln netto uop,Kraków
+2017-04-11,32,SQL,6,8 000 pln brutto uop,Wrocław
+2017-04-12,21,PHP,0,2 000 pln netto ?,Bielsko-Biała
+2017-04-12,23,Javascript,5,12 000 pln brutto uop,Kraków
+2017-04-12,37,Java,10,24 000 pln netto b2b,Warszawa
+2017-04-12,23,Java,0,2 300 pln netto ?,Wrocław
+2017-04-13,22,Fullstack,2,9 000 pln netto ?,Warszawa
+2017-04-13,30,Fullstack,5,4 200 pln brutto ?,Łódź
+2017-04-13,28,Visual Basic,2,8 000 pln brutto uop,Kraków
+2017-04-14,23,Java,1.5,7 000 pln brutto uop,Kraków
+2017-04-14,22,Java,0.67,4 000 pln netto uop,Warszawa
+2017-04-15,28,Programista ,0.67,3 000 pln netto uop,Gdańsk
+2017-04-15,23,Java,0,4 000 pln netto uop,Katowice
+2017-04-18,29,Android,8,14 000 pln brutto uop,Kraków
+2017-04-21,24,C++,1,7 600 pln brutto uop,Wrocław
+2017-04-22,32,Developer,1.08,4 000 pln netto ?,Poznań
+2017-04-22,22,Java,1,5 500 pln netto ?,Warszawa
+2017-04-22,28,Java,5.17,10 000 pln brutto uop,Warszawa
+2017-04-25,28,Analityk,0,4 700 pln netto uop,Wrocław
+2017-04-25,31,Tester Automatyczny,5,6 000 pln netto ?,Kraków
+2017-04-25,31,.NET,1,5 200 pln netto b2b,Rzeszów
+2017-04-26,25,Javascript,4,3 800 pln netto ?,Warszawa
+2017-04-26,36,Software Developer,1.08,4 000 pln ! uop,Gdańsk
+2017-04-29,32,C++,3,11 000 pln netto uop,Kraków
+2017-05-02,26,Java,5,10 000 pln netto uop,Kraków
+2017-05-04,20,Android,0.08,1 700 pln netto ?,Wrocław
+2017-05-04,25,Java,0.58,2 800 pln netto uop,Warszawa
+2017-05-04,22,.NET,2.5,3 300 pln netto uop,Poznań
+2017-05-06,24,Software Engineer,1,6 000 pln brutto uop,Poznań
+2017-05-06,25,Javascript,2,3 700 pln netto uop,Kraków
+2017-05-07,23,Tester,2,12 800 pln netto b2b,Warszawa
+2017-05-09,34,PHP,10,9 000 pln brutto uop,Warszawa
+2017-05-09,23,Java,0.08,2 500 pln netto ?,Wrocław
+2017-05-10,24,Java,3,9 000 pln netto ?,Kraków
+2017-05-10,26,Java,3.5,7 000 pln brutto uop,Kraków
+2017-05-13,24,Python,3,10 000 pln netto ?,Warszawa
+2017-05-13,22,Ruby,2,15 000 pln netto ?,Eblag
+2017-05-14,32,.NET,9,11 000 pln netto b2b,Wrocław
+2017-05-14,22,.NET,0,2 500 pln netto ?,Warszawa
+2017-05-14,38,Java,14,24 000 pln netto b2b,Warszawa
+2017-05-15,30,Javascript,0,6 500 pln ! uop,Wrocław
+2017-05-16,22,Javascript,1,2 400 usd brutto ?,Zdalnie
+2017-05-17,32,.NET,0,2 400 pln netto ?,Wrocław
+2017-05-19,25,Analityk,2,3 500 pln netto ?,Kraków
+2017-05-19,31,SQL,2,5 600 pln brutto ?,Poznań
+2017-05-20,24,Javascript,0.33,1 810 pln brutto ?,Kraków
+2017-05-20,38,PHP,0.58,7 000 pln netto b2b,Warszawa
+2017-05-20,29,Java,9,2 000 pln ! ?,Ukraine/Wrocwal
+2017-05-20,23,Java,1.5,12 000 pln ! ?,Warszawa
+2017-05-20,29,Tester,2,12 000 pln brutto uop,Kraków
+2017-05-21,24,Java,1.5,2 500 pln netto uz,Lublin
+2017-05-23,31,C++,10,12 000 pln brutto ?,Poznań
+2017-05-23,27,Java,5,16 000 pln brutto ?,Warszawa
+2017-05-26,26,Tester Automatyczny,2,14 000 pln netto b2b,Kraków
+2017-05-26,21,Java,0,3 500 pln netto uod,Śląsk
+2017-05-27,30,.NET,7,12 000 pln netto ?,Warszawa
+2017-05-30,26,Java,0,2 600 pln netto uop,Gdańsk
+2017-05-30,30,Java,3,12 000 pln brutto uop,Wrocław
+2017-05-30,21,Java,0.25,4 500 pln netto uod,Poludnie Polski
+2017-05-31,31,Java,10,22 000 pln netto uop,Warszawa
+2017-05-31,35,C Developer​,12,6 500 pln netto uop,Poznań
+2017-05-31,31,Java,3,13 500 pln brutto uop,Kraków
+2017-06-01,21,Javascript,0.83,2 500 pln netto uz,Gdańsk
+2017-06-02,23,.NET,2,8 000 pln netto b2b,Warszawa
+2017-06-02,28,.NET,3,7 200 pln netto uop,Wrocław
+2017-06-05,31,Devops,7,12 000 pln netto uop,Gdańsk
+2017-06-06,20,Java,1.5,15 500 pln netto uod,Warszawa
+2017-06-06,23,Javascript,2.08,6 100 pln netto uop,Kraków
+2017-06-09,21,Java,0,1 500 pln netto uz,Kraków
+2017-06-10,25,Java,0,6 000 pln netto uop,Warszawa
+2017-06-10,21,Javascript,1.5,10 000 pln brutto uop,Wrocław
+2017-06-13,42,Tester Automatyczny,22,1 333.3333333333333 usd netto b2b,Warszawa
+2017-06-13,35,Python,8,6 800 pln netto b2b,Białystok
+2017-06-13,24,Java,0,1 800 pln netto ?,Lublin
+2017-06-14,32,.NET,5,4 500 pln brutto ?,Kraków
+2017-06-15,27,.NET,6.5,13 500 pln netto b2b,Wrocław
+2017-06-15,25,.NET,2,5 000 pln netto uop,Warszawa
+2017-06-15,22,Java,0.92,6 500 pln netto uop,Warszawa
+2017-06-15,24,.NET,1,4 000 pln netto uop,Białystok
+2017-06-16,23,.NET,3.25,4 500 pln netto uz,Katowice
+2017-06-16,31,Java,1,4 800 pln netto uop,Kielce
+2017-06-19,30,Java,1.92,7 800 pln netto uop,Poznań
+2017-06-19,22,Java,1,4 500 pln netto uop,Kraków
+2017-06-20,30,.NET,5,2 500 pln netto uop,Nowy Sacz
+2017-06-20,26,Javascript,0,3 000 pln brutto uop,Wrocław
+2017-06-20,28,C++,1,6 998 pln brutto uop,Wrocław
+2017-06-21,29,Programista Net,3,3 480 pln brutto uop,Stalowa Wola
+2017-06-21,32,Junior Net Developer,0,3 500 pln brutto uop,Kraków
+2017-06-24,27,Javascript,0.25,3 000 pln netto ?,Katowice
+2017-06-24,26,Javascript,1.25,3 500 pln ! uop,Poznań
+2017-06-25,26,.NET,3,13 000 pln netto b2b,Warszawa
+2017-06-26,34,.NET,2.75,4 200 pln brutto ?,Rzeszów
+2017-06-26,30,C++,5,16 000 pln netto b2b,Wrocław
+2017-06-27,31,.NET,6,3 200 pln netto uop,Częstochowa
+2017-06-27,26,.NET,5,9 460 pln netto b2b,Poznań
+2017-06-27,24,PHP,3.5,6 000 pln netto uop,Warszawa
+2017-06-27,33,Junior Salesforce Developer,0,3 000 pln netto uop,Łódź
+2017-06-28,26,Devops,2.5,7 300 pln brutto uop,Wrocław
+2017-06-29,32,.NET,6,15 700 pln netto uop,Wrocław
+2017-06-30,30,.NET,12,34 500 pln brutto uop,Zdalnie
+2017-06-30,32,.NET,6,5 500 pln brutto uop,Nowy Sacz
+2017-06-30,26,Python,4,8 500 pln netto b2b,Warszawa
+2017-07-02,23,Python,2,9 000 pln netto b2b,Warszawa
+2017-07-02,36,.NET,3.5,4 000 pln brutto uop,Wrocław
+2017-07-03,39,Java,13,15 000 pln brutto uop,Kraków
+2017-07-04,31,Java,5,3 412 pln netto uop,Kraków
+2017-07-04,21,Java,2,4 500 pln netto ?,Zdalnie
+2017-07-05,26,Ux Designer,1.5,5 400 pln netto uod,Warszawa
+2017-07-05,23,Java,0.25,3 000 pln netto uz,Warszawa
+2017-07-06,34,Java,10,20 000 pln netto b2b,Gdańsk
+2017-07-06,29,Java,6,10 000 pln netto b2b,Zdalnie
+2017-07-06,25,PHP,2.5,3 500 pln netto uop,Kraków
+2017-07-06,25,.NET,2,8 800 pln netto b2b,Białystok
+2017-07-06,29,Java,0.08,2 500 pln netto uop,Katowice
+2017-07-06,32,Ux Designer - Może Nie Programowanie Ale,8,14 500 pln netto b2b,Katowice
+2017-07-08,31,"Konsultant It,",6,18 400 pln netto b2b,Warszawa
+2017-07-08,24,Android,0,2 500 pln netto ?,Kraków
+2017-07-08,25,Android,2,2 600 pln netto uod,Białystok
+2017-07-09,31,Senior Dev,4.5,12 000 pln brutto uop,Wrocław
+2017-07-12,25,Javascript,0.08,2 000 pln netto uod,Wrocław
+2017-07-12,20,Java,0,2 450 pln netto uz,Poznań
+2017-07-13,21,Java,1.5,5 800 pln netto uop,Gdańsk
+2017-07-13,23,Javascript,2.17,6 500 pln brutto uop,Kraków
+2017-07-13,20,Junior Software Engineer,0.33,3 300 pln netto ?,Wrocław
+2017-07-14,24,Software Engineer,1,5 300 pln netto uop,Łódź
+2017-07-17,33,Java,3,5 000 pln netto uop,Częstochowa
+2017-07-17,21,Java,2,5 300 pln netto uz,Wrocław
+2017-07-17,22,.NET,0,2 300 pln netto uz,Łódź
+2017-07-18,21,Javascript,2,7 000 pln netto uod,Kraków
+2017-07-18,22,Java,1,2 900 pln brutto uod,Białystok
+2017-07-20,29,Java,3,4 800 pln netto ?,Poznań
+2017-07-21,26,Java,2,2 600 pln netto ?,Łódź
+2017-07-23,29,Tester Automatyczny,6,15 000 pln brutto uop,Kraków
+2017-07-24,20,.NET,0,2 200 pln netto uod,Lublin
+2017-07-25,23,.NET,2,2 500 pln netto uz,Zdalnie
+2017-07-25,21,PHP,1.25,2 250 pln netto ?,Zdalnie
+2017-07-25,35,Java,11,20 000 pln netto b2b,Warszawa
+2017-07-27,25,.NET,1,3 500 pln netto uop,Łódź
+2017-07-27,24,Tester Automatyczny,3,12 000 pln brutto uop,Kraków
+2017-07-27,22,.NET,1.42,2 000 pln netto uop,Gdańsk
+2017-07-28,24,Java,2.17,8 000 pln brutto uop,Kraków
+2017-07-28,30,Javascript,5,6 400 pln netto ?,Kraków
+2017-07-28,25,PHP,1.5,3 000 pln netto uop,Gdańsk
+2017-07-28,24,Java,3,12 500 pln netto b2b,Kraków
+2017-07-29,28,.NET,0,4 000 pln netto b2b,Wrocław
+2017-07-31,26,PHP,4,4 500 pln brutto uop,Poznań
+2017-08-01,22,Javascript,1,4 500 pln brutto uz,Poznań
+2017-08-03,28,Programista,5,4 000 pln netto uop,Śląsk
+2017-08-03,22,Programista,0,3 000 pln netto uop,Piotrkow Tryb.
+2017-08-03,24,Programista,2,4 000 pln netto uod,Kraków
+2017-08-03,23,Java,1,7 000 pln netto uop,Kraków
+2017-08-04,22,Java,2,5 000 pln netto uz,Kraków
+2017-08-04,30,Programista,2.5,6 600 pln brutto uop,Katowice
+2017-08-05,31,Tester Automatyczny,5.5,14 000 pln brutto ?,Kraków
+2017-08-05,23,Java,0.25,2 600 pln netto b2b,Warszawa
+2017-08-06,23,Ai Developer + Rekrutacje + Lider Projek,0,19 000 pln ! ?,Warszawa
+2017-08-06,20,PHP,0.25,2 200 pln ! uod,Zdalnie
+2017-08-07,30,Junior Dev,2.5,3 500 pln ! uop,Kraków
+2017-08-07,31,Helpdesk,7,5 200 pln brutto ?,Wrocław
+2017-08-09,21,Junior Dev,0,1 500 pln netto uod,Kielce
+2017-08-09,26,Java,2,5 000 pln netto uop,Szczecin
+2017-08-09,26,.NET,1.5,5 000 pln brutto uop,Łódź
+2017-08-10,24,Tester Automatyczny,0.42,2 100 pln brutto uz,Kraków
+2017-08-10,26,PHP,0.33,4 500 pln brutto uz,Wrocław
+2017-08-11,21,Junior Developer,0.92,2 500 pln netto uz,Poznań
+2017-08-12,31,PHP,6,6 300 pln netto ?,Tychy
+2017-08-20,27,.NET,3,7 500 pln netto ?,Kraków
+2017-08-20,30,Java,0.25,2 150 pln netto ?,Katowice
+2017-08-20,30,PHP,7,12 500 pln netto b2b,Gdańsk
+2017-08-21,21,C++,0.08,2 550 pln netto ?,Kraków
+2017-08-22,22,Java,0,1 700 pln ! ?,Wrocław
+2017-08-24,28,Javascript,1.42,4 000 pln netto uop,Zdalnie
+2017-08-27,25,Fullstack,1,3 500 pln brutto uz,Kraków
+2017-08-27,23,Fullstack,1,14 500 pln brutto uz,Gdynia
+2017-08-29,25,.NET,3,6 500 pln netto uop,Bydgoszcz
+2017-08-30,29,Programista,2,3 500 pln netto uod,Rzeszów
+2017-08-31,26,Android,0.08,3 000 pln netto uz,Warszawa
+2017-08-31,24,.NET,0.08,6 000 pln brutto uop,Łódź
+2017-08-31,20,Java,0,2 500 pln netto uz,Poznań
+2017-09-02,30,Embedded,8,15 000 pln brutto uop,Kraków
+2017-09-02,26,Delphi Developer,0.83,2 200 pln netto uop,Kraków
+2017-09-03,22,Junior Software Developer,0.17,4 100 pln brutto uop,Kraków
+2017-09-05,24,Java,2,5 800 pln brutto ?,Łódź
+2017-09-05,22,Java,1.5,7 000 pln brutto uop,Warszawa
+2017-09-05,26,Analityk,2,5 500 pln brutto uop,Kraków
+2017-09-06,20,"Młodszy Programista Net, Młodszy Team Le",2,2 600 pln netto ?,Bydgoszcz
+2017-09-06,31,Java,2,10 000 pln brutto uop,Poznań
+2017-09-10,22,Big Data,0.33,5 200 pln brutto uop,Warszawa
+2017-09-11,25,Java,2,6 000 pln brutto uop,Warszawa
+2017-09-12,31,.NET,1.33,6 880 pln netto b2b,Rzeszów
+2017-09-12,22,.NET,2,5 000 pln netto uod,Warszawa
+2017-09-13,28,Java,0,5 600 pln netto b2b,Gdańsk
+2017-09-14,25,Javascript,2,8 000 pln brutto uop,Warszawa
+2017-09-14,30,.NET,7,14 000 pln netto ?,Warszawa
+2017-09-17,28,Java,4,12 000 pln netto ?,Gdańsk
+2017-09-17,25,Scala,3,17 000 pln netto ?,Sopot
+2017-09-17,25,.NET,1.25,5 000 pln netto uop,Warszawa
+2017-09-17,25,Java,1,2 900 pln ! uop,Wrocław
+2017-09-18,28,Javascript,2,6 000 pln netto uop,Kraków
+2017-09-19,24,Javascript,0,2 500 pln netto uz,Warszawa
+2017-09-21,28,SQL,0,3 000 pln brutto uop,Poznań
+2017-09-25,31,PHP,1.5,3 500 pln netto uop,Katowice
+2017-09-25,40,Java,15,3 750 pln brutto uop,Kraków
+2017-09-26,25,PHP,4,10 000 pln netto b2b,Wrocław
+2017-09-26,22,Javascript,0.33,2 300 pln netto uod,Katowice
+2017-09-26,28,Analityk,3,15 000 pln netto b2b,Wrocław
+2017-09-27,32,.NET,0.83,4 000 pln netto uop,Poludnie Lubelskiego
+2017-09-27,30,Senior,5,16 000 pln netto b2b,Szczecin
+2017-09-28,22,Fullstack,0.17,2 800 pln netto ?,Kraków
+2017-09-28,26,Java,2.5,9 500 pln brutto uop,Katowice
+2017-09-29,33,PHP,0,2 000 pln netto uz,Warszawa
+2017-09-30,24,Javascript,2,1 300 pln brutto uz,Łódź
+2017-10-01,21,Ruby,2,13 000 pln brutto ?,Warszawa
+2017-10-01,33,C++,3,14 000 pln netto uop,Kraków
+2017-10-01,23,Android,2,4 000 pln netto uop,Zielona Góra
+2017-10-02,25,Java,2,10 000 pln brutto uz,Warszawa
+2017-10-03,30,Senior,9,13 800 pln ! uop,Warszawa
+2017-10-06,25,Java,1.67,5 000 pln brutto uop,Lublin
+2017-10-06,25,Javascript,3,6 500 pln netto b2b,Sredniej Wielkosci Miasto W Centralnej Polsce
+2017-10-06,28,Java,2.5,12 800 pln netto b2b,Zdalnie
+2017-10-06,31,Tester Manualny,1.83,5 700 pln brutto uop,Warszawa
+2017-10-07,24,PHP,1,2 400 pln netto ?,Rzeszów
+2017-10-08,30,Tester Automatyczny,6,15 000 pln brutto uop,Kraków
+2017-10-08,32,Javascript,0.08,4 000 pln netto b2b,Kraków
+2017-10-09,21,PHP,0.75,2 400 pln netto uz,Warszawa
+2017-10-09,25,Analityk,2,6 000 pln brutto ?,Kraków
+2017-10-09,28,Java,4,12 000 pln netto b2b,Warszawa
+2017-10-09,35,Tester,12,14 000 pln netto uop,Kraków
+2017-10-09,31,Javascript,3,20 800 pln ! ?,Kraków
+2017-10-09,24,Java,0.83,6 000 pln brutto uod,Warszawa
+2017-10-10,29,Software Developer,3.5,10 000 pln brutto uop,Wrocław
+2017-10-10,24,iOS,1.25,9 000 pln netto b2b,Warszawa
+2017-10-11,24,Software Developer,2,5 700 pln netto uop,Łódź
+2017-10-11,28,Junior Software Engineer,1.25,2 800 pln netto uop,Karpacz
+2017-10-12,22,Sharepoint,0,2 250 pln netto uop,Lublin
+2017-10-12,27,PHP,0.33,3 000 pln netto ?,Warszawa
+2017-10-12,22,Java,0,2 500 pln netto ?,Warszawa
+2017-10-12,22,Java,1.17,6 400 pln netto uod,Warszawa
+2017-10-12,25,Java,2.5,3 300 pln ! uod,Lublin
+2017-10-13,30,Product Owner,6,10 000 eur netto b2b,Zdalnie
+2017-10-13,24,Android,0.67,5 500 pln brutto ?,Kraków
+2017-10-14,26,Java,2.5,5 000 pln netto ?,Szczecin
+2017-10-15,21,Javascript,0.33,3 600 pln netto ?,Wrocław
+2017-10-16,25,Java,4,10 833.333333333334 usd ! ?,San Francisco
+2017-10-16,28,.NET,0.92,3 000 pln netto uop,Kraków
+2017-10-19,20,Java,0,2 200 pln brutto uop,Gliwice
+2017-10-21,23,Django,2,8 000 pln netto b2b,Poznań
+2017-10-22,25,Java,2,13 500 pln netto b2b,Poznań
+2017-10-22,24,Ruby,2.5,4 300 pln netto ?,Poznań
+2017-10-23,32,Tester Automatyczny,2,5 300 pln brutto uop,Wrocław
+2017-10-23,26,.NET,2,11 000 pln netto b2b,Warszawa
+2017-10-23,19,Javascript,0.75,2 700 pln netto uz,Lublin
+2017-10-23,23,C++,2.5,14 000 pln netto b2b,Warszawa
+2017-10-25,24,Javascript,1.5,7 000 pln brutto uop,Warszawa
+2017-10-26,25,Stażysta,0.25,3 000 pln brutto uz,Warszawa
+2017-10-27,26,Devops,3,8 000 pln brutto uop,Wrocław
+2017-10-28,24,Programista,0.5,9 000 pln brutto uop,Wrocław
+2017-10-29,28,SQL,3.5,5 500 pln netto uop,Kraków
+2017-11-01,29,Java,0.25,5 000 pln brutto uop,Poznań
+2017-11-01,30,Software Engineer,4.5,12 500 pln brutto uop,Kraków
+2017-11-02,34,Fullstack,11,18 500 pln brutto uop,Warszawa
+2017-11-03,25,Backend,6,11 000 usd netto uz,Zdalnie
+2017-11-05,21,Java,0,2 500 pln netto uop,Gdańsk
+2017-11-07,28,Python,7,17 000 eur netto uop,Zdalnie
+2017-11-07,27,.NET,4.5,9 100 pln brutto uop,Kraków
+2017-11-07,23,Java,1.58,2 800 pln netto uop,Łódź
+2017-11-07,29,Tester Manualny,0,4 250 pln ! uop,Wrocław
+2017-11-08,30,Tester Automatyczny,7,5 500 pln ! ?,Warszawa
+2017-11-09,26,Python,5,15 000 pln netto b2b,Wrocław
+2017-11-09,25,Android,1.08,5 100 pln brutto b2b,Kraków
+2017-11-11,23,Golang,2,3 400 pln netto uop,Siedlce
+2017-11-11,24,.NET,2.5,9 700 pln brutto uop,Kraków
+2017-11-13,25,Java,3,5 000 pln netto uop,Gliwice
+2017-11-13,21,Java,1.33,5 920 pln netto ?,Poznań
+2017-11-13,24,.NET,0.08,8 000 pln brutto uop,Łódź
+2017-11-14,26,Senior Software Engineer,4,13 000 pln brutto uop,Kraków
+2017-11-14,26,Javascript,0.5,2 080 pln brutto uz,Kraków
+2017-11-15,27,.NET,3.5,12 800 pln netto b2b,Warszawa
+2017-11-15,29,"Siem Qradar, Splunk, Sourcefire Ips",5,12 500 pln brutto uop,Warszawa
+2017-11-17,26,Javascript,4.5,11 000 pln brutto uop,Wrocław
+2017-11-17,22,Java,0.5,3 900 pln netto uop,Kraków
+2017-11-18,22,Junior Software Developer,0.42,4 500 pln brutto uop,Kraków
+2017-11-21,29,C++,6,14 500 pln brutto uop,Wrocław
+2017-11-22,28,.NET,5,8 000 pln brutto uop,Wrocław
+2017-11-23,28,Java,3.5,15 000 pln brutto uop,Warszawa
+2017-11-25,27,PHP,0.83,5 500 pln netto b2b,Śląsk
+2017-11-25,25,Wordpress,0.5,2 800 pln netto uod,Wrocław
+2017-11-25,24,Java,1.25,7 000 pln brutto b2b,Gdańsk
+2017-11-26,23,Java,2,7 200 pln brutto uz,Poznań
+2017-11-29,26,Android,0,7 500 pln brutto uop,Kraków
+2017-11-30,21,Java,0.25,3 500 pln netto uop,Gdańsk
+2017-11-30,23,Java,0,8 000 pln ! uz,Kraków
+2017-12-02,30,Java,6,11 600 pln netto b2b,Lublin
+2017-12-02,23,Java,0,3 500 pln netto uop,Poznań
+2017-12-03,22,Junior Software Engineer,0.5,4 000 pln brutto uop,Kraków
+2017-12-04,29,Java,2,14 400 pln netto ?,Warszawa
+2017-12-04,31,Java,5,12 000 pln brutto uop,Wrocław
+2017-12-04,24,Java,2.42,7 000 pln netto ?,Białystok
+2017-12-04,26,Javascript,0.58,2 700 pln netto uop,Kraków
+2017-12-05,24,Java,2,4 900 pln brutto uop,Kraków
+2017-12-05,25,Android,0.92,5 000 pln netto b2b,Kraków
+2017-12-08,20,Fullstack,0.5,2 000 pln netto uz,Gdańsk
+2017-12-08,28,Developer,1,8 500 pln brutto uop,Kraków
+2017-12-09,28,Python,5,6 500 pln netto uop,Poznań
+2017-12-11,36,.NET,10,11 000 pln brutto ?,Miejscowosc 40.000 Mieszkancow
+2017-12-11,26,Ruby,4,12 500 pln ! uop,Wrocław
+2017-12-11,23,Javascript,1,5 000 pln netto uop,Poznań
+2017-12-13,26,Informatyk ,2,2 000 pln netto ?,Kraków
+2017-12-13,21,Machine Learning,1,9 000 pln netto b2b,Zdalnie
+2017-12-13,28,SQL,2,6 500 pln brutto uop,Wrocław
+2017-12-13,29,.NET,0.33,5 300 pln brutto uop,Kraków
+2017-12-13,26,Fullstack,3,16 000 pln netto b2b,Kraków
+2017-12-14,27,Java,5.5,12 500 pln netto b2b,Wrocław
+2017-12-14,36,.NET,13,10 000 pln netto b2b,Poznań
+2017-12-14,34,Java,14,10 000 pln netto uop,Poznań
+2017-12-14,35,.NET,10,20 000 pln netto b2b,Poznań
+2017-12-15,27,PHP,3,7 200 pln netto b2b,Poznań
+2017-12-15,26,.NET,3.5,12 000 pln brutto uop,Kraków
+2017-12-16,30,Software Engineer Iii ,12,20 000 usd brutto uop,Dolina Krzemowa
+2017-12-19,25,Tester,1.17,5 300 pln netto uop,Katowice
+2017-12-19,25,Ruby,4.5,14 000 pln brutto uop,Poznań
+2017-12-20,39,Software Developer,18,23 000 pln brutto uop,Warszawa
+2017-12-23,30,C++,7,12 000 pln netto b2b,Kraków
+2017-12-23,29,Python,6,13 600 pln netto ?,Wrocław
+2017-12-23,23,Ruby,3,14 800 pln netto ?,Warszawa
+2017-12-24,27,Tester Manualny,1,6 000 pln brutto uop,Warszawa
+2017-12-26,24,Junior Developer Hadoopa ,1.42,2 000 pln brutto uz,Warszawa
+2017-12-26,21,PHP,0.25,2 800 pln ! uop,Warszawa
+2017-12-29,18,Android,1.17,3 750 pln netto ?,Zdalnie
+2018-01-01,25,Java,2,3 850 pln brutto uop,Lublin
+2018-01-01,27,Javascript,0.58,4 300 pln brutto uop,Wrocław
+2018-01-02,22,Ruby,1.5,11 000 pln netto ?,Zdalnie
+2018-01-02,30,Fullstack,6.5,3 400 eur netto ?,Dublin
+2018-01-04,29,Devops,10,15 000 pln brutto uop,Kraków
+2018-01-04,23,PHP,1,6 000 pln brutto ?,Gdańsk
+2018-01-05,25,.NET,2,4 000 pln netto uop,Katowice
+2018-01-05,27,Fullstack,5.5,3 600 eur netto ?,Berlin
+2018-01-05,40,Software Developer,2,5 000 pln netto b2b,Gdańsk
+2018-01-05,22,Junior Software Developer,1,4 000 pln brutto uop,Kraków
+2018-01-06,22,Junior Software Developer,3,14 000 pln brutto uop,Wrocław
+2018-01-06,25,Android,2.75,7 000 pln netto b2b,Lublin
+2018-01-07,32,Java,2.5,11 000 pln brutto uop,Zdalnie
+2018-01-08,26,Java,2.5,7 500 pln netto ?,Warszawa
+2018-01-08,30,Software Developer,8,16 000 pln brutto uop,Katowice
+2018-01-08,27,Javascript,1,3 000 pln netto uop,Kraków
+2018-01-09,22,Fullstack,0.5,2 500 pln netto uz,Łódź
+2018-01-10,26,Software Engineer,3,13 000 pln brutto uop,Kraków
+2018-01-13,26,Javascript,4.5,15 800 pln netto b2b,Zdalnie
+2018-01-13,25,Android,1.25,4 000 pln netto uop,Kraków
+2018-01-13,24,Backend,3.5,17 000 pln netto b2b,Gdańsk
+2018-01-14,27,Admin,2,36 000 pln netto b2b,Łódź
+2018-01-14,28,Developer,2,11 000 pln brutto uop,Wrocław
+2018-01-16,28,SQL,1.5,3 750 pln brutto uop,Lublin
+2018-01-16,29,Sas Developer,4.5,1 000 pln brutto uop,Warszawa
+2018-01-17,27,Java,2.5,6 500 pln netto b2b,Woj. Pomorskie
+2018-01-17,26,Senior Developer,2.5,16 000 pln brutto uop,Warszawa
+2018-01-19,25,.NET,1,4 000 pln brutto ?,Warszawa
+2018-01-21,24,Java,2,4 500 pln netto uz,Lublin
+2018-01-21,21,.NET,0,2 400 pln netto ?,Katowice
+2018-01-21,25,Python,3,14 500 pln netto uz,Gdynia
+2018-01-22,30,Java,5,11 000 pln brutto uop,Katowice
+2018-01-24,21,PHP,1.67,3 000 pln netto ?,Zdalnie
+2018-01-24,27,Linux Kernel Developer,8,31 000 pln netto b2b,Zdalnie
+2018-01-25,22,Javascript,0.5,4 300 pln netto ?,Wrocław
+2018-01-27,23,Android,1.5,6 000 pln brutto uop,Katowice
+2018-01-28,22,Sharepoint,0.5,3 500 pln netto ?,Lublin
+2018-01-28,26,PHP,2,4 800 pln ! ?,Poznań
+2018-01-29,25,Java,1.5,4 000 pln netto uz,Gdańsk
+2018-01-29,31,Javascript,2,6 800 pln netto b2b,Lublin
+2018-01-29,20,Java,0.5,2 000 pln netto uop,Rzeszów
+2018-01-31,31,.NET,8,14 000 pln netto ?,Warszawa
+2018-02-02,30,Java,0.5,6 500 pln netto b2b,Kraków
+2018-02-02,24,Tester,0.17,1 970 pln ! ?,Wrocław
+2018-02-08,26,Javascript,2,8 000 pln netto b2b,Kraków
+2018-02-09,25,PHP,4,12 000 pln netto b2b,Warszawa
+2018-02-09,23,Java,0,9 000 pln brutto uop,Kraków
+2018-02-09,27,.NET,1.67,10 000 pln brutto ?,Łódź
+2018-02-09,25,Android,0.5,3 200 pln netto uop,Katowice
+2018-02-10,26,Java,0.58,6 500 pln brutto uop,Warszawa
+2018-02-14,27,Java,2.5,7 000 pln netto b2b,Woj. Pomorskie
+2018-02-14,33,Informatyk ,13,1 700 pln netto ?,Kraków
+2018-02-16,22,Java,0.58,4 300 pln ! ?,Warszawa
+2018-02-18,23,Java,0.67,4 000 pln netto uop,Białystok
+2018-02-18,24,C++,2.5,7 500 pln brutto uop,Kraków
+2018-02-18,21,.NET,0.33,3 800 pln netto uop,Kraków
+2018-02-22,24,Tester,0.25,2 800 pln ! ?,Wrocław
+2018-02-24,25,Java,0.5,6 500 pln netto ?,Warszawa
+2018-02-24,22,Junior Software Developer,0.42,4 000 pln netto uop,Wrocław
+2018-02-24,28,.NET,1,4 000 pln netto ?,Warszawa
+2018-02-25,22,Junior Software Developer,0.58,5 200 pln brutto uop,Kraków
+2018-02-26,28,Javascript,0.25,2 000 pln brutto uop,Kraków
+2018-02-27,28,.NET,3.5,10 000 pln netto uop,Kraków
+2018-02-28,29,Devops,11,17 000 pln netto b2b,Kraków
+2018-02-28,25,Java,3,12 600 pln netto b2b,Kraków
+2018-02-28,26,Java,1,8 000 pln netto b2b,Gdańsk
+2018-02-28,26,Java,1,7 000 pln netto b2b,Katowice
+2018-03-01,30,Android,2,9 120 pln netto b2b,Łódź
+2018-03-01,25,Junior Developer,1,3 200 pln brutto uop,Szczecin
+2018-03-01,30,Junior Developer,0.33,4 500 pln netto b2b,Gdańsk
+2018-03-01,25,Fullstack,4,20 000 pln netto b2b,Kraków
+2018-03-04,25,"Konsultant, Programista",1,7 500 pln netto b2b,Warszawa
+2018-03-04,24,.NET,0.33,3 400 pln netto uop,Warszawa
+2018-03-04,26,Java,1,4 000 pln brutto uop,Wrocław
+2018-03-09,29,Programista,4,8 000 pln netto uod,Warszawa
+2018-03-09,34,Senior Developer,10,12 500 pln netto uop,Wrocław
+2018-03-09,22,Java,0.75,4 000 pln brutto ?,Kraków
+2018-03-10,27,.NET,4,8 500 pln brutto ?,Kraków
+2018-03-10,27,Software Developer,1,7 500 pln brutto uop,Śląsk
+2018-03-12,31,Java,0,8 500 pln brutto uop,Warszawa
+2018-03-13,23,Javascript,2.5,10 000 pln brutto uop,Kraków
+2018-03-14,31,Tester,3,7 600 pln netto b2b,Podlaskie
+2018-03-14,22,iOS,2,8 500 pln netto ?,Kraków
+2018-03-15,38,.NET,10,8 500 pln netto uop,Gdańsk
+2018-03-16,33,.NET,10,18 000 pln brutto uop,Kraków
+2018-03-16,32,.NET,8,13 000 pln brutto uop,Kraków
+2018-03-16,25,Python,2,6 500 pln netto uz,Kraków
+2018-03-17,23,.NET,0.75,4 200 pln netto uz,Gliwice
+2018-03-17,23,Javascript,3,11 000 pln brutto uop,Warszawa
+2018-03-17,24,iOS,0.75,2 600 pln netto uz,Rzeszów
+2018-03-19,26,Big Data,1.5,5 000 pln netto b2b,Warszawa
+2018-03-19,21,.NET,0.75,4 550 pln brutto uz,Gdańsk
+2018-03-21,25,Java,3,7 500 pln netto uop,Gliwice
+2018-03-22,27,Java,2,6 500 pln netto b2b,Wrocław
+2018-03-22,26,Java,2,4 000 pln netto uop,Gdańsk
+2018-03-22,32,Admin,6,9 000 pln netto b2b,Śląsk
+2018-03-23,29,Javascript,0.5,3 000 pln netto uop,Gdańsk
+2018-03-23,29,PHP,4.5,10 000 pln brutto uop,Kraków
+2018-03-23,26,.NET,5,22 400 pln netto b2b,Warszawa
+2018-03-23,30,Junior Developer,0.5,4 250 pln netto uop,Wrocław
+2018-03-25,20,Junior Developer,0.83,3 000 pln ! uod,Warszawa
+2018-03-26,30,.NET,6,10 500 pln brutto uop,Warszawa
+2018-03-26,23,Big Data,1,8 000 pln brutto uop,Warszawa
+2018-03-27,26,Analityk,2.5,7 500 pln netto b2b,Kraków
+2018-03-27,28,.NET,7.5,19 200 pln ! ?,Wrocław
+2018-03-27,21,Java,0.5,5 000 pln brutto uz,Kraków
+2018-03-29,27,.NET,3,6 500 pln netto b2b,Poznań
+2018-03-29,29,Javascript,7,24 000 pln netto b2b,Zdalnie
+2018-03-29,45,Java,19,1 500 pln netto b2b,Gdańsk
+2018-03-30,24,.NET,0,2 000 pln ! uz,Warszawa
+2018-03-31,32,Java,9,17 500 eur ! uop,Gdańsk
+2018-04-01,21,Javascript,1.58,3 500 pln netto uop,Gdańsk
+2018-04-02,25,Java,2,8 000 pln netto b2b,Lublin
+2018-04-02,24,Java,2,7 500 pln brutto uop,Kraków
+2018-04-04,33,.NET,11,18 000 pln brutto uop,Kraków
+2018-04-04,24,Javascript,0.5,1 600 pln netto uz,Łódź
+2018-04-04,23,.NET,2,5 500 pln brutto uop,Warszawa
+2018-04-05,25,Javascript,1.17,3 400 pln netto uop,Kraków
+2018-04-05,24,Java,0,4 300 pln brutto uz,Warszawa
+2018-04-05,28,.NET,0.67,5 500 pln netto b2b,Wrocław
+2018-04-05,29,.NET,2,14 400 pln netto b2b,Kraków
+2018-04-06,30,.NET,8,11 000 pln brutto uop,Warszawa
+2018-04-07,22,Tester,0,2 700 pln netto ?,Śląsk
+2018-04-10,26,Visual Basic,0,4 000 pln brutto uop,Wojewodzkie
+2018-04-11,23,Java,0,4 500 pln brutto ?,Wrocław
+2018-04-11,22,PHP,0.25,4 000 pln netto b2b,Warszawa
+2018-04-13,25,Java,2.5,20 500 pln netto b2b,Poznań
+2018-04-15,29,Java,3,7 200 pln brutto ?,Łódź
+2018-04-16,25,C++,1,4 000 pln brutto ?,Poznań
+2018-04-16,24,PHP,1,4 000 pln netto ?,Wrocław
+2018-04-17,24,Ruby,1,3 000 pln brutto ?,Zdalnie
+2018-04-18,26,Javascript,1.5,3 000 pln netto uop,Wrocław
+2018-04-19,28,Android,4,16 000 usd netto b2b,Zdalnie
+2018-04-19,33,C++,10,12 000 pln netto uop,Katowice
+2018-04-19,28,Java,4.5,7 500 pln netto uop,Kraków
+2018-04-19,25,Javascript,4,6 000 pln netto uod,Wrocław
+2018-04-21,27,Javascript,2,5 000 pln ! uop,Poznań
+2018-04-21,26,Python,2,6 000 pln netto uop,Zdalnie
+2018-04-21,26,Tester,4,9 800 pln brutto uop,Kraków
+2018-04-22,30,Javascript,6,18 000 pln ! uop,Wrocław
+2018-04-22,30,PHP,4,3 000 pln netto ?,Rzeszów
+2018-04-24,22,Java,3,10 400 pln netto b2b,Poznań
+2018-04-24,32,.NET,0.75,3 200 pln netto uop,Warszawa
+2018-04-24,24,Java,2.5,9 000 pln brutto uop,Kraków
+2018-04-25,34,Senior Engineer,7,1 166.6666666666667 pln brutto uop,Kraków
+2018-04-26,26,Big Data,2.5,11 000 pln brutto ?,Kraków
+2018-04-27,27,.NET,0.17,6 200 pln netto uop,Gdańsk
+2018-04-27,27,Java,0.75,4 000 pln brutto uop,Katowice
+2018-04-28,39,Java,15,12 300 pln netto b2b,Warszawa
+2018-04-28,10,.NET,0.5,4 800 pln netto ?,Wrocław
+2018-05-01,26,.NET,4.5,4 800 pln netto uop,Poznań
+2018-05-04,27,PHP,2,8 000 pln netto b2b,Zdalnie
+2018-05-04,30,One Man Army Na Dg,12,23 000 pln netto ?,Zdalnie
+2018-05-05,23,Sharepoint,0.83,3 000 pln brutto uop,Warszawa
+2018-05-07,25,PHP,0,2 900 pln brutto uop,Gdańsk
+2018-05-08,22,Junior Software Engineer,0.08,6 000 pln ! ?,Poznań
+2018-05-09,27,.NET,3,7 500 pln netto b2b,Poznań
+2018-05-09,29,Fullstack,2,6 300 pln brutto ?,Warszawa
+2018-05-09,33,Java,11,10 000 pln netto b2b,Gliwice
+2018-05-10,29,Python,2,8 000 pln netto b2b,Zdalnie
+2018-05-10,32,Java,6,10 000 pln netto uop,Warszawa
+2018-05-10,23,Java,2,7 700 pln brutto uod,Warszawa
+2018-05-11,26,Visual Basic,0,4 200 pln brutto uop,Wojewodzkie
+2018-05-12,31,Fullstack,6,12 000 pln netto b2b,Poznań
+2018-05-12,24,Javascript,5,3 000 pln netto uop,Warszawa
+2018-05-15,30,Tester Automatyczny,5,10 000 pln brutto uop,Gdańsk
+2018-05-16,24,Javascript,1,5 000 pln brutto uop,Gdynia
+2018-05-16,24,Java,1,5 000 pln ! uod,Warszawa
+2018-05-17,25,Java,4,16 000 pln netto b2b,Kraków
+2018-05-17,26,.NET,1.5,5 500 pln netto uop,Poznań
+2018-05-18,26,Java,2,8 500 pln netto b2b,Kraków
+2018-05-19,29,Javascript,1,4 400 pln brutto uop,Kraków
+2018-05-22,33,.NET,10,17 500 pln brutto uop,Kraków
+2018-05-24,23,Java,2,6 500 pln brutto ?,Katowice
+2018-05-24,29,Javascript,2.33,12 500 pln netto b2b,Warszawa
+2018-05-25,23,.NET,0,3 300 pln brutto ?,Rzeszów
+2018-05-25,38,.NET,14,5 500 pln netto uop,Gliwice
+2018-05-25,24,.NET,1,4 000 pln netto uz,Rzeszów
+2018-05-27,40,Analityk,10,12 000 pln brutto ?,Warszawa
+2018-05-27,35,Senior Developer,11,6 500 pln netto uop,Katowice
+2018-05-28,34,Embedded,10,10 000 pln netto uop,Wrocław
+2018-05-30,23,Java,1,5 000 pln netto uop,Białystok
+2018-06-01,26,Fullstack,3,9 000 pln netto uop,Warszawa
+2018-06-02,21,.NET,0,2 720 pln brutto uz,Rzeszów
+2018-06-02,24,Big Data,0.5,3 200 pln ! uop,Wrocław
+2018-06-04,25,PHP,0.75,3 000 pln netto uop,Łódź
+2018-06-06,22,PHP,1.5,4 200 pln netto uz,Warszawa
+2018-06-07,25,.NET,1.5,3 500 pln netto uop,Poznań
+2018-06-08,29,.NET,6,13 000 pln netto b2b,Zdalnie
+2018-06-08,25,Java,1.17,8 500 pln netto b2b,Wrocław
+2018-06-08,22,Javascript,2.5,13 000 pln netto b2b,Zdalnie
+2018-06-08,33,Java,0,4 500 pln brutto uop,Łódź
+2018-06-09,25,Tester Manualny,1.33,7 200 pln brutto uop,Kraków
+2018-06-09,38,Java,1,15 600 pln netto b2b,Warszawa
+2018-06-10,30,Java,8,17 000 pln netto b2b,Kraków
+2018-06-10,32,.NET,2,7 600 pln brutto uop,Wrocław
+2018-06-11,25,Javascript,4,6 400 pln netto uod,Wrocław
+2018-06-12,24,Java,1.5,2 700 pln netto uop,Lublin
+2018-06-12,25,Tester Automatyczny,4,18 400 pln netto b2b,Kraków
+2018-06-13,25,Devops,0,3 000 pln netto ?,Gdańsk
+2018-06-13,26,Javascript,3,7 000 pln netto uop,Wrocław
+2018-06-15,30,Programista Przetwarzania Obrazu,5.5,6 000 pln netto uop,Białystok
+2018-06-15,22,Fullstack,1.75,6 000 pln ! ?,Poznań
+2018-06-16,25,Python,2,6 000 pln netto uop,Zdalnie
+2018-06-16,23,Javascript,0,5 300 pln netto b2b,Zdalnie
+2018-06-16,24,Javascript,1.08,3 500 pln brutto uop,Śląsk
+2018-06-16,27,iOS,4,8 200 pln netto b2b,Rzeszów
+2018-06-16,32,Java,6,6 000 pln netto uop,Kraków
+2018-06-18,19,Java,1,2 300 pln brutto uop,Warszawa
+2018-06-19,26,Devops,2,10 000 pln netto b2b,Wrocław
+2018-06-20,24,Java,1.5,9 000 pln brutto uod,Warszawa
+2018-06-20,24,Java,0.83,4 800 pln brutto uop,Wrocław
+2018-06-21,24,.NET,0.83,3 500 pln brutto uod,Wrocław
+2018-06-21,26,.NET,3,11 670 pln netto b2b,Zdalnie
+2018-06-22,28,Android,4,9 000 pln netto b2b,Zdalnie
+2018-06-22,29,Tester Automatyczny,5,12 250 pln brutto ?,Kraków
+2018-06-22,24,.NET,0.25,4 800 pln netto uop,Warszawa
+2018-06-23,21,Devops,1,8 500 pln brutto uop,Wrocław
+2018-06-23,25,Java,2,9 000 pln brutto uop,Warszawa
+2018-06-23,21,Java,0.5,3 000 pln netto uod,Gliwice
+2018-06-24,26,Java,2.5,24 000 pln netto b2b,Poznań
+2018-06-26,31,Tester,7,7 500 pln ! uop,Warszawa
+2018-06-26,23,Machine Learning,0,2 420 pln netto uz,Katowice
+2018-06-26,31,Java,8,18 500 pln ! uop,Kraków
+2018-06-30,24,Python,1,3 000 pln brutto uod,Kraków
+2018-06-30,23,Java,2,11 000 pln brutto uod,Warszawa
+2018-07-02,28,.NET,5,12 000 pln netto b2b,Kraków
+2018-07-02,25,.NET,1.5,8 000 pln netto b2b,Gdańsk
+2018-07-05,33,Fullstack,1,3 500 pln netto b2b,Wrocław
+2018-07-07,24,Java,4,16 000 pln netto b2b,Kraków
+2018-07-08,31,Java,6,17 000 pln netto b2b,Gdańsk
+2018-07-13,23,Java,1.5,3 400 pln ! uop,Poznań
+2018-07-17,22,Java,0.92,5 500 pln netto uop,Gdańsk
+2018-07-17,22,.NET,0,1 500 pln netto uop,Gdańsk
+2018-07-19,26,.NET,2,3 600 pln netto uop,Katowice
+2018-07-20,22,Javascript,1.5,2 500 pln netto ?,Wrocław
+2018-07-23,30,Javascript,0.58,3 520 pln netto ?,Lublin
+2018-07-24,25,Java,4,14 500 pln netto b2b,Kraków
+2018-07-24,34,Java,11,16 500 pln brutto uop,Kraków
+2018-07-25,32,Junior,0.17,3 000 pln brutto uop,Gdańsk
+2018-07-26,24,PHP,2.5,6 200 pln netto b2b,Kraków
+2018-07-29,25,Java,0,4 000 pln ! uop,Kraków
+2018-07-30,23,Devops,1.08,5 600 pln brutto uop,Gdańsk
+2018-07-30,20,Junior Software Developer,0,2 200 pln netto uz,Katowice
+2018-07-30,28,Javascript,0.92,7 000 pln brutto uop,Warszawa
+2018-07-31,25,Java,5,13 500 pln brutto uop,Wrocław
+2018-07-31,33,.NET,2.25,8 960 pln netto b2b,Rzeszów
+2018-08-01,20,Java,0,5 500 pln brutto uop,Katowice
+2018-08-01,28,.NET,0,4 400 pln brutto uop,Warszawa
+2018-08-01,34,Tester,6,10 000 pln brutto ?,Gdańsk
+2018-08-02,25,Javascript,2,8 940 pln netto b2b,Rzeszów
+2018-08-02,28,Javascript,8,18 400 pln netto b2b,Wrocław
+2018-08-02,30,Javascript,1.5,5 000 pln brutto uop,Kraków
+2018-08-03,22,Javascript,1.25,3 800 pln netto uop,Warszawa
+2018-08-03,29,Javascript,8,14 000 pln netto b2b,Rzeszów
+2018-08-04,26,Tester Manualny,1.08,3 500 pln netto uop,Warszawa
+2018-08-06,37,.NET,10,8 000 pln netto uop,Poznań
+2018-08-06,25,Java,4,16 000 pln netto b2b,Łódź
+2018-08-06,26,Java,6,20 000 pln netto b2b,Gdańsk
+2018-08-07,26,PHP,1,2 500 pln netto uop,Okolo 30 Tys.
+2018-08-07,25,C++,2,10 500 pln brutto uop,Wrocław
+2018-08-07,44,Fullstack,20,30 000 pln netto b2b,Zdalnie
+2018-08-08,30,Senior Software Engineer,5,10 800 pln brutto uop,Gdańsk
+2018-08-08,26,Python,3,8 700 pln netto b2b,Zdalnie
+2018-08-11,26,Java,5,8 500 pln brutto uop,Kraków
+2018-08-11,31,Tester,8,8 900 pln brutto uop,Warszawa
+2018-08-11,37,Javascript,15,30 000 pln netto b2b,Kraków
+2018-08-11,37,Devops,15,17 600 pln netto b2b,Kraków
+2018-08-12,23,Java,0,6 000 pln brutto uop,Szczecin
+2018-08-13,34,.NET,8,13 000 pln netto b2b,Kraków
+2018-08-14,34,Devops,7,12 000 pln ! ?,Kraków
+2018-08-16,25,Javascript,1,5 500 pln netto b2b,Wrocław
+2018-08-16,26,Tester,1,3 100 pln netto uop,Łódź
+2018-08-20,25,Java,3.33,6 560 pln netto b2b,Białystok
+2018-08-20,23,Java,0,4 000 pln brutto uop,Kraków
+2018-08-20,28,Java,1,4 700 pln brutto ?,Poznań
+2018-08-22,28,PHP,2.5,13 000 pln netto b2b,Gdańsk
+2018-08-22,32,Big Data,10,19 200 pln netto b2b,Warszawa
+2018-08-22,25,Python,1.5,10 000 pln netto b2b,Warszawa
+2018-08-23,29,PHP,0.33,2 800 pln netto uop,Gdańsk
+2018-08-26,26,Java,1,7 000 pln netto uop,Warszawa
+2018-08-27,29,Devops,12,15 000 pln brutto uop,Kraków
+2018-08-28,25,Javascript,4,1 800 pln netto uod,Wrocław
+2018-08-29,25,Javascript,2,4 500 pln netto uod,Warszawa
+2018-08-30,30,It Ba,8,18 000 pln netto b2b,Kraków
+2018-08-30,23,Java,2,8 000 pln netto uop,Warszawa
+2018-08-30,25,Java,2.5,7 500 pln brutto uop,Kraków
+2018-08-31,25,Javascript,4,8 000 pln netto uod,Wrocław
+2018-09-01,27,Java,4,20 000 pln netto b2b,Kraków
+2018-09-02,30,Operator Maszyn Cnc Niemcy.,4,5 970 eur ! ?,Okolice Monachium
+2018-09-02,26,Firmware Developer,2,7 500 pln brutto ?,Łódź
+2018-09-03,25,.NET,5,8 300 pln netto b2b,Katowice
+2018-09-05,22,Tester,0,2 700 pln netto uop,Katowice
+2018-09-06,25,Javascript,1.5,9 000 pln netto b2b,Sopot
+2018-09-07,21,C++,0.17,3 500 pln netto uz,Kraków
+2018-09-08,27,Java,1.33,2 400 pln netto uod,Warszawa
+2018-09-10,28,.NET,4,2 083.3333333333335 pln brutto uop,"Praga, Czechy "
+2018-09-10,30,Python,7,9 000 pln netto uop,Poznań
+2018-09-10,26,Fullstack,1,12 000 pln brutto uop,Warszawa
+2018-09-12,24,Python,0,2 000 pln netto uod,Zielona Góra
+2018-09-13,28,Java,0,3 000 pln netto ?,Wrocław
+2018-09-13,25,Tester,0.92,2 810 pln ! uod,Lublin
+2018-09-13,26,Ruby,1.5,8 500 pln netto b2b,Zdalnie
+2018-09-13,21,C++,0.42,3 500 pln netto uod,Wrocław
+2018-09-13,22,Java,0,4 000 pln netto uod,Kraków
+2018-09-14,24,Java,0.25,4 000 pln netto uop,Kraków
+2018-09-14,30,SQL,2,3 000 pln netto uop,Poznań
+2018-09-14,25,Software Developer,2.5,14 400 pln netto b2b,Katowice
+2018-09-14,24,Ruby,1.17,6 700 pln netto b2b,Zdalnie
+2018-09-15,24,.NET,1.25,3 300 pln netto uop,Wrocław
+2018-09-15,31,Android,9,12 000 pln netto ?,Kraków
+2018-09-16,23,.NET,3,10 000 pln brutto uop,Warszawa
+2018-09-16,33,Tester Automatyczny,10,1 833.3333333333333 usd brutto b2b,Zdalnie
+2018-09-17,33,Ruby,3,14 000 pln netto ?,Katowice
+2018-09-18,24,Lead Technology,3,15 416.666666666666 pln ! ?,Londyn
+2018-09-18,22,PHP,0.67,5 500 pln netto b2b,Warszawa
+2018-09-19,35,Java,12,16 800 pln netto b2b,Warszawa
+2018-09-19,25,Java,4,16 800 pln netto b2b,Gdańsk
+2018-09-20,34,Java,10,13 800 pln netto b2b,Gdańsk
+2018-09-21,24,Java,3,16 000 pln netto b2b,Gdańsk
+2018-09-21,28,PHP,0.75,3 000 pln netto uop,Poznań
+2018-09-21,27,.NET,5.25,3 400 gbp brutto ?,Zdalnie
+2018-09-21,25,.NET,3,5 800 pln netto ?,Katowice
+2018-09-21,24,PHP,0.75,4 200 pln netto ?,Kraków
+2018-09-23,27,Embedded,3,16 000 pln netto b2b,Warszawa
+2018-09-24,26,Java,1.17,8 500 pln brutto uop,Warszawa
+2018-09-25,23,Sharepoint,0,4 000 pln netto uop,Warszawa
+2018-09-25,23,Java,3,12 000 pln netto b2b,Warszawa
+2018-09-25,30,.NET,8,11 000 pln netto b2b,Poznań
+2018-09-25,21,C++,0.25,4 000 pln brutto ?,Gdańsk
+2018-09-26,25,Cobol,0,5 300 pln brutto uop,Warszawa
+2018-09-26,25,Javascript,1,4 500 pln netto uz,Warszawa
+2018-09-27,23,.NET,1.08,4 000 pln netto uop,Kraków
+2018-09-27,25,Java,1.5,6 500 pln ! ?,Warszawa
+2018-09-27,22,.NET,0.5,3 700 pln netto uop,Katowice
+2018-09-27,30,Junior It Specialist,0,2 400 pln brutto uop,Okolice Monachium
+2018-09-27,22,Javascript,1.25,3 550 pln ! uod,Kraków
+2018-09-30,23,Tester Automatyczny,0.58,3 500 pln netto uop,Śląsk
+2018-09-30,31,Ruby,11,20 000 pln netto b2b,Poznań
+2018-10-01,31,Tester,9,6 300 pln netto uop,Warszawa
+2018-10-01,36,Embedded,10,9 500 pln brutto ?,Warszawa
+2018-10-01,29,Javascript,5,14 000 pln brutto b2b,Lublin
+2018-10-01,25,Android,0,5 500 pln netto b2b,Poznań
+2018-10-01,30,Javascript,1.5,6 000 pln brutto uop,Kraków
+2018-10-02,37,.NET,13,7 500 pln netto uop,Katowice
+2018-10-02,24,.NET,0.5,6 720 pln netto b2b,Warszawa
+2018-10-03,25,.NET,2,5 000 pln netto uop,Wrocław
+2018-10-03,23,Java,0.75,5 000 pln netto uop,Kraków
+2018-10-03,27,Java,3.5,7 600 pln netto uop,Szczecin
+2018-10-03,27,Analityk,3,13 650 pln netto b2b,Warszawa
+2018-10-03,28,Javascript,7,28 000 gbp netto b2b,Wielka Brytania 
+2018-10-04,40,PHP,1.5,6 000 pln netto b2b,Zdalnie
+2018-10-04,30,Java,6,12 500 pln netto uop,Kraków
+2018-10-05,32,Javascript,5,9 600 pln netto uop,Kraków
+2018-10-05,26,Javascript,3,10 000 pln brutto uop,Kraków
+2018-10-06,30,.NET,1,5 000 pln netto uop,Wrocław
+2018-10-06,29,Developer,2,10 000 pln netto b2b,Katowice
+2018-10-06,34,Tester,1,6 000 pln netto ?,Kraków
+2018-10-06,22,.NET,0.25,3 300 pln netto uop,Gdańsk
+2018-10-06,20,Javascript,0.25,3 360 pln brutto uz,Warszawa
+2018-10-08,27,Admin,2,2 000 pln brutto uop,Kraków
+2018-10-08,25,Software Engineer,2.5,6 000 pln netto uop,Kraków
+2018-10-09,23,Software Engineer,3,5 400 pln netto uop,Katowice
+2018-10-09,28,Android,1.5,4 500 pln netto uop,Kraków
+2018-10-09,24,Java,10,6 000 pln ! uop,Kraków
+2018-10-10,27,C++,0.08,2 500 pln ! uop,Kraków
+2018-10-11,30,Python,7,12 500 pln netto b2b,Poznań
+2018-10-11,25,Tester Automatyczny,2,5 200 pln netto uop,Warszawa
+2018-10-11,29,PHP,0.33,4 300 pln netto b2b,Gdańsk
+2018-10-12,24,.NET,2.8,12 000 pln netto b2b,Gdańsk
+2018-10-12,30,Tester,2.5,5 000 pln netto uop,Poznań
+2018-10-14,25,.NET,0.83,4 500 pln brutto uop,Gdańsk
+2018-10-14,25,.NET,1.5,6 500 pln netto uz,Rzeszów
+2018-10-18,23,Tester Manualny,0.08,3 000 pln netto uop,Warszawa
+2018-10-18,25,PHP,1.17,2 500 pln netto uop,Warszawa
+2018-10-18,25,Java,0.5,6 000 pln netto uop,Gdańsk
+2018-10-19,30,Architekt,12,25 000 pln netto b2b,Kraków
+2018-10-19,23,Java,0,2 300 pln netto uz,Katowice
+2018-10-19,25,Javascript,2.5,13 000 pln netto b2b,Rzeszów
+2018-10-19,27,.NET,4,13 500 pln brutto uop,Kraków
+2018-10-20,23,Java,1,4 800 pln netto uop,Kraków
+2018-10-20,30,Java,6,6 400 pln netto uop,Gdańsk
+2018-10-20,30,Programista,3.5,8 700 pln brutto uop,Katowice
+2018-10-21,27,C++,4,18 400 pln netto b2b,Katowice
+2018-10-22,30,Java,1.17,3 500 pln netto uop,Katowice
+2018-10-22,25,Javascript,4.5,6 400 pln netto uod,Wrocław
+2018-10-23,26,Ruby,3.5,14 500 pln ! ?,Gdynia
+2018-10-23,23,SQL,0.83,2 500 pln netto uz,Poznań
+2018-10-23,35,.NET,10,21 970 pln brutto b2b,Wrocław
+2018-10-26,24,Java,3,16 000 pln ! uop,Kraków
+2018-10-26,23,.NET,1,4 000 pln brutto uop,Warszawa
+2018-10-27,23,PHP,0.5,3 000 pln netto ?,Wrocław
+2018-10-27,24,.NET,0.58,3 600 pln netto ?,Wrocław
+2018-10-27,21,PHP,0.33,1 000 pln netto uop,Wrocław
+2018-10-28,28,Java,1.5,2 800 pln netto uop,Miasto Wojewodzkie Na Wschodzie Polski
+2018-10-29,30,Admin,8,2 000 pln netto uop,Kraków
+2018-10-30,27,PHP,1.5,10 000 pln netto b2b,Wrocław
+2018-11-01,22,Java,1.5,12 000 pln netto b2b,Śląsk
+2018-11-02,26,Java,0,3 700 pln netto uop,Gdańsk
+2018-11-02,23,Junior Developer,0.33,2 920 pln brutto uop,Katowice
+2018-11-09,22,PHP,2.5,3 000 pln netto ?,Zdalnie
+2018-11-09,22,Intern /   Associate Software Developer,0,3 500 pln brutto uop,Kraków
+2018-11-10,23,Javascript,1,4 400 pln netto ?,Kraków
+2018-11-11,30,Tester,8,7 000 pln netto uop,Warszawa
+2018-11-12,27,Java,4,20 000 pln netto b2b,Kraków
+2018-11-12,23,Java,1.5,4 500 pln netto uop,Warszawa
+2018-11-13,25,Java,5,13 000 pln netto b2b,Kraków
+2018-11-17,29,.NET,4.5,12 500 pln brutto uop,Wrocław
+2018-11-18,28,Javascript,2,4 355 pln brutto uop,Poznań
+2018-11-19,22,Junior Security Engineer,0,6 500 pln brutto uop,Warszawa
+2018-11-19,24,Javascript,4,1 000 pln brutto uop,Poznań
+2018-11-20,27,PHP,1.33,3 300 pln netto uop,Miejscowosc Do 30K Mieszkancow.
+2018-11-23,22,Java,2,3 800 pln netto uz,Miasto Ponizej 350 Tys
+2018-11-24,31,Java,9,24 000 pln netto b2b,Miasto Wojewodzkie
+2018-11-24,24,Java,3,12 800 pln netto b2b,Poznań
+2018-11-24,26,C,0,4 200 pln netto uop,Warszawa
+2018-11-24,35,.NET,13,12 000 pln netto b2b,Kraków
+2018-11-24,25,Java,1.5,3 000 pln netto uop,Kraków
+2018-11-26,22,PHP,1.5,4 500 pln netto uop,Dojezdzam Z Katowic Ok. 60 Km Do Firmy 
+2018-11-27,27,Tester Automatyczny,3,12 000 pln netto b2b,Śląsk
+2018-11-27,32,.NET,10,18 500 pln ! uop,Wrocław
+2018-11-28,26,Javascript,5,21 000 pln netto b2b,Warszawa
+2018-11-29,24,Fullstack,5,19 500 pln netto b2b,Wrocław
+2018-11-29,27,Android,1.5,10 000 pln netto b2b,Warszawa
+2018-12-04,20,iOS,2,30 000 pln netto b2b,Wilno
+2018-12-05,25,Analityk,0,3 800 pln netto ?,Warszawa
+2018-12-05,20,Java,0.5,6 000 pln netto b2b,Katowice
+2018-12-09,33,Senior Software Developer,6,19 200 pln netto b2b,Wrocław
+2018-12-09,30,Javascript,1,4 000 pln netto ?,Lublin
+2018-12-15,27,Software Developer,0.25,2 900 pln ! uop,Rzeszów
+2018-12-15,26,Fullstack,0,2 700 pln netto uop,Warszawa
+2018-12-15,23,Java,1.25,4 700 pln netto uop,Łódź
+2018-12-15,25,Javascript,5,8 000 pln ! uod,Wrocław
+2018-12-16,24,Javascript,0.75,5 200 pln brutto uop,Białystok
+2018-12-16,27,Java,3,16 000 pln netto b2b,Warszawa
+2018-12-16,24,Abap Developer,1,7 500 pln brutto ?,Kraków
+2018-12-19,21,iOS,0,3 600 pln brutto uop,Kraków
+2018-12-20,24,Java,0.33,6 500 pln brutto uop,Kraków
+2018-12-20,27,Tester Automatyczny,4.5,9 500 pln brutto uop,Kraków
+2018-12-21,25,Tester,1,5 270 pln brutto uop,Kraków
+2018-12-21,25,.NET,2,6 200 pln brutto uop,Kraków
+2018-12-21,32,Ruby,11,2 583.3333333333335 pln netto b2b,Zdalnie
+2018-12-21,22,Java,3,9 000 pln netto uop,Gdańsk
+2018-12-21,24,Java,2,7 500 pln netto uop,Łódź
+2018-12-22,26,Java,3,21 500 pln netto b2b,Poznań
+2018-12-23,29,Backend,0.25,2 000 pln netto uz,Rzeszów
+2018-12-23,25,Java,0.25,2 000 pln netto uop,Wrocław
+2018-12-24,22,.NET,0,3 700 pln netto ?,Katowice
+2018-12-26,25,Software Engineer ,1.5,8 000 pln brutto uop,Kraków
+2018-12-27,40,Analityk,17,13 000 pln brutto ?,Warszawa
+2018-12-28,28,Javascript,5,8 000 pln netto uod,Poznań
+2018-12-28,33,Algo Quant,5,37 000 gbp brutto ?,Londyn
+2018-12-29,26,Java,4,9 600 pln netto uop,Gliwice
+2018-12-30,25,Embedded,1,3 000 pln netto uop,Gdańsk
+2019-01-03,28,Javascript,0.17,8 500 pln netto uz,Warszawa
+2019-01-05,21,iOS,0.5,4 800 pln brutto uop,Warszawa
+2019-01-06,23,PHP,4,10 000 pln netto b2b,Warszawa
+2019-01-07,25,Backend,0.67,3 900 pln brutto uop,Kraków
+2019-01-08,27,Javascript,0.25,4 320 pln netto b2b,Wrocław
+2019-01-08,25,Java,3,14 500 pln netto b2b,Rzeszów
+2019-01-09,23,Java,1.5,5 850 pln netto ?,Białystok
+2019-01-09,26,Abap Developer,0,2 700 pln netto b2b,Wrocław
+2019-01-09,32,Javascript,0.25,2 000 pln brutto uop,Gdańsk
+2019-01-09,28,Python,0.5,7 000 pln netto uop,Kraków
+2019-01-10,30,Analityk,4,10 000 pln brutto uop,Warszawa
+2019-01-10,19,Javascript,0.25,2 400 gbp netto ?,Londyn
+2019-01-11,25,Java,3,15 000 pln netto b2b,Rzeszów
+2019-01-11,23,Javascript,0.58,3 000 pln netto uop,Kraków
+2019-01-12,23,.NET,2.5,8 000 pln netto b2b,Warszawa
+2019-01-12,24,Javascript,3,9 000 pln brutto uop,Katowice
+2019-01-12,23,Ruby,2,14 600 pln netto ?,Warszawa
+2019-01-12,30,Java,6,6 400 pln brutto ?,Gdańsk
+2019-01-12,24,Java,3,18 000 pln netto b2b,Kraków
+2019-01-13,26,Android,0.5,6 000 pln netto b2b,Poznań
+2019-01-13,24,.NET,0,6 400 pln brutto uop,Warszawa
+2019-01-13,29,PHP,3.5,3 000 pln netto uop,Toruń
+2019-01-13,23,Junior Developer,0.17,2 920 pln brutto uop,Katowice
+2019-01-14,30,Devops,7,21 000 pln netto b2b,Zdalnie
+2019-01-16,24,Django,3,11 000 pln netto b2b,Zdalnie
+2019-01-16,26,Java,0,3 000 pln netto ?,Warszawa
+2019-01-16,32,Fullstack,4,6 200 pln brutto uop,Łódź
+2019-01-20,36,.NET,11,22 000 pln netto b2b,Poznań
+2019-01-22,27,Embedded,5,15 500 pln netto uop,"Tokio, Japonia"
+2019-01-22,23,Backend,1,7 500 pln netto b2b,Poznań
+2019-01-24,21,It Spiecialist,0.33,3 000 pln netto ?,"Mniejsze , 100 Tysieczne ;)"
+2019-01-24,26,Javascript,0.5,2 400 pln brutto uod,Lublin
+2019-01-28,27,.NET,1,4 600 pln brutto uop,Wojewodzkie
+2019-01-30,24,Java,5,16 000 pln netto b2b,Warszawa
+2019-01-31,29,Python,0.92,9 000 pln netto b2b,Warszawa
+2019-02-04,33,Visual Basic,4,7 250 pln brutto uop,Warszawa
+2019-02-05,28,.NET,4,10 000 pln netto b2b,Poznań
+2019-02-06,24,Javascript,0.58,4 100 pln netto b2b,Warszawa
+2019-02-07,23,Fullstack,1.58,5 500 pln netto uz,Gliwice
+2019-02-09,29,Embedded,4,2 880 pln netto uop,Częstochowa
+2019-02-10,25,.NET,3,13 000 pln ! uop,Gdańsk
+2019-02-11,34,Admin,7,18 000 pln brutto uop,Wrocław
+2019-02-13,30,.NET,5,7 360 pln ! ?,Poznań
+2019-02-13,27,Tester Automatyczny,1.42,4 000 pln netto uop,Bydgoszcz
+2019-02-13,26,Python,6,18 000 pln ! ?,Warszawa
+2019-02-19,22,.NET,0,1 500 pln netto uop,Gdańsk
+2019-02-20,26,Młodszy Konsultant Sap Business One,0.08,2 250 pln brutto ?,Poznań
+2019-02-20,24,1 Linia Soc,0,3 000 pln netto ?,Warszawa
+2019-02-21,22,Wordpress,0,2 400 pln netto uz,Warszawa
+2019-02-22,26,Java,0,5 500 pln brutto uop,Warszawa
+2019-03-03,32,Ruby,12,32 000 pln netto b2b,Zdalnie
+2019-03-05,29,Android,7,3 000 eur netto b2b,Zdalnie
+2019-03-06,26,.NET,0,4 500 pln brutto uop,Warszawa
+2019-03-08,27,Big Data,4,13 000 pln netto b2b,Kraków
+2019-03-10,23,PHP,1.25,6 000 pln netto b2b,Warszawa
+2019-03-10,26,Embedded,0.75,6 500 pln brutto ?,Kraków
+2019-03-12,28,Javascript,4,19 000 pln brutto ?,Kraków
+2019-03-13,22,Python,0,6 000 pln brutto uop,Warszawa
+2019-03-15,36,Architekt,10,28 000 pln netto b2b,Warszawa
+2019-03-16,22,Python,1,2 600 pln netto uz,Lublin
+2019-03-17,22,.NET,1.17,6 200 pln ! uop,Kraków
+2019-03-18,31,Javascript,1.25,4 320 pln netto uod,Lublin
+2019-03-18,22,Java,0,1 700 pln ! uz,Katowice
+2019-03-19,25,Ruby,1.5,3 000 pln brutto ?,Kraków
+2019-03-19,25,Java,4,16 400 pln netto b2b,Kraków
+2019-03-20,20,.NET,1.17,1 950 pln ! ?,Kraków
+2019-03-21,26,PHP,5,13 000 pln netto b2b,Warszawa
+2019-03-22,23,Java,1.5,8 000 pln netto b2b,Kraków
+2019-03-27,23,Java,1.67,7 300 pln netto uop,Gdańsk
+2019-03-28,28,Javascript,6,17 000 pln brutto uop,Warszawa
+2019-03-29,26,Java,1.08,4 600 pln brutto uop,Kraków
+2019-03-29,31,Python,7,12 500 pln netto uod,Warszawa
+2019-03-31,31,Tester Automatyczny,8,10 500 pln netto uop,Kraków
+2019-03-31,23,Nieopierzony Junior Pod Płaszczykiem 'So,2,4 800 pln netto uop,Kraków
+2019-04-05,33,Python,5.5,14 000 pln netto b2b,Wrocław
+2019-04-09,29,Javascript,0,6 500 pln netto b2b,Gdańsk
+2019-04-17,26,Javascript,2.33,5 600 pln netto uod,Warszawa
+2019-04-18,27,Java,6,23 500 pln netto b2b,Gdańsk
+2019-04-19,34,.NET,3,11 360 pln netto b2b,Rzeszów
+2019-04-19,28,Javascript,6,15 200 pln netto b2b,Wrocław
+2019-04-20,25,Devops,2,7 200 pln brutto uop,Warszawa
+2019-04-24,24,.NET,1.92,6 820 pln brutto uop,Toruń
+2019-04-25,21,Java,3,25 000 pln brutto uop,Zurych
+2019-04-25,23,Javascript,3,6 000 pln netto uz,Warszawa
+2019-04-26,25,Java,2.5,16 000 pln netto b2b,Warszawa
+2019-04-27,22,Scala,0,4 200 pln netto uz,Kraków
+2019-04-27,24,iOS,0.75,2 800 pln netto uop,Katowice
+2019-04-28,28,Java,1,4 500 pln brutto uop,Warszawa
+2019-04-28,25,Cobol,0.42,3 600 pln netto uop,Warszawa
+2019-04-29,22,Java,0.25,3 338 pln netto uz,Katowice
+2019-04-29,28,.NET,3.5,13 000 pln netto b2b,Gdańsk
+2019-04-29,24,.NET,2.67,12 200 pln netto b2b,Toruń
+2019-05-01,24,Devops,2.5,12 000 pln brutto uop,Wrocław
+2019-05-05,30,.NET,9,17 000 pln netto b2b,Warszawa
+2019-05-06,23,Javascript,1.83,7 000 pln netto ?,Wrocław
+2019-05-12,25,Tester Automatyczny,2,13 600 pln brutto ?,Kraków
+2019-05-12,23,Java,0.5,5 000 pln brutto uop,Warszawa
+2019-05-13,38,.NET,10,14 000 pln brutto uop,Poznań
+2019-05-13,20,Helpdesk,0,4 200 pln brutto ?,Kielce
+2019-05-19,30,.NET,2,5 000 pln netto uop,Wrocław
+2019-05-23,27,Java,3.83,7 800 pln netto b2b,Gdańsk
+2019-05-23,29,Javascript,0.58,10 000 pln netto b2b,Gdańsk
+2019-05-24,23,Analityk,2.5,18 000 pln netto b2b,Warszawa
+2019-05-24,31,Senior Software Engineer,6,16 500 pln ! uop,Kraków
+2019-05-25,25,C++,0.5,6 000 pln brutto uop,Katowice
+2019-05-25,22,Javascript,1,7 040 pln netto ?,Zdalnie
+2019-05-25,24,Java,2,12 000 pln brutto uop,Warszawa
+2019-05-25,24,Java,2,9 500 pln brutto uop,Kraków
+2019-05-25,26,Javascript,5,11 500 pln netto b2b,Zdalnie
+2019-05-26,24,Javascript,1.83,12 320 pln netto b2b,Gdańsk
+2019-05-27,30,.NET,2,17 000 pln netto b2b,Warszawa
+2019-05-28,26,Android,2.75,10 000 pln netto b2b,Kraków
+2019-05-28,28,Java,1.67,2 900 pln netto uop,Poznań
+2019-05-29,30,Javascript,5,21 600 pln netto b2b,Zdalnie
+2019-05-29,30,Admin,1,2 250 eur netto uop,Okolice Monachium
+2019-06-01,30,.NET,731,20 000 pln netto b2b,Sloikowo
+2019-06-03,21,Java,2,13 500 pln netto b2b,Śląsk
+2019-06-04,27,Java,1.83,10 000 pln netto b2b,Warszawa
+2019-06-05,24,.NET,3,20 000 pln netto b2b,Warszawa
+2019-06-06,25,"Pomocnik Tokarski Dla Vw, Scani I Czasam",0.58,2 000 pln netto ?,Lipsk
+2019-06-08,29,Java,0.75,4 800 pln netto ?,Wrocław
+2019-06-10,24,Java,0.83,7 000 pln brutto uop,Kraków
+2019-06-11,25,Java,0.5,4 000 pln brutto uz,Kraków
+2019-06-11,25,Java,1.08,3 600 pln brutto uop,Kraków
+2019-06-11,23,Tester,0,4 500 pln brutto uop,Kraków
+2019-06-12,30,Tester Manualny,2,6 000 pln brutto ?,Łódź
+2019-06-12,30,Architekt,10,12 000 pln brutto uop,Śląsk
+2019-06-12,25,.NET,1.25,8 400 pln netto b2b,Warszawa
+2019-06-13,27,.NET,4,16 000 pln netto b2b,Zdalnie
+2019-06-14,25,Java,2,12 500 pln netto b2b,Warszawa
+2019-06-19,22,Embedded,1,9 500 pln brutto uop,Kraków
+2019-06-22,25,Embedded,1,3 300 pln netto uop,Kraków
+2019-06-22,24,Javascript,1.08,3 500 pln brutto uop,Śląsk
+2019-07-02,30,Architekt,1.25,13 000 pln netto b2b,Warszawa
+2019-07-02,21,PHP,1.08,3 100 pln ! uop,Bielsko-Biała
+2019-07-03,38,.NET,10,18 400 pln netto b2b,Zdalnie
+2019-07-03,30,.NET,8,18 000 pln brutto uop,Poznań
+2019-07-05,28,Analityk,2.5,12 000 pln netto b2b,Warszawa
+2019-07-06,27,Tester Automatyczny,1.67,4 350 pln netto uop,Bydgoszcz
+2019-07-08,24,Tester Manualny,1.33,3 100 pln netto uop,Wrocław
+2019-07-10,24,.NET,0.58,6 000 pln brutto uop,Katowice
+2019-07-12,23,PHP,3,10 000 pln netto b2b,Kraków
+2019-07-14,24,.NET,2,9 000 pln netto b2b,Zdalnie
+2019-07-16,29,.NET,5,20 800 pln netto b2b,Kraków
+2019-07-18,24,Visual Basic,1.5,3 700 pln netto uop,Poznań
+2019-07-20,24,Tester Automatyczny,1.5,8 000 pln netto b2b,Katowice
+2019-07-23,31,.NET,4.5,5 000 pln netto uop,Warszawa
+2019-07-23,27,.NET,6,4 600 pln netto uop,Nowy Sacz
+2019-07-24,28,Analityk,5,19 200 pln netto b2b,Warszawa
+2019-07-28,30,PHP,6,12 000 pln netto b2b,Zdalnie
+2019-07-31,32,Android,10,25 000 pln netto b2b,Kraków
+2019-08-01,42,Python,21,24 300 pln brutto uop,Warszawa
+2019-08-04,28,Java,3.5,18 500 pln netto b2b,Warszawa
+2019-08-11,22,.NET,1.33,6 000 pln ! uop,Kraków
+2019-08-11,22,Python,1,5 000 pln netto ?,Kraków
+2019-08-12,27,Tester,3,7 300 pln netto uop,Kraków
+2019-08-13,31,Admin,1.5,2 650 eur netto uop,Okolice Monachium
+2019-08-13,36,C++,2,10 500 pln brutto ?,Warszawa
+2019-08-14,28,Java,0,3 500 pln brutto uop,Gdańsk
+2019-08-15,20,Java,0,3 000 pln netto ?,Warszawa
+2019-08-16,27,Java,3.5,13 010 pln netto b2b,Wrocław
+2019-08-16,25,.NET,2,8 500 pln ! ?,Warszawa
+2019-08-17,31,Javascript,2,4 800 pln netto uod,Lublin
+2019-08-17,31,Tester Automatyczny,8,15 300 pln brutto uop,Kraków
+2019-08-20,26,Java,2,10 500 pln netto b2b,Wrocław
+2019-08-20,34,Python,3,23 000 pln netto b2b,Zdalnie
+2019-08-22,23,Fullstack,2.5,22 000 pln netto b2b,Warszawa
+2019-08-23,26,Java,1.5,4 600 pln netto uop,Gdynia
+2019-08-24,33,.NET,7,4 600 pln netto uop,Katowice
+2019-08-24,28,Java,4,18 000 pln brutto uop,Wrocław
+2019-08-28,24,Java,5,20 800 pln netto b2b,Warszawa
+2019-08-29,20,Android,0,2 500 pln netto uod,Wrocław
+2019-08-30,25,Junior Software Engineer,0,8 600 pln brutto uop,Poznań
+2019-08-30,31,Python,1,5 000 pln netto uop,Gliwice
+2019-08-30,32,Java,9,28 000 pln ! uop,Kraków
+2019-09-01,32,Młodszy Programista,1,2 150 pln netto uop,Okolice Warszawy 
+2019-09-02,27,Java,5,7 000 pln netto ?,Katowice
+2019-09-02,22,Programista Aplikacji Internetowych ,0.75,3 000 pln brutto uz,Tychy
+2019-09-07,24,Backend,3,5 000 pln netto uz,Rzeszów
+2019-09-07,22,Software Engineer,0.25,7 600 pln brutto uop,Kraków
+2019-09-09,26,Java,1.17,6 300 pln netto b2b,Top5
+2019-09-09,22,.NET,0.17,5 000 pln netto uop,Wojewodzkie
+2019-09-10,26,Tester Automatyczny,1.17,5 000 pln netto uop,Kraków
+2019-09-13,25,.NET,0,2 500 pln netto uz,Warszawa
+2019-09-15,37,PHP,7,10 000 pln brutto uop,Warszawa
+2019-09-17,36,Junior Software Developer,0.5,3 000 pln netto ?,Zielona Góra
+2019-09-18,26,Tester,0.75,3 300 pln netto uop,Wrocław
+2019-09-19,28,Java,5,16 000 pln netto b2b,Łódź
+2019-09-21,25,Java,3,17 600 pln netto b2b,Warszawa
+2019-09-22,27,Fullstack,2,17 300 pln netto b2b,Warszawa
+2019-09-24,25,Java,0,4 000 pln ! uz,Wrocław
+2019-09-24,24,Sharepoint,2,9 600 pln netto b2b,Zawsze Na Wschod
+2019-09-24,21,Big Data,2,4 166.666666666667 gbp brutto ?,Londyn
+2019-09-24,20,Javascript,2,3 600 pln netto uop,Wrocław
+2019-09-25,22,.NET,1.83,10 000 pln netto b2b,Kraków
+2019-09-25,26,Analityk,4,5 000 pln netto uop,Wrocław
+2019-09-26,25,Java,4,19 200 pln netto b2b,Kraków
+2019-09-27,33,Java,3,7 000 pln brutto uop,Kraków
+2019-09-27,30,Fullstack,6,13 600 pln netto b2b,Kraków
+2019-09-27,23,Admin,1,3 700 pln netto ?,Kraków
+2019-09-28,25,Java,3,13 000 pln brutto uop,Wrocław
+2019-09-29,24,Java,0,2 800 pln netto uop,Kraków
+2019-10-01,25,Java,0,5 500 pln brutto uop,Kraków
+2019-10-03,36,C++,5,16 000 pln netto b2b,Warszawa
+2019-10-03,22,Scala,0.33,7 800 pln netto uop,Kraków
+2019-10-07,26,Java,5,12 000 pln ! ?,Bristol
+2019-10-09,25,Niby Wskoczył Mid,1.33,7 000 pln brutto uop,Wrocław
+2019-10-09,22,iOS,0.92,5 600 pln brutto uop,Kraków
+2019-10-09,30,.NET,0.17,8 000 pln netto uop,Wrocław
+2019-10-10,29,Java,0.5,4 000 pln netto uop,Kraków
+2019-10-10,28,.NET,4,22 200 pln netto b2b,Warszawa
+2019-10-13,28,Cobol,1.17,5 700 pln brutto ?,Łódź
+2019-10-15,26,PHP,2,4 000 pln brutto ?,Ok. 25Km Od Katowic
+2019-10-15,26,Android,1.08,10 000 pln netto b2b,Poznań
+2019-10-16,26,.NET,0.5,10 000 pln brutto uop,Zdalnie
+2019-10-17,32,Java,7,25 000 pln netto b2b,Gdańsk
+2019-11-04,38,Fullstack,15,32 000 pln netto b2b,Kraków
+2019-11-05,27,Embedded,1.33,12 500 pln brutto ?,Kraków
+2019-11-06,24,Analityk,2,10 000 pln netto ?,Kraków
+2019-11-09,23,Java,1.5,8 700 pln brutto uop,Warszawa
+2019-11-11,32,Ruby,13,25 500 pln netto b2b,Zdalnie
+2019-11-12,30,Javascript,6,11 250 pln brutto uop,Poznań
+2019-11-13,23,Java,1.33,4 900 pln brutto uz,Katowice
+2019-11-14,28,Android,2.5,14 400 pln netto uop,Warszawa
+2019-11-14,34,.NET,12,22 400 pln netto b2b,Zdalnie
+2019-11-15,24,.NET,0,3 500 pln brutto uop,Wrocław
+2019-11-15,24,Analityk,1.25,4 000 pln netto uz,Top 5
+2019-11-16,28,PHP,5,13 000 pln netto ?,Zurych
+2019-11-16,26,.NET,2,4 000 pln netto uop,Katowice
+2019-11-18,26,Java,0.83,3 000 pln brutto uop,Warszawa
+2019-11-19,24,Java,2.5,7 000 pln brutto uop,Kraków
+2019-11-19,23,Java,1,6 000 pln brutto uop,Warszawa
+2019-11-19,27,SQL,4,4 800 pln netto ?,Wrocław
+2019-11-20,26,Analityk,3.5,15 500 pln netto b2b,Wrocław
+2019-11-25,25,.NET,0,3 500 pln brutto uop,Szczecin
+2019-11-26,21,.NET,0,2 700 pln netto ?,Rzeszów
+2019-11-27,31,Senior Dev,3.5,19 200 pln brutto uop,Warszawa
+2019-11-28,26,Ruby,2,12 000 pln netto b2b,Kraków
+2019-11-28,26,Junior Salesforce Developer,0.83,2 700 pln netto uop,Lublin
+2019-11-30,26,Java,3,20 000 pln netto b2b,Warszawa
+2019-12-04,22,iOS,1,14 000 pln brutto uop,Kraków
+2019-12-04,21,.NET,0.67,4 500 pln brutto uop,Kraków
+2019-12-05,28,C++,2.5,6 500 pln brutto uop,Wrocław
+2019-12-05,24,Javascript,4,17 170 pln netto b2b,Zdalnie
+2019-12-06,28,Analityk,5,20 800 pln netto b2b,Warszawa
+2019-12-12,30,Java,5,10 500 pln netto uop,Kraków
+2019-12-16,24,Javascript,2.5,11 000 pln netto b2b,Warszawa
+2019-12-16,30,PHP,1.5,4 200 pln netto b2b,Gdańsk
+2019-12-16,32,Tester Manualny,5,8 400 pln netto b2b,Kraków
+2019-12-18,25,Java,0.25,6 000 pln brutto uop,Kraków
+2019-12-19,29,.NET,6.5,29 000 gbp netto b2b,Zdalnie
+2019-12-21,26,PHP,2,9 200 pln brutto ?,Kraków
+2019-12-21,30,.NET,3,22 000 pln netto b2b,Sloikowo
+2019-12-22,24,Java,0.83,6 000 pln brutto uop,Kraków
+2019-12-25,28,Java,5,29 000 pln netto b2b,Warszawa
+2019-12-27,33,Java,4,11 000 pln brutto ?,Warszawa
+2019-12-27,27,Tester Automatyczny,3.5,14 500 pln ! uop,Kraków
+2020-01-02,25,Java,1.5,9 200 pln ! uop,Kraków
+2020-01-06,24,Javascript,2.5,8 600 pln netto uop,Wrocław
+2020-01-07,22,Javascript,0.83,4 000 pln netto b2b,Śląsk
+2020-01-08,34,Devops,9,14 700 pln netto b2b,Zdalnie
+2020-01-08,25,Programista,4,4 400 pln ! uop,Sosnowiec
+2020-01-12,31,Python,2.5,7 400 pln brutto uop,Kraków
+2020-01-13,28,Developer ,5,20 000 pln netto uop,Warszawa
+2020-01-15,26,Java,5,6 000 pln netto uop,Śląsk
+2020-01-16,31,Lider Techniczny,8,15 000 pln netto uop,Warszawa
+2020-01-16,25,Java,6,24 000 pln netto b2b,Warszawa
+2020-01-16,28,Javascript,7,29 000 pln netto ?,Zdalnie
+2020-01-17,22,.NET,0.17,3 000 pln netto uop,Warszawa
+2020-01-17,29,Tester Automatyczny,5.5,15 300 pln netto b2b,Kraków
+2020-01-17,23,Software Engineer,0.25,9 000 pln brutto uop,Kraków
+2020-01-19,32,Javascript,4,10 500 pln brutto uop,Kraków

@@ -113,13 +113,15 @@ def valid_stack(content):
         stack = 'Wordpress'
     elif 'support' in stack or 'help' in stack:
         stack = 'Helpdesk'
+    elif 'programista c' in stack:
+        stack = 'Embedded'
 
     if stack is not None:
         if stack is not 'iOS' and stack is not '.NET' and stack is not 'PHP' and stack is not 'SQL':
             stack = stack.title()
 
         stack = re.sub(r'\(.*?\)', '', stack)
-        stack = stack[:30]
+        stack = stack[:40]
 
     return stack
 
@@ -190,11 +192,13 @@ def valid_salary(content):
                 or re.search(r'.*?\Wetat\W.*?', content) and 'zlecenie' not in content:
             salary = get_salary(salary, 'uop')
         elif re.search(r'.*?b2b.*?', content) or re.search(r'.*?vat.*?', content) or re.search(r'.*?\Wfv.*?', content) \
-                or re.search(r'.*?kontrakt.*?', content) or re.search(r'.*?działalno.*?', content) and 'umowa o dzie' not in content:
+                or re.search(r'.*?kontrakt.*?', content) or re.search(r'.*?działalno.*?',
+                                                                      content) and 'umowa o dzie' not in content:
             salary = get_salary(salary, 'b2b')
         elif re.search(r'.*?\Wuz\W.*?', content) or re.search(r'.*?zlecenie.*?', content):
             salary = get_salary(salary, 'uz')
-        elif re.search(r'.*?\Wud\W.*?', content) or re.search(r'.*?umowa o dzie.*?', content) or re.search(r'.*?\Wuod\W.*?', content):
+        elif re.search(r'.*?\Wud\W.*?', content) or re.search(r'.*?umowa o dzie.*?', content) or re.search(
+                r'.*?\Wuod\W.*?', content):
             salary = get_salary(salary, 'uod')
         elif 'freelancer' in content:
             salary = None
@@ -207,7 +211,6 @@ def valid_salary(content):
 
 
 def get_salary(salary, contract_type):
-
     if re.search(r'.*?(\d+)(\.|,|\s|\')(\d+).*?', salary):
         if re.search(r'.*?(\d+)(\.|,)(\d+)(|\s)k.*?', salary):
             first_part = re.search(r'.*?(\d+)(\.|,)(\d+)(|\s)k.*?', salary).group(1)
@@ -220,7 +223,7 @@ def get_salary(salary, contract_type):
         elif re.search(r'.*?(\d+)(\.|,)(\d+).*?(/h|/ h|/g|/ g|godz.*|rbh).*?', salary):
             first_part = re.search(r'.*?(\d+)(\.|,)(\d+).*?(/h|/ h|/g|/ g|godz.*|rbh).*?', salary).group(1)
             second_part = re.search(r'.*?(\d+)(\.|,)(\d+).*?(/h|/ h|/g|/ g|godz.*|rbh).*?', salary).group(3)
-            contract_salary = int(first_part) * 160 + int(second_part)/10 * 100
+            contract_salary = int(first_part) * 160 + int(second_part) / 10 * 100
         elif re.search(r'.*?(\d+)(\.|,)(\d+).*?(dzien.*|dzień|per day|md|/d|/ d).*?', salary):
             first_part = re.search(r'.*?(\d+)(\.|,)(\d+).*?(dzien.*|dzień|per day|md|/d|/ d).*?', salary).group(1)
             second_part = re.search(r'.*?(\d+)(\.|,)(\d+).*?(dzien.*|dzień|per day|md|/d|/ d).*?', salary).group(3)
@@ -256,8 +259,7 @@ def get_salary(salary, contract_type):
         if contract_salary < 15 and len(re.findall(r'[0-9]', salary)) < 3:
             contract_salary *= 1000
 
-        contract_salary = int('{0:g}'.format(contract_salary))
-        contract_salary = format(contract_salary, ',').replace(',', ' ')
+        contract_salary = format(contract_salary, ',').replace(',', ' ').replace('.0', '')
 
         if '€' in salary or 'eur' in salary:
             contract_salary = str(contract_salary) + ' eur'
@@ -297,7 +299,7 @@ def valid_location(content):
             location = 'Kraków'
         elif 'trojmiasto' in location or 'gdansk' in location or '3city' in location or '3miasto' in location:
             location = 'Gdańsk'
-        elif 'wroclaw' in location or 'wrocek' in location:
+        elif 'wroclaw' in location or 'wrocek' in location or 'woclaw' in location:
             location = 'Wrocław'
         elif 'poznan' in location:
             location = 'Poznań'
@@ -311,7 +313,7 @@ def valid_location(content):
             location = 'Katowice'
         elif 'torun' in location:
             location = 'Toruń'
-        elif 'b-b' in location:
+        elif 'b-b' in location or 'bielsko' in location:
             location = 'Bielsko-Biała'
         elif 'bialystok' in location:
             location = 'Białystok'
@@ -319,6 +321,12 @@ def valid_location(content):
             location = 'Poznań'
         elif 'zielona gora' in location:
             location = 'Zielona Góra'
+        elif 'czestochowa' in location:
+            location = 'Częstochowa'
+        elif 'lomza' in location:
+            location = "Łomża"
+        elif 'chelm' in location:
+            location = 'Chełm'
 
         if len(location) > 80:
             location = None
