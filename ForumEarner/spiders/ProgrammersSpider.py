@@ -55,6 +55,10 @@ class ProgrammersSpider(scrapy.Spider):
                         salary = salary_validator.valid_salary(content)
                         location = location_validator.valid_location(content)
 
+                        if salary is not None and None not in salary and exp is not None:
+                            if int(salary[0]) >= 20000 and float(exp) <= 2:
+                                salary[0] = None
+
                         if age is not None and stack is not None and exp is not None \
                                 and salary is not None and None not in salary and location is not None:
                             yield {
