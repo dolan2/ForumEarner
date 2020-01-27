@@ -6,7 +6,7 @@ cache:
     - frontent/node_modules
 script:
   - cd frontend
-  - yarn lint
+  - yarn
   - yarn build
 deploy:
   provider: pages
