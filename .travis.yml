@@ -3,15 +3,16 @@ node_js:
   - "stable"
 cache:
   directories:
-    - frontent/node_modules
-script:
+    - frontend/node_modules
+before_script:
   - cd frontend
+script:
   - yarn
   - yarn build
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir: frontent/build
+  local_dir: frontend/build
   on:
     branch: master
