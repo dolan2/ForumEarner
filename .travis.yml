@@ -4,8 +4,9 @@ node_js:
 cache:
   directories:
     - frontent/node_modules
-script:
+before_script:
   - cd frontend
+script:
   - yarn
   - yarn build
 deploy:
