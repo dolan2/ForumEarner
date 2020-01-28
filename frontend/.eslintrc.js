@@ -7,6 +7,11 @@ module.exports = {
     'plugin:react/recommended',
     'airbnb',
   ],
+  ignorePatterns: [
+    "temp.js",
+    "node_modules/",
+    "build"
+  ],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
