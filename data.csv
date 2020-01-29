@@ -28,7 +28,7 @@ date,age,stack,exp,salary,currency,taxes,contract_type,location
 2014-06-27,21,.NET,2,6600,pln,brutto,?,Warszawa
 2014-07-07,24,iOS,0.83,3300,pln,brutto,uop,Kraków
 2014-07-08,27,Developer,4,11000,pln,brutto,uop,Kraków
-2014-07-10,25,Salesforce,1.5,5000,pln,brutto,uop,Lublin
+2014-07-10,25,Developer,1.5,5000,pln,brutto,uop,Lublin
 2014-07-21,21,.NET,0,3600,pln,brutto,uop,Łomża
 2014-08-16,25,.NET,4,11000,pln,netto,b2b,Gdańsk
 2014-08-29,24,Visual Basic,2,4400,pln,brutto,?,Wrocław
@@ -345,7 +345,7 @@ date,age,stack,exp,salary,currency,taxes,contract_type,location
 2017-02-07,22,Javascript,1.75,5300,pln,netto,uop,Kraków
 2017-02-07,20,Java,0.58,4000,pln,netto,?,Poznań
 2017-02-07,24,Java,1.5,4500,pln,netto,uz,Warszawa
-2017-02-07,27,.NET,0,4200,pln,netto,uod,Sanok
+2017-02-07,27,.NET,0,4200,pln,netto,uod,Sanok 
 2017-02-08,25,Java,1,3600,pln,netto,uop,Kraków
 2017-02-09,29,.NET,6,9600,pln,netto,b2b,Wrocław
 2017-02-12,29,Java,5,3000,eur,netto,uop,Dublin Irlandia
@@ -496,7 +496,7 @@ date,age,stack,exp,salary,currency,taxes,contract_type,location
 2017-06-27,31,.NET,6,3200,pln,netto,uop,Częstochowa
 2017-06-27,26,.NET,5,9460,pln,netto,b2b,Poznań
 2017-06-27,24,PHP,3.5,6000,pln,netto,uop,Warszawa
-2017-06-27,33,Salesforce,0,3000,pln,netto,uop,Łódź
+2017-06-27,33,Developer,0,3000,pln,netto,uop,Łódź
 2017-06-28,26,Devops,2.5,7300,pln,brutto,uop,Wrocław
 2017-06-29,32,.NET,6,15700,pln,netto,uop,Wrocław
 2017-06-30,30,.NET,12,34500,pln,brutto,uop,Zdalnie
@@ -587,7 +587,7 @@ date,age,stack,exp,salary,currency,taxes,contract_type,location
 2017-09-05,26,Analityk,2,5500,pln,brutto,uop,Kraków
 2017-09-06,20,.NET,2,2600,pln,netto,?,Bydgoszcz
 2017-09-06,31,Java,2,10000,pln,brutto,uop,Poznań
-2017-09-10,22,Big Data,0.33,5200,pln,brutto,uop,Warszawa
+2017-09-10,22,Analityk,0.33,5200,pln,brutto,uop,Warszawa
 2017-09-11,25,Java,2,6000,pln,brutto,uop,Warszawa
 2017-09-12,31,.NET,1.33,6880,pln,netto,b2b,Rzeszów
 2017-09-12,22,.NET,2,5000,pln,netto,uod,Warszawa
@@ -633,7 +633,7 @@ date,age,stack,exp,salary,currency,taxes,contract_type,location
 2017-10-10,24,iOS,1.25,9000,pln,netto,b2b,Warszawa
 2017-10-11,24,Developer,2,5700,pln,netto,uop,Łódź
 2017-10-11,28,Developer,1.25,2800,pln,netto,uop,Karpacz
-2017-10-12,22,Sharepoint,0,2250,pln,netto,uop,Lublin
+2017-10-12,22,Developer,0,2250,pln,netto,uop,Lublin
 2017-10-12,27,PHP,0.33,3000,pln,netto,?,Warszawa
 2017-10-12,22,Java,0,2500,pln,netto,?,Warszawa
 2017-10-12,22,Java,1.17,6400,pln,netto,uod,Warszawa
@@ -657,7 +657,7 @@ date,age,stack,exp,salary,currency,taxes,contract_type,location
 2017-10-28,24,Developer,0.5,9000,pln,brutto,uop,Wrocław
 2017-10-29,28,SQL,3.5,5500,pln,netto,uop,Kraków
 2017-11-01,29,Java,0.25,5000,pln,brutto,uop,Poznań
-2017-11-03,25,Big Data,6,11000,usd,netto,uz,Zdalnie
+2017-11-03,25,Analityk,6,11000,usd,netto,uz,Zdalnie
 2017-11-05,21,Java,0,2500,pln,netto,uop,Gdańsk
 2017-11-07,28,Python,7,17000,eur,netto,uop,Zdalnie
 2017-11-07,27,.NET,4.5,9100,pln,brutto,uop,Kraków
@@ -680,7 +680,7 @@ date,age,stack,exp,salary,currency,taxes,contract_type,location
 2017-11-21,29,C++,6,14500,pln,brutto,uop,Wrocław
 2017-11-22,28,.NET,5,8000,pln,brutto,uop,Wrocław
 2017-11-23,28,Java,3.5,15000,pln,brutto,uop,Warszawa
-2017-11-25,25,Wordpress,0.5,2800,pln,netto,uod,Wrocław
+2017-11-25,25,Developer,0.5,2800,pln,netto,uod,Wrocław
 2017-11-25,24,Java,1.25,7000,pln,netto,b2b,Gdańsk
 2017-11-29,26,Android,0,7500,pln,brutto,uop,Kraków
 2017-11-30,21,Java,0.25,3500,pln,netto,uop,Gdańsk
@@ -753,10 +753,10 @@ date,age,stack,exp,salary,currency,taxes,contract_type,location
 2018-01-21,25,Python,3,14500,pln,netto,uz,Gdynia
 2018-01-22,30,Java,5,11000,pln,brutto,uop,Katowice
 2018-01-24,21,PHP,1.67,3000,pln,netto,?,Zdalnie
-2018-01-24,27,Linux Kernel,8,31000,pln,netto,b2b,Zdalnie
+2018-01-24,27,Admin,8,31000,pln,netto,b2b,Zdalnie
 2018-01-25,22,Javascript,0.5,4300,pln,netto,?,Wrocław
 2018-01-27,23,Android,1.5,6000,pln,brutto,uop,Katowice
-2018-01-28,22,Sharepoint,0.5,3500,pln,netto,?,Lublin
+2018-01-28,22,Developer,0.5,3500,pln,netto,?,Lublin
 2018-01-28,26,PHP,2,4800,pln,!,?,Poznań
 2018-01-29,25,Java,1.5,4000,pln,netto,uz,Gdańsk
 2018-01-29,31,Javascript,2,6800,pln,netto,b2b,Lublin
@@ -807,7 +807,7 @@ date,age,stack,exp,salary,currency,taxes,contract_type,location
 2018-03-17,23,.NET,0.75,4200,pln,netto,uz,Gliwice
 2018-03-17,23,Javascript,3,11000,pln,brutto,uop,Warszawa
 2018-03-17,24,iOS,0.75,2600,pln,netto,uz,Rzeszów
-2018-03-19,26,Big Data,1.5,5000,pln,netto,b2b,Warszawa
+2018-03-19,26,Analityk,1.5,5000,pln,netto,b2b,Warszawa
 2018-03-19,21,.NET,0.75,4550,pln,brutto,uz,Gdańsk
 2018-03-21,25,Java,3,7500,pln,netto,uop,Gliwice
 2018-03-22,27,Java,2,6500,pln,netto,b2b,Wrocław
@@ -818,7 +818,7 @@ date,age,stack,exp,salary,currency,taxes,contract_type,location
 2018-03-23,30,Developer,0.5,4250,pln,netto,uop,Wrocław
 2018-03-25,20,Developer,0.83,3000,pln,!,uod,Warszawa
 2018-03-26,30,.NET,6,10500,pln,brutto,uop,Warszawa
-2018-03-26,23,Big Data,1,8000,pln,brutto,uop,Warszawa
+2018-03-26,23,Analityk,1,8000,pln,brutto,uop,Warszawa
 2018-03-27,26,Analityk,2.5,7500,pln,netto,b2b,Kraków
 2018-03-27,28,.NET,7.5,19200,pln,!,?,Wrocław
 2018-03-27,21,Java,0.5,5000,pln,brutto,uz,Kraków
@@ -857,13 +857,13 @@ date,age,stack,exp,salary,currency,taxes,contract_type,location
 2018-04-22,30,PHP,4,3000,pln,netto,?,Rzeszów
 2018-04-24,32,.NET,0.75,3200,pln,netto,uop,Warszawa
 2018-04-24,24,Java,2.5,9000,pln,brutto,uop,Kraków
-2018-04-26,26,Big Data,2.5,11000,pln,brutto,?,Kraków
+2018-04-26,26,Analityk,2.5,11000,pln,brutto,?,Kraków
 2018-04-27,27,.NET,0.17,6200,pln,netto,uop,Gdańsk
 2018-04-27,27,Java,0.75,4000,pln,brutto,uop,Katowice
 2018-04-28,39,Java,15,12300,pln,netto,b2b,Warszawa
 2018-05-01,26,.NET,4.5,4800,pln,netto,uop,Poznań
 2018-05-04,27,PHP,2,8000,pln,netto,b2b,Zdalnie
-2018-05-05,23,Sharepoint,0.83,3000,pln,brutto,uop,Warszawa
+2018-05-05,23,Developer,0.83,3000,pln,brutto,uop,Warszawa
 2018-05-07,25,PHP,0,2900,pln,brutto,uop,Gdańsk
 2018-05-08,22,Developer,0.08,6000,pln,!,?,Poznań
 2018-05-09,27,.NET,3,7500,pln,netto,b2b,Poznań
@@ -894,7 +894,7 @@ date,age,stack,exp,salary,currency,taxes,contract_type,location
 2018-05-30,23,Java,1,5000,pln,netto,uop,Białystok
 2018-06-01,26,Javascript,3,9000,pln,netto,uop,Warszawa
 2018-06-02,21,.NET,0,2720,pln,brutto,uz,Rzeszów
-2018-06-02,24,Big Data,0.5,3200,pln,!,uop,Wrocław
+2018-06-02,24,Analityk,0.5,3200,pln,!,uop,Wrocław
 2018-06-04,25,PHP,0.75,3000,pln,netto,uop,Łódź
 2018-06-06,22,PHP,1.5,4200,pln,netto,uz,Warszawa
 2018-06-07,25,.NET,1.5,3500,pln,netto,uop,Poznań
@@ -1030,7 +1030,7 @@ date,age,stack,exp,salary,currency,taxes,contract_type,location
 2018-09-21,24,PHP,0.75,4200,pln,netto,?,Kraków
 2018-09-23,27,C,3,16000,pln,netto,b2b,Warszawa
 2018-09-24,26,Java,1.17,8500,pln,brutto,uop,Warszawa
-2018-09-25,23,Sharepoint,0,4000,pln,netto,uop,Warszawa
+2018-09-25,23,Developer,0,4000,pln,netto,uop,Warszawa
 2018-09-25,23,Java,3,12000,pln,netto,b2b,Warszawa
 2018-09-25,30,.NET,8,11000,pln,netto,b2b,Poznań
 2018-09-25,21,C++,0.25,4000,pln,brutto,?,Gdańsk
@@ -1053,7 +1053,7 @@ date,age,stack,exp,salary,currency,taxes,contract_type,location
 2018-10-03,23,Java,0.75,5000,pln,netto,uop,Kraków
 2018-10-03,27,Java,3.5,7600,pln,netto,uop,Szczecin
 2018-10-03,27,Analityk,3,13650,pln,netto,b2b,Warszawa
-2018-10-03,28,Javascript,7,28000,gbp,netto,b2b,Wielka Brytania
+2018-10-03,28,Javascript,7,28000,gbp,netto,b2b,Wielka Brytania 
 2018-10-04,40,PHP,1.5,6000,pln,netto,b2b,Zdalnie
 2018-10-04,30,Java,6,12500,pln,netto,uop,Kraków
 2018-10-05,32,Javascript,5,9600,pln,netto,uop,Kraków
@@ -1195,11 +1195,11 @@ date,age,stack,exp,salary,currency,taxes,contract_type,location
 2019-02-13,27,Testing,1.42,4000,pln,netto,uop,Bydgoszcz
 2019-02-13,26,Python,6,18000,pln,!,?,Warszawa
 2019-02-20,26,Analityk,0.08,2250,pln,brutto,?,Poznań
-2019-02-21,22,Wordpress,0,2400,pln,netto,uz,Warszawa
+2019-02-21,22,Developer,0,2400,pln,netto,uz,Warszawa
 2019-02-22,26,Java,0,5500,pln,brutto,uop,Warszawa
 2019-03-05,29,Android,7,3000,eur,netto,b2b,Zdalnie
 2019-03-06,26,.NET,0,4500,pln,brutto,uop,Warszawa
-2019-03-08,27,Big Data,4,13000,pln,netto,b2b,Kraków
+2019-03-08,27,Analityk,4,13000,pln,netto,b2b,Kraków
 2019-03-10,23,PHP,1.25,6000,pln,netto,b2b,Warszawa
 2019-03-10,26,C,0.75,6500,pln,brutto,?,Kraków
 2019-03-12,28,Javascript,4,19000,pln,brutto,?,Kraków
@@ -1315,7 +1315,7 @@ date,age,stack,exp,salary,currency,taxes,contract_type,location
 2019-08-30,25,Developer,0,8600,pln,brutto,uop,Poznań
 2019-08-30,31,Python,1,5000,pln,netto,uop,Gliwice
 2019-08-30,32,Java,9,28000,pln,!,uop,Kraków
-2019-09-01,32,Developer,1,2150,pln,netto,uop,Okolice Warszawy
+2019-09-01,32,Developer,1,2150,pln,netto,uop,Okolice Warszawy 
 2019-09-02,27,Java,5,7000,pln,netto,?,Katowice
 2019-09-02,22,.NET,0.75,3000,pln,brutto,uz,Tychy
 2019-09-07,24,Developer,3,5000,pln,netto,uz,Rzeszów
@@ -1330,7 +1330,7 @@ date,age,stack,exp,salary,currency,taxes,contract_type,location
 2019-09-21,25,Java,3,17600,pln,netto,b2b,Warszawa
 2019-09-22,27,Developer,2,17300,pln,netto,b2b,Warszawa
 2019-09-24,25,Java,0,4000,pln,!,uz,Wrocław
-2019-09-24,21,Big Data,2,4166,gbp,brutto,?,Londyn
+2019-09-24,21,Analityk,2,4166,gbp,brutto,?,Londyn
 2019-09-24,20,Javascript,2,3600,pln,netto,uop,Wrocław
 2019-09-25,22,.NET,1.83,10000,pln,netto,b2b,Kraków
 2019-09-25,26,Analityk,4,5000,pln,netto,uop,Wrocław
@@ -1373,7 +1373,7 @@ date,age,stack,exp,salary,currency,taxes,contract_type,location
 2019-11-26,21,.NET,0,2700,pln,netto,?,Rzeszów
 2019-11-27,31,Developer,3.5,19200,pln,brutto,uop,Warszawa
 2019-11-28,26,Ruby,2,12000,pln,netto,b2b,Kraków
-2019-11-28,26,Salesforce,0.83,2700,pln,netto,uop,Lublin
+2019-11-28,26,Developer,0.83,2700,pln,netto,uop,Lublin
 2019-11-30,26,Java,3,20000,pln,netto,b2b,Warszawa
 2019-12-04,22,iOS,1,14000,pln,brutto,uop,Kraków
 2019-12-04,21,.NET,0.67,4500,pln,brutto,uop,Kraków
@@ -1407,6 +1407,7 @@ date,age,stack,exp,salary,currency,taxes,contract_type,location
 2020-01-17,29,Testing,5.5,15300,pln,netto,b2b,Kraków
 2020-01-17,23,Developer,0.25,9000,pln,brutto,uop,Kraków
 2020-01-19,32,Javascript,4,10500,pln,brutto,uop,Kraków
-2020-01-23,28,Java,0,8100,pln,netto,b2b,Gdańsk
+2020-01-22,28,Java,0,8100,pln,netto,b2b,Gdańsk
 2020-01-23,34,Javascript,2.25,6500,pln,brutto,uop,Gdańsk
 2020-01-23,24,.NET,4,15000,pln,brutto,uop,Warszawa
+2020-01-27,22,Developer,0.75,4800,pln,brutto,uop,Kraków

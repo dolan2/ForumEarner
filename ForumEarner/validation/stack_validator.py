@@ -34,7 +34,7 @@ def valid_stack(content):
     elif '.net' in stack:
         stack = '.NET'
     elif 'kernel' in stack:
-        stack = 'Linux Kernel'
+        stack = 'Admin'
     elif 'android' in stack:
         stack = 'Android'
     elif 'ios' in stack:
@@ -74,7 +74,7 @@ def valid_stack(content):
     elif 'admin' in stack:
         stack = 'Admin'
     elif 'sharepoint' in stack:
-        stack = 'SharePoint'
+        stack = 'Developer'
     elif 'archite' in stack:
         stack = 'Architekt'
     elif 'js' in stack:
@@ -90,13 +90,13 @@ def valid_stack(content):
     elif 'bi' in stack or 'intelligence' in stack or 'konsultant' in stack or 'consultant' in stack or 'sas' in stack or 'erp' in stack:
         stack = 'Analityk'
     elif 'data' in stack or 'etl' in stack or 'dwh' in stack:
-        stack = 'Big Data'
+        stack = 'Analityk'
     elif 'system' in stack:
         stack = 'C'
     elif 'machine' in stack:
         stack = 'Python'
     elif 'wordpress' in stack:
-        stack = 'Wordpress'
+        stack = 'Developer'
     elif 'support' in stack or 'help' in stack:
         stack = 'Helpdesk'
     elif 'delphi' in stack:
@@ -106,7 +106,7 @@ def valid_stack(content):
     elif 'sql' in stack:
         stack = 'SQL'
     elif 'salesforce' in stack:
-        stack = 'Salesforce'
+        stack = 'Developer'
     elif 'lider' in stack or 'lead' in stack:
         stack = 'Team Leader'
     elif 'owner' in stack:
