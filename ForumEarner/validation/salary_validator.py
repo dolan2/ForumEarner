@@ -110,7 +110,11 @@ def get_salary(salary, contract_type):
             if 'b2b' in contract_type:
                 taxes = 'netto'
         elif 'netto' in salary or 'na rek' in salary:
-            taxes = 'netto'
+            if 'uop' in contract_type:
+                contract_salary = int(round(contract_salary * 1.33, -2))
+                taxes = 'brutto'
+            else:
+                taxes = 'netto'
         else:
             if 'b2b' in contract_type:
                 taxes = 'netto'

@@ -18,7 +18,7 @@ def valid_location(content):
         elif 'krakow' in location or 'krk' in location:
             location = 'Kraków'
         elif 'trojmiasto' in location or 'gdansk' in location or '3city' in location or '3miasto' in location:
-            location = 'Gdańsk'
+            location = 'Trójmiasto Gdańsk'
         elif 'wroclaw' in location or 'wrocek' in location or 'woclaw' in location:
             location = 'Wrocław'
         elif 'poznan' in location:
@@ -27,30 +27,60 @@ def valid_location(content):
             location = 'Łódź'
         elif 'rzeszow' in location:
             location = 'Rzeszów'
-        elif 'slask' in location:
-            location = 'Śląsk'
-        elif 'katowice' in location:
-            location = 'Katowice'
         elif 'torun' in location:
             location = 'Toruń'
-        elif 'b-b' in location or 'bielsko' in location:
-            location = 'Bielsko-Biała'
         elif 'bialystok' in location:
             location = 'Białystok'
-        elif 'pn' in location:
-            location = 'Poznań'
+        elif 'katowice' in location:
+            location = 'Śląsk Katowice'
+        elif 'bydgoszcz' in location:
+            location = 'Bydgoszcz'
+        elif 'kielce' in location:
+            location = 'Kielce'
+        elif 'lublin' in location:
+            location = 'Lublin'
+        elif 'olsztyn' in location:
+            location = 'Olsztyn'
+        elif 'opole' in location:
+            location = 'Opole'
+        elif 'szczecin' in location:
+            location = 'Szczecin'
         elif 'zielona gora' in location:
             location = 'Zielona Góra'
-        elif 'czestochowa' in location:
-            location = 'Częstochowa'
-        elif 'lomza' in location:
-            location = "Łomża"
-        elif 'chelm' in location:
-            location = 'Chełm'
-        elif 'nowy sacz' in location:
-            location = 'Nowy Sącz'
+        elif 'gorzow' in location or 'gorzów' in location:
+            location = 'Gorzów Wielkopolski'
+        elif 'slask' in location:
+            location = 'Śląsk'
+        elif 'b-b' in location or 'bielsko' in location:
+            location = 'Śląsk Bielsko-Biała'
+        elif 'czestochowa' in location or 'częstochowa' in location:
+            location = 'Śląsk Częstochowa'
         elif 'gliwice' in location:
-            location = 'Gliwice'
+            location = 'Śląsk Gliwice'
+        elif 'sosnowiec' in location:
+            location = 'Śląsk Sosnowiec'
+        elif 'zabrze' in location:
+            location = 'Śląsk Zabrze'
+        elif 'bytom' in location:
+            location = 'Śląsk Bytom'
+        elif 'rybnik' in location:
+            location = 'Śląsk Rybnik'
+        elif 'tychy' in location:
+            location = 'Śląsk Tychy'
+        elif 'gdynia' in location:
+            location = 'Trójmiasto Gdynia'
+        elif 'sopot' in location:
+            location = 'Trójmiasto Sopot'
+        elif 'lomza' in location:
+            location = "Other Łomża"
+        elif 'chelm' in location:
+            location = 'Other Chełm'
+        elif 'nowy sacz' in location:
+            location = 'Other Nowy Sącz'
+        elif 'pn' in location:
+            location = 'Poznań'
+        else:
+            location = 'Other ' + location
 
         if len(location.split()) > 10:
             location = None
