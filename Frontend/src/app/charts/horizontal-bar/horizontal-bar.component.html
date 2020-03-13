@@ -1,0 +1,10 @@
+<section>
+  <mat-form-field>
+    <mat-label>Data type</mat-label>
+    <mat-select [(value)]="selected">
+      <mat-option *ngFor="let data of selectData" [value]="data">
+        {{data}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</section>

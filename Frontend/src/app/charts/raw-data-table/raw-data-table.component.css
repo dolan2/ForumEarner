@@ -1,0 +1,13 @@
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mat-cell {
+  padding-right: 3rem;
+}
+
+.mat-table {
+  width: 100%;
+}
