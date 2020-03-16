@@ -1,6 +1,6 @@
-import {Component, Output} from '@angular/core';
+import {Component} from '@angular/core';
 import * as data from '../../../data.json';
-import {Post} from "./models/post.interface";
+import {Post} from './models/post.interface';
 
 @Component({
   selector: 'app-root',

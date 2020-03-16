@@ -9,21 +9,21 @@ def valid_salary(content):
 
         if re.search(r'.*?(^|\W)uop($|\W).*', content) or re.search(r'(^|\W)umowa o prac.($|\W)', content) \
                 or re.search(r'(^|\W)etat($|\W)', content) and 'zlecenie' not in content:
-            salary = get_salary(salary, 'uop')
+            salary = get_salary(salary, 'UoP')
         elif re.search(r'(^|\W)b2b($|\W)', content) or re.search(r'.*vat($|\W)', content) or re.search(r'.*\Wfv($|\W)', content) \
                 or re.search(r'(^|\W)działalno.*', content):
-            salary = get_salary(salary, 'b2b')
+            salary = get_salary(salary, 'B2B')
         elif re.search(r'(^|\W)uz($|\W)', content) or re.search(r'(^|\W)zlecenie($|\W)', content):
-            salary = get_salary(salary, 'uz')
+            salary = get_salary(salary, 'UZ')
         elif re.search(r'(^|\W)ud($|\W)', content) or re.search(r'(^|\W)umowa o dzie.*', content) or re.search(
                 r'(^|\W)uod\W.*', content):
-            salary = get_salary(salary, 'uod')
+            salary = get_salary(salary, 'UoD')
         elif 'freelancer' in content:
             salary = None
         elif re.search(r'(^|\W)kontrakt.*', content):
-            salary = get_salary(salary, 'b2b')
+            salary = get_salary(salary, 'B2B')
         elif re.search(r'\d', salary) is not None:
-            salary = get_salary(salary, '?')
+            salary = get_salary(salary, 'None')
         else:
             salary = None
 
@@ -106,21 +106,21 @@ def get_salary(salary, contract_type):
             currency = 'pln'
 
         if 'brutto' in salary:
-            taxes = 'brutto'
+            taxes = 'Brutto'
             if 'b2b' in contract_type:
-                taxes = 'netto'
+                taxes = 'Netto'
         elif 'netto' in salary or 'na rek' in salary:
             if 'uop' in contract_type:
                 contract_salary = int(round(contract_salary * 1.33, -2))
-                taxes = 'brutto'
+                taxes = 'Brutto'
             else:
-                taxes = 'netto'
+                taxes = 'Netto'
         else:
             if 'b2b' in contract_type:
-                taxes = 'netto'
+                taxes = 'Netto'
             else:
                 if 'uop' in contract_type and (contract_salary % 1000 == 0 or contract_salary > 7000):
-                    taxes = 'brutto'
+                    taxes = 'Brutto'
                 taxes = '!'
 
         if contract_salary < 2000 or contract_salary > 80000:

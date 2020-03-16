@@ -11,7 +11,7 @@ def valid_location(content):
                                        .replace(':', '').strip())
 
         if 'zdaln' in location or 'on-line' in location or 'google play' in location or 'remote' in location:
-            location = 'zdalnie'
+            location = 'Remote'
         elif 'warszawa' in location or 'wwa' in location or 'wawa' in location or 'stolica' in location \
                 or 'stolyca' in location or 'warszafka' in location or 'w-wa' in location or 'waw' in location or 'sloikowo' in location:
             location = 'Warszawa'
