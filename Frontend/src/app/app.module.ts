@@ -12,6 +12,7 @@ import {RawDataTableComponent} from './charts/raw-data-table/raw-data-table.comp
 import { HorizontalBarComponent } from './charts/horizontal-bar/horizontal-bar.component';
 import {MatOptionModule} from "@angular/material/core";
 import {MatSelectModule} from "@angular/material/select";
+import {NgxChartsModule} from "@swimlane/ngx-charts";
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {MatSelectModule} from "@angular/material/select";
     MatTableModule,
     MatSortModule,
     MatOptionModule,
-    MatSelectModule
+    MatSelectModule,
+    NgxChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

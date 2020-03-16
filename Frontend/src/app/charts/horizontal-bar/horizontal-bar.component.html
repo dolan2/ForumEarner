@@ -1,10 +1,25 @@
 <section>
   <mat-form-field>
     <mat-label>Data type</mat-label>
-    <mat-select [(value)]="selected">
+    <mat-select [(value)]="selected" (selectionChange)="onSelectedData()">
       <mat-option *ngFor="let data of selectData" [value]="data">
         {{data}}
       </mat-option>
     </mat-select>
   </mat-form-field>
+
+  <ngx-charts-bar-horizontal
+    [view]="view"
+    [scheme]="colorScheme"
+    [results]="data"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [legend]="showLegend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel">
+  </ngx-charts-bar-horizontal>
+
 </section>
