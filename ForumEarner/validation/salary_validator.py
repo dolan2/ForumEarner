@@ -121,7 +121,7 @@ def get_salary(salary, contract_type):
             else:
                 if 'uop' in contract_type and (contract_salary % 1000 == 0 or contract_salary > 7000):
                     taxes = 'Brutto'
-                taxes = '!'
+                taxes = 'None'
 
         if contract_salary < 2000 or contract_salary > 80000:
             contract_salary = None
