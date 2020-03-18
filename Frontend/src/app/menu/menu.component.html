@@ -1,0 +1,26 @@
+<mat-grid-list cols="1" rowHeight="2:1">
+  <p>
+    <a href="https://4programmers.net/Forum/Kariera/233131-ile_zarabiacie">4Programmers</a>
+    Visualisation 'How much do you earn?'
+  </p>
+  <mat-grid-tile>
+    <app-pie [data]="dataPieAge"></app-pie>
+    <p>Age</p>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bar [data]="dataExperience" [yAxisLabel]="'Experience'"></app-bar>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bar [data]="dataSalary" [yAxisLabel]="'Salary'"></app-bar>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bar [data]="dataLocation" [yAxisLabel]="'Location'"></app-bar>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bar [data]="dataStack" [yAxisLabel]="'Stack'"></app-bar>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-pie [data]="dataPieContractType"></app-pie>
+    <p>Contract type</p>
+  </mat-grid-tile>
+</mat-grid-list>

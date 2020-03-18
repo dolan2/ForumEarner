@@ -9,16 +9,23 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {RawDataTableComponent} from './charts/raw-data-table/raw-data-table.component';
-import { HorizontalBarComponent } from './charts/horizontal-bar/horizontal-bar.component';
+import {BarComponent} from './charts/bar/bar.component';
 import {MatOptionModule} from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
 import {NgxChartsModule} from '@swimlane/ngx-charts';
+import {LinearComponent} from './charts/linear/linear.component';
+import {MenuComponent} from './menu/menu.component';
+import {MatGridListModule} from "@angular/material/grid-list";
+import {PieComponent} from './charts/pie/pie.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RawDataTableComponent,
-    HorizontalBarComponent,
+    BarComponent,
+    LinearComponent,
+    MenuComponent,
+    PieComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +37,8 @@ import {NgxChartsModule} from '@swimlane/ngx-charts';
     MatSortModule,
     MatOptionModule,
     MatSelectModule,
-    NgxChartsModule
+    NgxChartsModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

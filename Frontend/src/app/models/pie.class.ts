@@ -1,4 +1,4 @@
-export class HorizontalBar {
+export class Pie {
   name: string;
   value = 0;
 

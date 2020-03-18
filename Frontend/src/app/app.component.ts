@@ -11,6 +11,4 @@ export class AppComponent {
 
   posts: Post[] = (data as any).default;
 
-  constructor() {}
-
 }
