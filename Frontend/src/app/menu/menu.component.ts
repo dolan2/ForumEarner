@@ -105,8 +105,6 @@ export class MenuComponent implements OnInit {
         .push(new Series(Math.round(post.exp).toString(), post.salary));
     });
 
-    console.log(this.dataSalaryToExperienceByLocation);
-
     this.dataSalaryToExperienceByLocation.forEach(data => {
       const seriesMap = new Map();
       data.series.forEach(series => {
@@ -139,7 +137,47 @@ export class MenuComponent implements OnInit {
   }
 
   chartSalaryToAgeByStack() {
+    this.dataSalaryToAgeByStack = [];
+    const uniqueStack = new Set(this.posts.map(post => post.stack));
 
+    uniqueStack.forEach(stack => {
+      this.dataSalaryToAgeByStack.push(new Linear(stack));
+    });
+
+    this.posts.forEach(post => {
+      this.dataSalaryToAgeByStack
+        .find(x => x.name === post.stack).series
+        .push(new Series(Math.round(post.age).toString(), post.salary));
+    });
+
+    this.dataSalaryToAgeByStack.forEach(data => {
+      const seriesMap = new Map();
+      data.series.forEach(series => {
+        if (seriesMap.has(series.name)) {
+          seriesMap.set(series.name, seriesMap.get(series.name) + series.value);
+        } else {
+          seriesMap.set(series.name, series.value);
+        }
+      });
+
+      const tempArray = [];
+      seriesMap.forEach((value, key) => {
+        tempArray.push(new Series(key, value));
+      });
+
+      data.series = tempArray;
+    });
+
+    this.dataSalaryToAgeByStack.forEach(data => {
+      data.series.forEach(series => {
+        series.value = Math.round(series.value / this.posts.filter(x => x.stack === data.name)
+          .filter(y => Math.round(y.age) === +series.name).length);
+      });
+    });
+
+    this.dataSalaryToAgeByStack.map(data => {
+      data.series.sort((m, n) => (+m.name > +n.name) ? 1 : -1);
+    });
   }
 
   chartSalaryToAgeByLocation() {
