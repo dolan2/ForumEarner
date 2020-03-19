@@ -10,15 +10,12 @@ import {environment} from '../../../environments/environment';
 export class PieComponent {
 
   @Input() data: Pie[];
-  view: any[] = [700, 400];
+  view: any[] = environment.view;
   gradient = false;
   showLegend = false;
   showLabels = true;
   isDoughnut = false;
   trimLabels = false;
-  legendPosition = 'below';
-
   colorScheme = environment.colorScheme;
-
 
 }

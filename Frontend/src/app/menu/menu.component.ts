@@ -2,7 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {Post} from '../models/post.interface';
 import {Bar} from '../models/bar.class';
 import {Pie} from '../models/pie.class';
-import {Linear} from '../models/linear.class';
+import {Linear, Series} from '../models/linear.class';
 
 @Component({
   selector: 'app-menu',
@@ -17,8 +17,8 @@ export class MenuComponent implements OnInit {
   dataExperience: Bar[];
   dataLocation: Bar[];
 
-  dataPieAge: Pie[];
-  dataPieContractType: Pie[];
+  dataAge: Pie[];
+  dataContractType: Pie[];
 
   dataSalaryToExperienceByStack: Linear[];
   dataSalaryToExperienceByLocation: Linear[];
@@ -27,15 +27,127 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {
     this.chartAge();
+    this.charContractType();
+
     this.chartLocation();
     this.chartExperience();
     this.chartStack();
     this.chartSalary();
-    this.charContractType();
+
+    this.chartSalaryToExperienceByStack();
+    this.chartSalaryToExperienceByLocation();
+    this.chartSalaryToAgeByStack();
+    this.chartSalaryToAgeByLocation();
+  }
+
+  chartSalaryToExperienceByStack() {
+    this.dataSalaryToExperienceByStack = [];
+    const uniqueStack = new Set(this.posts.map(post => post.stack));
+
+    uniqueStack.forEach(stack => {
+      this.dataSalaryToExperienceByStack.push(new Linear(stack));
+    });
+
+    this.posts.forEach(post => {
+      this.dataSalaryToExperienceByStack
+        .find(x => x.name === post.stack).series
+        .push(new Series(Math.round(post.exp).toString(), post.salary));
+    });
+
+    this.dataSalaryToExperienceByStack.forEach(data => {
+      const seriesMap = new Map();
+      data.series.forEach(series => {
+        if (seriesMap.has(series.name)) {
+          seriesMap.set(series.name, seriesMap.get(series.name) + series.value);
+        } else {
+          seriesMap.set(series.name, series.value);
+        }
+      });
+
+      const tempArray = [];
+      seriesMap.forEach((value, key) => {
+        tempArray.push(new Series(key, value));
+      });
+
+      data.series = tempArray;
+    });
+
+    this.dataSalaryToExperienceByStack.forEach(data => {
+      data.series.forEach(series => {
+        series.value = Math.round(series.value / this.posts.filter(x => x.stack === data.name)
+          .filter(y => Math.round(y.exp) === +series.name).length);
+      });
+    });
+
+    this.dataSalaryToExperienceByStack.map(data => {
+      data.series.sort((m, n) => (+m.name > +n.name) ? 1 : -1);
+    });
+  }
+
+  chartSalaryToExperienceByLocation() {
+    this.dataSalaryToExperienceByLocation = [
+      new Linear('Other'),
+      new Linear('Śląsk'),
+      new Linear('Trójmiasto')
+    ];
+
+    const uniqueLocation = new Set(this.posts.map(post => post.location));
+
+    uniqueLocation.forEach(location => {
+      if (location.indexOf('Trójmiasto') < 0 && location.indexOf('Śląsk') < 0 && location.indexOf('Other') < 0) {
+        this.dataSalaryToExperienceByLocation.push(new Linear(location));
+      }
+    });
+
+    this.posts.forEach(post => {
+      this.dataSalaryToExperienceByLocation
+        .find(x => post.location.includes(x.name)).series
+        .push(new Series(Math.round(post.exp).toString(), post.salary));
+    });
+
+    console.log(this.dataSalaryToExperienceByLocation);
+
+    this.dataSalaryToExperienceByLocation.forEach(data => {
+      const seriesMap = new Map();
+      data.series.forEach(series => {
+        if (seriesMap.has(series.name)) {
+          seriesMap.set(series.name, seriesMap.get(series.name) + series.value);
+        } else {
+          seriesMap.set(series.name, series.value);
+        }
+      });
+
+      const tempArray = [];
+      seriesMap.forEach((value, key) => {
+        tempArray.push(new Series(key, value));
+      });
+
+      data.series = tempArray;
+    });
+
+    this.dataSalaryToExperienceByLocation.forEach(data => {
+      data.series.forEach(series => {
+        series.value = Math.round(series.value / this.posts.filter(x => x.location.includes(data.name))
+          .filter(y => Math.round(y.exp) === +series.name).length);
+      });
+    });
+
+    this.dataSalaryToExperienceByLocation.map(data => {
+      data.series.sort((m, n) => (+m.name > +n.name) ? 1 : -1);
+    });
+
+  }
+
+  chartSalaryToAgeByStack() {
+
+  }
+
+  chartSalaryToAgeByLocation() {
+
   }
 
   chartAge() {
-    this.dataPieAge = [
+    this.dataAge = [
       new Bar('Younger than 15 years', 0),
       new Bar('15 to 19 years', 0),
       new Bar('20 to 24 years', 0),
@@ -51,27 +163,27 @@ export class MenuComponent implements OnInit {
 
     this.posts.forEach(post => {
       if (post.age < 15) {
-        this.dataPieAge.filter(x => x.name === 'Younger than 15 years').map(y => y.value += 1);
+        this.dataAge.filter(x => x.name === 'Younger than 15 years').map(y => y.value += 1);
       } else if (post.age >= 15 && post.age < 20) {
-        this.dataPieAge.filter(x => x.name === '15 to 19 years').map(y => y.value += 1);
+        this.dataAge.filter(x => x.name === '15 to 19 years').map(y => y.value += 1);
       } else if (post.age >= 20 && post.age < 25) {
-        this.dataPieAge.filter(x => x.name === '20 to 24 years').map(y => y.value += 1);
+        this.dataAge.filter(x => x.name === '20 to 24 years').map(y => y.value += 1);
       } else if (post.age >= 25 && post.age < 30) {
-        this.dataPieAge.filter(x => x.name === '25 to 29 years').map(y => y.value += 1);
+        this.dataAge.filter(x => x.name === '25 to 29 years').map(y => y.value += 1);
       } else if (post.age >= 30 && post.age < 35) {
-        this.dataPieAge.filter(x => x.name === '30 to 34 years').map(y => y.value += 1);
+        this.dataAge.filter(x => x.name === '30 to 34 years').map(y => y.value += 1);
       } else if (post.age >= 35 && post.age < 40) {
-        this.dataPieAge.filter(x => x.name === '35 to 39 years').map(y => y.value += 1);
+        this.dataAge.filter(x => x.name === '35 to 39 years').map(y => y.value += 1);
       } else if (post.age >= 40 && post.age < 45) {
-        this.dataPieAge.filter(x => x.name === '40 to 44 years').map(y => y.value += 1);
+        this.dataAge.filter(x => x.name === '40 to 44 years').map(y => y.value += 1);
       } else if (post.age >= 45 && post.age < 50) {
-        this.dataPieAge.filter(x => x.name === '45 to 49 years').map(y => y.value += 1);
+        this.dataAge.filter(x => x.name === '45 to 49 years').map(y => y.value += 1);
       } else if (post.age >= 50 && post.age < 55) {
-        this.dataPieAge.filter(x => x.name === '50 to 54 years').map(y => y.value += 1);
+        this.dataAge.filter(x => x.name === '50 to 54 years').map(y => y.value += 1);
       } else if (post.age >= 55 && post.age < 60) {
-        this.dataPieAge.filter(x => x.name === '55 to 59 years').map(y => y.value += 1);
+        this.dataAge.filter(x => x.name === '55 to 59 years').map(y => y.value += 1);
       } else if (post.age >= 60) {
-        this.dataPieAge.filter(x => x.name === '60 years and older').map(y => y.value += 1);
+        this.dataAge.filter(x => x.name === '60 years and older').map(y => y.value += 1);
       }
     });
   }
@@ -102,8 +214,6 @@ export class MenuComponent implements OnInit {
       this.dataExperience.filter(x => x.name === Math.round(+post.exp).toString()).map(y => y.value += 1);
     });
     this.dataExperience.sort((m, n) => (+m.name > +n.name) ? 1 : -1);
-
-    return this.dataExperience;
   }
 
   chartSalary() {
@@ -188,17 +298,17 @@ export class MenuComponent implements OnInit {
   }
 
   charContractType() {
-    this.dataPieContractType = [];
+    this.dataContractType = [];
     const uniqueStack = new Set(this.posts.map(post => post.contract_type));
 
     uniqueStack.forEach(contractType => {
-      this.dataPieContractType.push(new Bar(contractType, 0));
+      this.dataContractType.push(new Bar(contractType, 0));
     });
 
     this.posts.forEach(post => {
-      this.dataPieContractType.filter(x => x.name === post.contract_type).map(y => y.value += 1);
+      this.dataContractType.filter(x => x.name === post.contract_type).map(y => y.value += 1);
     });
-    this.dataPieContractType.sort((m, n) => (m.value > n.value) ? -1 : 1);
+    this.dataContractType.sort((m, n) => (m.value > n.value) ? -1 : 1);
   }
 
   chartLocation() {

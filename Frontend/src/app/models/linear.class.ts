@@ -1,9 +1,18 @@
 export class Linear {
   name: string;
-  series: Array<{ name: string, value: string }>;
+  series: Array<Series> = [];
 
-  constructor(name: string, series: Array<{ name: string; value: string }>) {
+  constructor(name: string) {
     this.name = name;
-    this.series = series;
+  }
+}
+
+export class Series {
+  name: string;
+  value: number;
+
+  constructor(name: string, value: number) {
+    this.name = name;
+    this.value = value;
   }
 }

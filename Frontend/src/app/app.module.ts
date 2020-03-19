@@ -17,6 +17,7 @@ import {LinearComponent} from './charts/linear/linear.component';
 import {MenuComponent} from './menu/menu.component';
 import {MatGridListModule} from "@angular/material/grid-list";
 import {PieComponent} from './charts/pie/pie.component';
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import {PieComponent} from './charts/pie/pie.component';
     MatOptionModule,
     MatSelectModule,
     NgxChartsModule,
-    MatGridListModule
+    MatGridListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

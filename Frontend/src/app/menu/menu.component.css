@@ -1,6 +1,17 @@
-mat-grid-tile {
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+section {
   display: flex;
   justify-content: center;
   align-content: center;
-  flex-direction: column;
+}
+
+a {
+    text-decoration: none;
 }

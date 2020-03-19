@@ -1,11 +1,31 @@
+<section>
+  <a href="https://4programmers.net/Forum/Kariera/233131-ile_zarabiacie" target="_blank" rel="noopener noreferrer">
+    <mat-card>
+      <p class="text">
+        Visualisation of 'How much do you earn? on 4Programmers.net'
+      </p>
+    </mat-card>
+  </a>
+</section>
+
 <mat-grid-list cols="1" rowHeight="2:1">
-  <p>
-    <a href="https://4programmers.net/Forum/Kariera/233131-ile_zarabiacie">4Programmers</a>
-    Visualisation 'How much do you earn?'
-  </p>
   <mat-grid-tile>
-    <app-pie [data]="dataPieAge"></app-pie>
-    <p>Age</p>
+    <aside>
+      <app-pie [data]="dataAge"></app-pie>
+      <p>Age</p>
+    </aside>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <aside>
+      <app-pie [data]="dataContractType"></app-pie>
+      <p>Contract type</p>
+    </aside>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bar [data]="dataStack" [yAxisLabel]="'Stack'"></app-bar>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bar [data]="dataLocation" [yAxisLabel]="'Location'"></app-bar>
   </mat-grid-tile>
   <mat-grid-tile>
     <app-bar [data]="dataExperience" [yAxisLabel]="'Experience'"></app-bar>
@@ -14,13 +34,15 @@
     <app-bar [data]="dataSalary" [yAxisLabel]="'Salary'"></app-bar>
   </mat-grid-tile>
   <mat-grid-tile>
-    <app-bar [data]="dataLocation" [yAxisLabel]="'Location'"></app-bar>
+    <app-linear [data]="dataSalaryToExperienceByStack" [xAxisLabel]="'Experience'" [yAxisLabel]="'Average salary'"></app-linear>
   </mat-grid-tile>
   <mat-grid-tile>
-    <app-bar [data]="dataStack" [yAxisLabel]="'Stack'"></app-bar>
+    <app-linear [data]="dataSalaryToExperienceByLocation" [xAxisLabel]="'Experience'" [yAxisLabel]="'Average salary'"></app-linear>
   </mat-grid-tile>
   <mat-grid-tile>
-    <app-pie [data]="dataPieContractType"></app-pie>
-    <p>Contract type</p>
+    <app-linear [data]="dataSalaryToAgeByStack" [xAxisLabel]="'Age'" [yAxisLabel]="'Average salary'"></app-linear>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-linear [data]="dataSalaryToAgeByLocation" [xAxisLabel]="'Age'" [yAxisLabel]="'Average salary'"></app-linear>
   </mat-grid-tile>
 </mat-grid-list>

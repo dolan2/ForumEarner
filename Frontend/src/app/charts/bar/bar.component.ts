@@ -1,6 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {Bar} from '../../models/bar.class';
-import {environment} from "../../../environments/environment";
+import {environment} from '../../../environments/environment';
 
 @Component({
   selector: 'app-bar',
@@ -11,7 +11,7 @@ export class BarComponent {
 
   @Input() data: Bar[];
   @Input() yAxisLabel: string;
-  view: any[] = [1100, 700];
+  view: any[] = environment.view;
   showXAxis = true;
   showYAxis = true;
   gradient = false;
