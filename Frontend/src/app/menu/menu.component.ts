@@ -181,7 +181,54 @@ export class MenuComponent implements OnInit {
   }
 
   chartSalaryToAgeByLocation() {
+    this.dataSalaryToAgeByLocation = [
+      new Linear('Other'),
+      new Linear('Śląsk'),
+      new Linear('Trójmiasto')
+    ];
 
+    const uniqueLocation = new Set(this.posts.map(post => post.location));
+
+    uniqueLocation.forEach(location => {
+      if (location.indexOf('Trójmiasto') < 0 && location.indexOf('Śląsk') < 0 && location.indexOf('Other') < 0) {
+        this.dataSalaryToAgeByLocation.push(new Linear(location));
+      }
+    });
+
+    this.posts.forEach(post => {
+      this.dataSalaryToAgeByLocation
+        .find(x => post.location.includes(x.name)).series
+        .push(new Series(Math.round(post.age).toString(), post.salary));
+    });
+
+    this.dataSalaryToAgeByLocation.forEach(data => {
+      const seriesMap = new Map();
+      data.series.forEach(series => {
+        if (seriesMap.has(series.name)) {
+          seriesMap.set(series.name, seriesMap.get(series.name) + series.value);
+        } else {
+          seriesMap.set(series.name, series.value);
+        }
+      });
+
+      const tempArray = [];
+      seriesMap.forEach((value, key) => {
+        tempArray.push(new Series(key, value));
+      });
+
+      data.series = tempArray;
+    });
+
+    this.dataSalaryToAgeByLocation.forEach(data => {
+      data.series.forEach(series => {
+        series.value = Math.round(series.value / this.posts.filter(x => x.location.includes(data.name))
+          .filter(y => Math.round(y.age) === +series.name).length);
+      });
+    });
+
+    this.dataSalaryToAgeByLocation.map(data => {
+      data.series.sort((m, n) => (+m.name > +n.name) ? 1 : -1);
+    });
   }
 
   chartAge() {
