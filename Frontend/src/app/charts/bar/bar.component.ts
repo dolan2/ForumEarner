@@ -1,6 +1,5 @@
 import {Component, Input} from '@angular/core';
 import {Bar} from '../../models/bar.class';
-import {environment} from '../../../environments/environment';
 
 @Component({
   selector: 'app-bar',
@@ -11,7 +10,7 @@ export class BarComponent {
 
   @Input() data: Bar[];
   @Input() yAxisLabel: string;
-  view: any[] = environment.view;
+  view: any[] = [1100, 700];
   showXAxis = true;
   showYAxis = true;
   gradient = false;
@@ -20,6 +19,8 @@ export class BarComponent {
   showYAxisLabel = true;
   trimYAxisTicks = false;
   xAxisLabel = 'Employees';
-  colorScheme = environment.colorScheme;
+  colorScheme = {
+    domain: ['#ff9671', '#ffc75f', '#0089ba', '#ffd0ff', '#00c9a7', '#3b1c32', '#c4fcef', '#d4e09b', '#8d5b4c', '#c4bbaf']
+  };
 
 }

@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import * as data from '../../../data.json';
+import * as data from 'src/assets/data.json';
 import {Post} from './models/post.interface';
 
 @Component({

@@ -1,6 +1,5 @@
 import {Component, Input} from '@angular/core';
 import {Linear} from '../../models/linear.class';
-import {environment} from '../../../environments/environment';
 
 @Component({
   selector: 'app-linear',
@@ -9,7 +8,7 @@ import {environment} from '../../../environments/environment';
 })
 export class LinearComponent {
 
-  view: any[] = environment.view;
+  view: any[] = [1100, 700];
 
   @Input() data: Linear[];
   @Input() yAxisLabel: string;
@@ -22,6 +21,8 @@ export class LinearComponent {
   showYAxisLabel = true;
   showXAxisLabel = true;
   timeline = true;
-  colorScheme = environment.colorScheme;
+  colorScheme = {
+    domain: ['#ff9671', '#ffc75f', '#0089ba', '#ffd0ff', '#00c9a7', '#3b1c32', '#c4fcef', '#d4e09b', '#8d5b4c', '#c4bbaf']
+  };
 
 }
