@@ -15,9 +15,9 @@ import {MatSelectModule} from '@angular/material/select';
 import {NgxChartsModule} from '@swimlane/ngx-charts';
 import {LinearComponent} from './charts/linear/linear.component';
 import {MenuComponent} from './menu/menu.component';
-import {MatGridListModule} from "@angular/material/grid-list";
+import {MatGridListModule} from '@angular/material/grid-list';
 import {PieComponent} from './charts/pie/pie.component';
-import {MatCardModule} from "@angular/material/card";
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [

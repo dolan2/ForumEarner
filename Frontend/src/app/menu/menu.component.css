@@ -15,3 +15,13 @@ section {
 a {
     text-decoration: none;
 }
+
+.programmers {
+  font-size: 200%;
+  font-family: Antic, serif;
+}
+
+.title {
+  font-size: 200%;
+  font-family: Buda, serif;
+}

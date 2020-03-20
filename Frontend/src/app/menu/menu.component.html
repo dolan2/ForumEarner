@@ -1,8 +1,8 @@
 <section>
   <a href="https://4programmers.net/Forum/Kariera/233131-ile_zarabiacie" target="_blank" rel="noopener noreferrer">
     <mat-card>
-      <p class="text">
-        Visualisation of 'How much do you earn? on 4Programmers.net'
+      <p class="programmers">
+        <b>Visualisation of <i>How much do you earn?</i> on 4Programmers.net</b>
       </p>
     </mat-card>
   </a>
@@ -11,38 +11,62 @@
 <mat-grid-list cols="1" rowHeight="2:1">
   <mat-grid-tile>
     <aside>
+      <p class="title">Age</p>
       <app-pie [data]="dataAge"></app-pie>
-      <p>Age</p>
     </aside>
   </mat-grid-tile>
   <mat-grid-tile>
     <aside>
+      <p class="title">Contract type</p>
       <app-pie [data]="dataContractType"></app-pie>
-      <p>Contract type</p>
     </aside>
   </mat-grid-tile>
   <mat-grid-tile>
-    <app-bar [data]="dataStack" [yAxisLabel]="'Stack'"></app-bar>
+    <aside>
+      <p class="title">Technology stack</p>
+      <app-bar [data]="dataStack" [yAxisLabel]="'Stack'"></app-bar>
+    </aside>
   </mat-grid-tile>
   <mat-grid-tile>
-    <app-bar [data]="dataLocation" [yAxisLabel]="'Location'"></app-bar>
+    <aside>
+      <p class="title">Location</p>
+      <app-bar [data]="dataLocation" [yAxisLabel]="'Location'"></app-bar>
+    </aside>
   </mat-grid-tile>
   <mat-grid-tile>
-    <app-bar [data]="dataExperience" [yAxisLabel]="'Experience'"></app-bar>
+    <aside>
+      <p class="title">Experience</p>
+      <app-bar [data]="dataExperience" [yAxisLabel]="'Experience'"></app-bar>
+    </aside>
   </mat-grid-tile>
   <mat-grid-tile>
-    <app-bar [data]="dataSalary" [yAxisLabel]="'Salary'"></app-bar>
+    <aside>
+      <p class="title">Salary</p>
+      <app-bar [data]="dataSalary" [yAxisLabel]="'Salary'"></app-bar>
+    </aside>
   </mat-grid-tile>
   <mat-grid-tile>
-    <app-linear [data]="dataSalaryToExperienceByStack" [xAxisLabel]="'Experience'" [yAxisLabel]="'Average salary'"></app-linear>
+    <aside>
+      <p class="title">Salary by experience in stack</p>
+      <app-linear [data]="dataSalaryToExperienceByStack" [xAxisLabel]="'Experience'" [yAxisLabel]="'Average salary'"></app-linear>
+    </aside>
   </mat-grid-tile>
   <mat-grid-tile>
-    <app-linear [data]="dataSalaryToExperienceByLocation" [xAxisLabel]="'Experience'" [yAxisLabel]="'Average salary'"></app-linear>
+    <aside>
+      <p class="title">Salary by experience in location</p>
+      <app-linear [data]="dataSalaryToExperienceByLocation" [xAxisLabel]="'Experience'" [yAxisLabel]="'Average salary'"></app-linear>
+    </aside>
   </mat-grid-tile>
   <mat-grid-tile>
-    <app-linear [data]="dataSalaryToAgeByStack" [xAxisLabel]="'Age'" [yAxisLabel]="'Average salary'"></app-linear>
+    <aside>
+      <p class="title">Salary by age in stack</p>
+      <app-linear [data]="dataSalaryToAgeByStack" [xAxisLabel]="'Age'" [yAxisLabel]="'Average salary'"></app-linear>
+    </aside>
   </mat-grid-tile>
   <mat-grid-tile>
-    <app-linear [data]="dataSalaryToAgeByLocation" [xAxisLabel]="'Age'" [yAxisLabel]="'Average salary'"></app-linear>
+    <aside>
+      <p class="title">Salary by age in location</p>
+      <app-linear [data]="dataSalaryToAgeByLocation" [xAxisLabel]="'Age'" [yAxisLabel]="'Average salary'"></app-linear>
+    </aside>
   </mat-grid-tile>
 </mat-grid-list>
