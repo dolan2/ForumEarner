@@ -1,13 +1,14 @@
 section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-.mat-cell {
-  padding-right: 3rem;
 }
 
 .mat-table {
   width: 100%;
 }
+
+.mat-sort-header-container {
+  display: flex;
+  justify-content: center;
+}
+

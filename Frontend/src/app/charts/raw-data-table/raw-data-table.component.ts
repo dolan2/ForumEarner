@@ -1,4 +1,4 @@
-import {Component, Input, OnDestroy, OnInit, ViewChild} from '@angular/core';
+import {Component, Input, OnDestroy, OnInit, ViewChild, ViewEncapsulation} from '@angular/core';
 import {Post} from '../../models/post.interface';
 import {MatTableDataSource} from '@angular/material/table';
 import {MatSort} from '@angular/material/sort';
@@ -7,7 +7,8 @@ import {MatPaginator} from '@angular/material/paginator';
 @Component({
   selector: 'app-raw-data-table',
   templateUrl: './raw-data-table.component.html',
-  styleUrls: ['./raw-data-table.component.css']
+  styleUrls: ['./raw-data-table.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class RawDataTableComponent implements OnInit, OnDestroy {
 

@@ -181,6 +181,21 @@ export class MenuComponent implements OnInit {
   }
 
   chartSalaryToAgeByLocation() {
+
+    // const rangeAge = [
+    //   new Linear('Younger than 15 years'),
+    //   new Linear('15 to 19 years'),
+    //   new Linear('20 to 24 years'),
+    //   new Linear('25 to 29 years'),
+    //   new Linear('30 to 34 years'),
+    //   new Linear('35 to 39 years'),
+    //   new Linear('40 to 44 years'),
+    //   new Linear('45 to 49 years'),
+    //   new Linear('50 to 54 years'),
+    //   new Linear('55 to 59 years'),
+    //   new Linear('60 years and older')
+    // ];
+
     this.dataSalaryToAgeByLocation = [
       new Linear('Other'),
       new Linear('Śląsk'),
