@@ -19,9 +19,21 @@ a {
 .programmers {
   font-size: 200%;
   font-family: Antic, serif;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.title {
+.chart-title {
   font-size: 200%;
   font-family: Antic, serif;
+}
+
+.main-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+ padding-left: 0.5%;
 }
