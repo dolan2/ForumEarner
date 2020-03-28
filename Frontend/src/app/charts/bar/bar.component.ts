@@ -10,7 +10,7 @@ export class BarComponent {
 
   @Input() data: Bar[];
   @Input() yAxisLabel: string;
-  view: any[] = [1100, 700];
+  // view: any[] = [1100, 700];
   showXAxis = true;
   showYAxis = true;
   gradient = false;

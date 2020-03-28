@@ -9,7 +9,7 @@ import {Pie} from '../../models/pie.class';
 export class PieComponent {
 
   @Input() data: Pie[];
-  view: any[] = [1100, 700];
+  // view: any[] = [1100, 700];
   gradient = false;
   showLegend = false;
   showLabels = true;

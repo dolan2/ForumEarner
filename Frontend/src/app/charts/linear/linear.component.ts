@@ -8,7 +8,7 @@ import {Linear} from '../../models/linear.class';
 })
 export class LinearComponent {
 
-  view: any[] = [1100, 700];
+  // view: any[] = [1100, 700];
 
   @Input() data: Linear[];
   @Input() yAxisLabel: string;
